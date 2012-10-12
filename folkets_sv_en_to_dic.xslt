@@ -52,9 +52,13 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
+
 					<xsl:if test="phonetic/@value">
-						<span>Uttal: |<xsl:value-of select="phonetic/@value"/>|</span><br/>
+						<xsl:for-each select="phonetic">
+							<span>Uttal: |<xsl:value-of select="@value"/>|</span><br/>
+						</xsl:for-each>
 					</xsl:if>
+
 					<xsl:if test="@class">
 						<span>
 							<xsl:choose>
