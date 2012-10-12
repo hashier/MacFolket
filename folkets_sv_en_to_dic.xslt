@@ -67,7 +67,8 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</span><br/>
-					<span><xsl:value-of select="definition/@value"/></span><br/>
+					<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+					<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
 					<ol>
 						<xsl:for-each select="translation">
 							<li>
