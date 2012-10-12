@@ -122,34 +122,3 @@
 </word>
 
 
-<d:entry id="make_1" d:title="make">
-	<d:index d:value="make"/>
-	<d:index d:value="makes"/>
-	<d:index d:value="made" d:title="made (make)"/>
-	<d:index d:value="making" d:priority="2"/>
-	<d:index d:value="make it" d:anchor="xpointer(//*[@id='make_it'])"/>
-	<div d:priority="2"><h1>make</h1></div>
-	<div>
-		<ol>
-			<li>
-				Form by putting parts together or combining substances; construct; create; produce 
-				<span d:priority="2"> : <i>Mother made her a beautiful dress</i>
-				</span>
-				.
-			</li>
-			<li>
-				Cause to be or become
-				<span d:priority="2"> : <i>The news made me happy</i>
-				</span>
-				.
-			</li>
-		</ol>
-	</div>
-	<div d:priority="2">
-		<h3>PHRASES</h3>
-		<div id="make_it"><b>make it</b> : succeed in something; survive.</div>
-		<h4><a href="x-dictionary:r:make_up_ones_mind"><b>make up one's mind</b></a></h4>
-	</div>
-</d:entry>
-
--->
