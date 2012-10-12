@@ -11,7 +11,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.4</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Code from <a href="http://loessl.org">Christopher Loessl</a>. Dataset from <a href="http://folkets-lexikon.csc.kth.se">Folkets lexikon</a></string>
+	<string>Code from Christopher Loessl. Dataset from Folkets lexikon</string>
 	<key>DCSDictionaryManufacturerName</key>
 	<string>Christopher Loessl</string>
 	<key>DCSDictionaryFrontMatterReferenceID</key>
