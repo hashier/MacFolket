@@ -50,33 +50,36 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-					<span>|<xsl:value-of select="phonetic/@value"/>|</span><br/>
-					<span>
-						<xsl:choose>
-							<xsl:when test="@class = 'nn'">
-								substantiv
-							</xsl:when>
-							<xsl:when test="@class = 'jj'">
-								adjektiv
-							</xsl:when>
-							<xsl:when test="@class = 'vb'">
-								adverb
-							</xsl:when>
-							<xsl:otherwise>
-								not yet tracked
-							</xsl:otherwise>
-						</xsl:choose>
-					</span><br/>
-					<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
-					<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
-					<ol>
-						<xsl:for-each select="translation">
-							<li>
-								<xsl:value-of select="@value"/>
-							</li>
-						</xsl:for-each>
-					</ol>
-
+					<xsl:if test="phonetic/@value">
+						<span>Uttal: |<xsl:value-of select="phonetic/@value"/>|</span><br/>
+					</xsl:if>
+					<xsl:if test="@class">
+						<span>
+							<xsl:choose>
+								<xsl:when test="@class = 'nn'">Word class: substantiv</xsl:when>
+								<xsl:when test="@class = 'jj'">Word class: adjektiv</xsl:when>
+								<xsl:when test="@class = 'vb'">Word class: adverb</xsl:when>
+								<xsl:when test="@class = 'in'">Word class: interjektion</xsl:when>
+								<xsl:when test="@class = 'pp'">Word class: preposition</xsl:when>
+								<xsl:otherwise>Word class: not tracked yet</xsl:otherwise>
+							</xsl:choose>
+						</span><br/>
+					</xsl:if>
+					<xsl:if test="paradigm/inflection/@value">
+						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+					</xsl:if>
+					<xsl:if test="definition/@value">
+						<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
+					</xsl:if>
+					<xsl:if test="translation/@value">
+						<ol>
+							<xsl:for-each select="translation">
+								<li>
+									<xsl:value-of select="@value"/>
+								</li>
+							</xsl:for-each>
+						</ol>
+					</xsl:if>
 				</d:entry>
 <xsl:text>
 </xsl:text>

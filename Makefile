@@ -37,8 +37,7 @@ RM					=	/bin/rm
 ###########################
 
 
-# all: fetch convert build # needed later
-all: fetch build
+all: fetch convert build
 	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
 build:
@@ -68,6 +67,8 @@ fetch:
 
 # for me to quickly test builds
 reinstall: clean all install
+
+reinstallsmall: clean small build install
 
 convert:
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
