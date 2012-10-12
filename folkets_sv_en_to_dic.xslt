@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -50,15 +50,32 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-		<ol>
-			<xsl:for-each select="translation">
-				<li>
-					<xsl:value-of select="@value"/>
-				</li>
-
-			</xsl:for-each>
-		</ol>
-
+					<span>|<xsl:value-of select="phonetic/@value"/>|</span><br/>
+					<span>
+						<xsl:choose>
+							<xsl:when test="@class = 'nn'">
+								substantiv
+							</xsl:when>
+							<xsl:when test="@class = 'jj'">
+								adjektiv
+							</xsl:when>
+							<xsl:when test="@class = 'vb'">
+								adverb
+							</xsl:when>
+							<xsl:otherwise>
+								not yet tracked
+							</xsl:otherwise>
+						</xsl:choose>
+					</span><br/>
+					<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+					<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
+					<ol>
+						<xsl:for-each select="translation">
+							<li>
+								<xsl:value-of select="@value"/>
+							</li>
+						</xsl:for-each>
+					</ol>
 
 				</d:entry>
 <xsl:text>
@@ -103,7 +120,6 @@
 </xsl:stylesheet>
 
 <!-- 
-
 <word value="slott" lang="sv" class="nn">
 	<translation value="manor house" />
 	<translation value="castle" />
@@ -122,35 +138,4 @@
 	<definition value="pampigt bostadshus för kungliga eller adliga personer" />
 </word>
 
-
-<d:entry id="make_1" d:title="make">
-	<d:index d:value="make"/>
-	<d:index d:value="makes"/>
-	<d:index d:value="made" d:title="made (make)"/>
-	<d:index d:value="making" d:priority="2"/>
-	<d:index d:value="make it" d:anchor="xpointer(//*[@id='make_it'])"/>
-	<div d:priority="2"><h1>make</h1></div>
-	<div>
-		<ol>
-			<li>
-				Form by putting parts together or combining substances; construct; create; produce 
-				<span d:priority="2"> : <i>Mother made her a beautiful dress</i>
-				</span>
-				.
-			</li>
-			<li>
-				Cause to be or become
-				<span d:priority="2"> : <i>The news made me happy</i>
-				</span>
-				.
-			</li>
-		</ol>
-	</div>
-	<div d:priority="2">
-		<h3>PHRASES</h3>
-		<div id="make_it"><b>make it</b> : succeed in something; survive.</div>
-		<h4><a href="x-dictionary:r:make_up_ones_mind"><b>make up one's mind</b></a></h4>
-	</div>
-</d:entry>
-
--->
+ -->
