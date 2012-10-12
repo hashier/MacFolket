@@ -86,6 +86,16 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<xsl:if test="example/@value">
+						<xsl:for-each select="example">
+							<span>Example: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
