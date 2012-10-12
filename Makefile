@@ -37,10 +37,12 @@ RM					=	/bin/rm
 ###########################
 
 
-# all: fetch convert # needed later
-all: fetch
-	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
+# all: fetch convert build # needed later
+all: fetch build
 	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
+
+build:
+	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
 install:
 	echo "Installing into $(DESTINATION_FOLDER)".
@@ -68,16 +70,10 @@ fetch:
 reinstall: clean all install
 
 convert:
-	xsltproc -o words.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
-	cat header.xml > MyDictionary.xml
-	tail -n +2 words.xml  >> MyDictionary.xml
-	cat footer.xml >> MyDictionary.xml
+	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
 
 small:
-	xsltproc -o words.xml folkets_sv_en_to_dic.xslt small.xml
-	cat header.xml > MyDictionary.xml
-	tail -n +2 words.xml  >> MyDictionary.xml
-	cat footer.xml >> MyDictionary.xml
+	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt small.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list
