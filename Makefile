@@ -6,7 +6,7 @@
 
 ###########################
 
-DICT_NAME			=	"My Dictionary"
+DICT_NAME			=	"Swedish -> English dictionary"
 DICT_SRC_PATH		=	MyDictionary.xml
 CSS_PATH			=	MyDictionary.css
 PLIST_PATH			=	MyInfo.plist
@@ -66,7 +66,7 @@ fetch:
 	sh get_files.sh
 
 # for me to quickly test builds
-reinstall: clean all install
+reinstall: clean small build install
 
 reinstallsmall: clean small build install
 

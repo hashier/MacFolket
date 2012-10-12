@@ -10,6 +10,7 @@
 		<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
 
 			<!-- HEADER -->
+<!-- 
 			<d:entry id="dictionary_application" d:title="Dictionary application">
 				<d:index d:value="Dictionary application"/>
 				<h1>Dictionary application </h1>
@@ -26,6 +27,7 @@
 			</d:entry>
 <xsl:text>
 </xsl:text>
+ -->
 			<!-- END OF HEADER -->
 
 
@@ -86,31 +88,33 @@
 			</xsl:for-each>
 
 
-
 			<!-- FOOTER -->
 			<d:entry id="front_back_matter" d:title="Front/Back Matter">
-				<h1><b>My Dictionary</b></h1>
-				<h2>Front/Back Matter</h2>
+				<h1><b>Swedish -> English</b></h1>
+				<p>
+					Dictionary from Swedish to English with a dataset from <a href="http://folkets-lexikon.csc.kth.se/folkets/">Folkets lexikon</a>. Sourcecode from <a href="http://loessl.org">Christopher Loessl</a>
+				</p>
 				<div>
-					This is a front matter page of the sample dictionary.<br/><br/>
+					<b>Usage</b>
+					<p>
+						<ul>
+							<li>Double tab a word with 3 fingers on your track-pad</li>
+							<li>Select a word and press cmd-ctrl-d</li>
+							<li>Use the dictionary application</li>
+							<li>...</li>
+						</ul>
+					</p>
+					<b>License</b>
+					<p>
+						The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
+					</p>
+					<p>
+						The source to create this dictionary can be found <a href="https://github.com/hashier/macfolket">here</a>.
+					</p>
+					<p>
+						Christopher Loessl homepage can be found <a href="http://loessl.org">here</a>.
+					</p>
 				</div>
-				<div>
-					<b>To see</b> this page,
-					<ol>
-						<li>Open "Go" menu.</li>
-						<li>Choose "Front/Back Matter" menu item. 
-							If it has sub-menu items, choose one of them.</li>
-					</ol>
-				</div>
-				<div>
-					<b>To prepare</b> the menu item, do the followings.
-					<ol>
-						<li>Prepare this page source as an entry.</li>
-						<li>Add "DCSDictionaryFrontMatterReferenceID" key and its value to the plist of the dictionary.
-							The value should be the string of this page entry id. </li>
-					</ol>
-				</div>
-				<br/>
 			</d:entry>
 <xsl:text>
 </xsl:text>
@@ -133,11 +137,14 @@
 		<inflection value="slott" />
 		<inflection value="slotten" />
 	</paradigm>
+
 	<synonym value="palats" level="4.3" />
 	<see value="slott||slott..1||slott..nn.1" type="saldo" />
+
 	<compound value="slotts|byggnad">
 		<translation value="palace building" />
 	</compound>
+
 	<definition value="pampigt bostadshus för kungliga eller adliga personer" />
 </word>
 
