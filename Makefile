@@ -36,10 +36,11 @@ RM					=	/bin/rm
 
 ###########################
 
-all:
-	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
-	echo "Done."
 
+# all: fetch convert # needed later
+all: fetch
+	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
+	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
 install:
 	echo "Installing into $(DESTINATION_FOLDER)".
@@ -49,12 +50,36 @@ install:
 	echo "Done."
 	echo "To test the new dictionary, try Dictionary.app."
 
-clean:
-	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
-
-remove:
+uninstall:
 	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
 	touch $(DESTINATION_FOLDER)
 
+clean:
+	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
+
+pristine: clean
+	$(RM) -rf folket_en_sv_public.xml
+	$(RM) -rf folket_sv_en_public.xml
+
 fetch:
 	sh get_files.sh
+
+# for me to quickly test builds
+reinstall: clean all install
+
+convert:
+	xsltproc -o words.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
+	cat header.xml words.xml footer.xml > MyDictionary.xml
+
+small:
+	xsltproc -o words.xml folkets_sv_en_to_dic.xslt small.xml
+	cat header.xml words.xml footer.xml > MyDictionary.xml
+
+# http://www.thaiopensource.com/relaxng/jing.html
+# http://code.google.com/p/jing-trang/downloads/list
+# you MUST download and unzip the apple Dictionary Development Kit in the same folder as the make file
+# AND 
+# you MUST download and unzip jing here as well
+validate:
+	java -jar jing-20091111/bin/jing.jar Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MyDictionary.xml
+

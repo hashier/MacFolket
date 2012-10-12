@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	This is a sample dictionary source file.
-	It can be built using Dictionary Development Kit.
--->
 <d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
 <d:entry id="dictionary_application" d:title="Dictionary application">
 	<d:index d:value="Dictionary application"/>
@@ -18,49 +14,4473 @@
 		<img src="Images/_internal_dictionary.png" alt="Dictionary.app Icon"/>
 	</span>
 </d:entry>
-<d:entry id="make_1" d:title="make">
-	<d:index d:value="make"/>
-	<d:index d:value="makes"/>
-	<d:index d:value="made" d:title="made (make)"/>
-	<d:index d:value="making" d:priority="2"/>
-	<d:index d:value="make it" d:parental-control="1" d:anchor="xpointer(//*[@id='make_it'])"/>
-	<div d:priority="2"><h1>make</h1></div>
-	<span class="syntax">
-		<span d:pr="US">| māk |</span>
-		<span d:pr="US_IPA">| meɪk |</span>
-		<span d:pr="UK_IPA">| meɪk |</span>
-	</span>
-	<div>
-		<ol>
-			<li>
-				Form by putting parts together or combining substances; construct; create; produce 
-				<span d:priority="2"> : <i>Mother made her a beautiful dress</i>
-				</span>
-				.
-			</li>
-			<li>
-				Cause to be or become
-				<span d:priority="2"> : <i>The news made me happy</i>
-				</span>
-				.
-			</li>
-		</ol>
-	</div>
-	<div d:parental-control="1" d:priority="2">
-		<h3>PHRASES</h3>
-		<div id="make_it"><b>make it</b> : succeed in something; survive.</div>
-		<h4><a href="x-dictionary:r:make_up_ones_mind"><b>make up one's mind</b></a></h4>
-	</div>
-</d:entry>
-<d:entry id="make_up_ones_mind" d:title="make up one's mind" d:parental-control="1">
-	<d:index d:value="make up one's mind"/>
-	<h1>make up one's mind</h1>
-	<ul>
+<d:entry id="à" d:title="à">
+	<d:index d:value="à"/>
+	<h1>à</h1>
+	<ol>
 		<li>
-		make a decision.
+				at
 		</li>
-	</ul>
+	</ol>
 </d:entry>
+<d:entry id="à" d:title="à">
+	<d:index d:value="à"/>
+	<h1>à</h1>
+	<ol>
+		<li>
+				to
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="a" d:title="a">
+	<d:index d:value="a"/>
+	<h1>a</h1>
+	<ol>
+		<li>
+				a
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="a" d:title="a">
+	<d:index d:value="a"/>
+	<h1>a</h1>
+	<ol>
+		<li>
+				A
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="a conto" d:title="a conto">
+	<d:index d:value="a conto"/>
+	<h1>a conto</h1>
+	<ol>
+		<li>
+				on account
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="à jour" d:title="à jour">
+	<d:index d:value="à jour"/>
+	<h1>à jour</h1>
+	<ol>
+		<li>
+				abreast with
+		</li>
+		<li>
+				up-to-date
+		</li>
+		<li>
+				informed
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="à la" d:title="à la">
+	<d:index d:value="à la"/>
+	<h1>à la</h1>
+	<ol>
+		<li>
+				à la
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="à la carte" d:title="à la carte">
+	<d:index d:value="à la carte"/>
+	<h1>à la carte</h1>
+	<ol>
+		<li>
+				à la carte
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AB" d:title="AB">
+	<d:index d:value="AB"/>
+	<h1>AB</h1>
+	<ol>
+		<li>
+				Ltd.
+		</li>
+		<li>
+				Co.
+		</li>
+		<li>
+				Inc.
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AB Svensk Bilprovning" d:title="AB Svensk Bilprovning">
+	<d:index d:value="AB Svensk Bilprovning"/>
+	<h1>AB Svensk Bilprovning</h1>
+	<ol>
+		<li>
+				the Swedish Motor Vehicle Inspection Co.
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AB Svenska Spel" d:title="AB Svenska Spel">
+	<d:index d:value="AB Svenska Spel"/>
+	<h1>AB Svenska Spel</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="abbé" d:title="abbé">
+	<d:index d:value="abbé"/>
+	<d:index d:value="abbén"/>
+	<d:index d:value="abbéer"/>
+	<h1>abbé</h1>
+	<ol>
+		<li>
+				abbé
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abbedissa" d:title="abbedissa">
+	<d:index d:value="abbedissa"/>
+	<d:index d:value="abbedissan"/>
+	<d:index d:value="abbedissor"/>
+	<h1>abbedissa</h1>
+	<ol>
+		<li>
+				abbess
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abborre" d:title="abborre">
+	<d:index d:value="abborre"/>
+	<d:index d:value="abborren"/>
+	<d:index d:value="abborrar"/>
+	<h1>abborre</h1>
+	<ol>
+		<li>
+				perch
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abc" d:title="abc">
+	<d:index d:value="abc"/>
+	<d:index d:value="abcet"/>
+	<d:index d:value="abcn"/>
+	<d:index d:value="abcna"/>
+	<h1>abc</h1>
+	<ol>
+		<li>
+				abc
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abc-bok" d:title="abc-bok">
+	<d:index d:value="abc-bok"/>
+	<d:index d:value="abc-boken"/>
+	<d:index d:value="abc-böcker"/>
+	<h1>abc-bok</h1>
+	<ol>
+		<li>
+				spelling-book
+		</li>
+		<li>
+				primer
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ABC-stridsmedel" d:title="ABC-stridsmedel">
+	<d:index d:value="ABC-stridsmedel"/>
+	<d:index d:value="ABC-stridsmedlet"/>
+	<d:index d:value="ABC-stridsmedel"/>
+	<d:index d:value="ABC-stridsmedlen"/>
+	<h1>ABC-stridsmedel</h1>
+	<ol>
+		<li>
+				ABC weapons
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abdikera" d:title="abdikera">
+	<d:index d:value="abdikera"/>
+	<d:index d:value="abdikerade"/>
+	<d:index d:value="abdikerat"/>
+	<d:index d:value="abdikera"/>
+	<d:index d:value="abdikerar"/>
+	<h1>abdikera</h1>
+	<ol>
+		<li>
+				abdicate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aber" d:title="aber">
+	<d:index d:value="aber"/>
+	<d:index d:value="aber"/>
+	<h1>aber</h1>
+	<ol>
+		<li>
+				catch
+		</li>
+		<li>
+				but
+		</li>
+		<li>
+				snag
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ABF" d:title="ABF">
+	<d:index d:value="ABF"/>
+	<h1>ABF</h1>
+	<ol>
+		<li>
+				ABF
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abnorm" d:title="abnorm">
+	<d:index d:value="abnorm"/>
+	<d:index d:value="abnormt"/>
+	<d:index d:value="abnorma"/>
+	<h1>abnorm</h1>
+	<ol>
+		<li>
+				abnormal
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abonnemang" d:title="abonnemang">
+	<d:index d:value="abonnemang"/>
+	<d:index d:value="abonnemanget"/>
+	<d:index d:value="abonnemang"/>
+	<d:index d:value="abonnemangen"/>
+	<h1>abonnemang</h1>
+	<ol>
+		<li>
+				subscription
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abonnent" d:title="abonnent">
+	<d:index d:value="abonnent"/>
+	<d:index d:value="abonnenten"/>
+	<d:index d:value="abonnenter"/>
+	<h1>abonnent</h1>
+	<ol>
+		<li>
+				subscriber
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abonnera" d:title="abonnera">
+	<d:index d:value="abonnera"/>
+	<d:index d:value="abonnerade"/>
+	<d:index d:value="abonnerat"/>
+	<d:index d:value="abonnera"/>
+	<d:index d:value="abonnerar"/>
+	<h1>abonnera</h1>
+	<ol>
+		<li>
+				subscribe
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abort" d:title="abort">
+	<d:index d:value="abort"/>
+	<d:index d:value="aborten"/>
+	<d:index d:value="aborter"/>
+	<h1>abort</h1>
+	<ol>
+		<li>
+				abortion
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abort|rådgivning" d:title="abort|rådgivning">
+	<d:index d:value="abort|rådgivning"/>
+	<d:index d:value="abortrådgivningen"/>
+	<h1>abort|rådgivning</h1>
+	<ol>
+		<li>
+				abortion guidance (counselling)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abrakadabra" d:title="abrakadabra">
+	<d:index d:value="abrakadabra"/>
+	<d:index d:value="abrakadabrat"/>
+	<h1>abrakadabra</h1>
+	<ol>
+		<li>
+				mumbo-jumbo
+		</li>
+		<li>
+				nonsense
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abrupt" d:title="abrupt">
+	<d:index d:value="abrupt"/>
+	<d:index d:value="abrupt"/>
+	<d:index d:value="abrupta"/>
+	<h1>abrupt</h1>
+	<ol>
+		<li>
+				abrupt
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absolut" d:title="absolut">
+	<d:index d:value="absolut"/>
+	<d:index d:value="absolut"/>
+	<d:index d:value="absoluta"/>
+	<h1>absolut</h1>
+	<ol>
+		<li>
+				absolute
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absolut" d:title="absolut">
+	<d:index d:value="absolut"/>
+	<h1>absolut</h1>
+	<ol>
+		<li>
+				certainly
+		</li>
+		<li>
+				absolutely
+		</li>
+		<li>
+				definitely
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absolutism" d:title="absolutism">
+	<d:index d:value="absolutism"/>
+	<d:index d:value="absolutismen"/>
+	<h1>absolutism</h1>
+	<ol>
+		<li>
+				absolutism
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absolutist" d:title="absolutist">
+	<d:index d:value="absolutist"/>
+	<d:index d:value="absolutisten"/>
+	<d:index d:value="absolutister"/>
+	<h1>absolutist</h1>
+	<ol>
+		<li>
+				total abstainer
+		</li>
+		<li>
+				teetotaller
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absorbera" d:title="absorbera">
+	<d:index d:value="absorbera"/>
+	<d:index d:value="absorberade"/>
+	<d:index d:value="absorberat"/>
+	<d:index d:value="absorbera"/>
+	<d:index d:value="absorberar"/>
+	<h1>absorbera</h1>
+	<ol>
+		<li>
+				absorb
+		</li>
+		<li>
+				soak (suck) up
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absorbera" d:title="absorbera">
+	<d:index d:value="absorbera"/>
+	<d:index d:value="absorberade"/>
+	<d:index d:value="absorberat"/>
+	<d:index d:value="absorbera"/>
+	<d:index d:value="absorberar"/>
+	<h1>absorbera</h1>
+	<ol>
+		<li>
+				occupy
+		</li>
+		<li>
+				absorb
+		</li>
+		<li>
+				fill
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abstinens" d:title="abstinens">
+	<d:index d:value="abstinens"/>
+	<d:index d:value="abstinensen"/>
+	<h1>abstinens</h1>
+	<ol>
+		<li>
+				abstinence
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abstrahera" d:title="abstrahera">
+	<d:index d:value="abstrahera"/>
+	<d:index d:value="abstraherade"/>
+	<d:index d:value="abstraherat"/>
+	<d:index d:value="abstrahera"/>
+	<d:index d:value="abstraherar"/>
+	<h1>abstrahera</h1>
+	<ol>
+		<li>
+				abstract
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abstrakt" d:title="abstrakt">
+	<d:index d:value="abstrakt"/>
+	<d:index d:value="abstrakt"/>
+	<d:index d:value="abstrakta"/>
+	<h1>abstrakt</h1>
+	<ol>
+		<li>
+				abstract
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abstraktion" d:title="abstraktion">
+	<d:index d:value="abstraktion"/>
+	<d:index d:value="abstraktionen"/>
+	<d:index d:value="abstraktioner"/>
+	<h1>abstraktion</h1>
+	<ol>
+		<li>
+				abstraction
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="abstraktion" d:title="abstraktion">
+	<d:index d:value="abstraktion"/>
+	<d:index d:value="abstraktionen"/>
+	<d:index d:value="abstraktioner"/>
+	<h1>abstraktion</h1>
+	<ol>
+		<li>
+				abstraction
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="absurd" d:title="absurd">
+	<d:index d:value="absurd"/>
+	<d:index d:value="absurt"/>
+	<d:index d:value="absurda"/>
+	<h1>absurd</h1>
+	<ol>
+		<li>
+				absurd
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="accelerera" d:title="accelerera">
+	<d:index d:value="accelerera"/>
+	<d:index d:value="accelererade"/>
+	<d:index d:value="accelererat"/>
+	<d:index d:value="accelerera"/>
+	<d:index d:value="accelererar"/>
+	<h1>accelerera</h1>
+	<ol>
+		<li>
+				accelerate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="accent" d:title="accent">
+	<d:index d:value="accent"/>
+	<d:index d:value="accenten"/>
+	<d:index d:value="accenter"/>
+	<h1>accent</h1>
+	<ol>
+		<li>
+				stress
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="accent" d:title="accent">
+	<d:index d:value="accent"/>
+	<d:index d:value="accenten"/>
+	<d:index d:value="accenter"/>
+	<h1>accent</h1>
+	<ol>
+		<li>
+				accent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="accentuera" d:title="accentuera">
+	<d:index d:value="accentuera"/>
+	<d:index d:value="accentuerade"/>
+	<d:index d:value="accentuerat"/>
+	<d:index d:value="accentuera"/>
+	<d:index d:value="accentuerar"/>
+	<h1>accentuera</h1>
+	<ol>
+		<li>
+				accentuate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="acceptabel" d:title="acceptabel">
+	<d:index d:value="acceptabel"/>
+	<d:index d:value="acceptabelt"/>
+	<d:index d:value="acceptabla"/>
+	<h1>acceptabel</h1>
+	<ol>
+		<li>
+				acceptable
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="acceptera" d:title="acceptera">
+	<d:index d:value="acceptera"/>
+	<d:index d:value="accepterade"/>
+	<d:index d:value="accepterat"/>
+	<d:index d:value="acceptera"/>
+	<d:index d:value="accepterar"/>
+	<h1>acceptera</h1>
+	<ol>
+		<li>
+				accept
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="accis" d:title="accis">
+	<d:index d:value="accis"/>
+	<d:index d:value="accisen"/>
+	<d:index d:value="acciser"/>
+	<h1>accis</h1>
+	<ol>
+		<li>
+				excise
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aceton" d:title="aceton">
+	<d:index d:value="aceton"/>
+	<d:index d:value="acetonet"/>
+	<h1>aceton</h1>
+	<ol>
+		<li>
+				acetone
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ack" d:title="ack">
+	<d:index d:value="ack"/>
+	<h1>ack</h1>
+	<ol>
+		<li>
+				oh!
+		</li>
+		<li>
+				oh dear!
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="acklamation" d:title="acklamation">
+	<d:index d:value="acklamation"/>
+	<d:index d:value="acklamationen"/>
+	<h1>acklamation</h1>
+	<ol>
+		<li>
+				acclamation
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="acklimatisera sig" d:title="acklimatisera sig">
+	<d:index d:value="acklimatisera sig"/>
+	<d:index d:value="acklimatiserade sig"/>
+	<d:index d:value="acklimatiserat sig"/>
+	<d:index d:value="acklimatisera sig"/>
+	<d:index d:value="acklimatiserar sig"/>
+	<h1>acklimatisera sig</h1>
+	<ol>
+		<li>
+				become (get) acclimatized
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackompanjera" d:title="ackompanjera">
+	<d:index d:value="ackompanjera"/>
+	<d:index d:value="ackompanjerade"/>
+	<d:index d:value="ackompanjerat"/>
+	<d:index d:value="ackompanjera"/>
+	<d:index d:value="ackompanjerar"/>
+	<h1>ackompanjera</h1>
+	<ol>
+		<li>
+				accompany
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackord" d:title="ackord">
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackordet"/>
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackorden"/>
+	<h1>ackord</h1>
+	<ol>
+		<li>
+				piecework
+		</li>
+		<li>
+				piece rate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackord" d:title="ackord">
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackordet"/>
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackorden"/>
+	<h1>ackord</h1>
+	<ol>
+		<li>
+				chord
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackord" d:title="ackord">
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackordet"/>
+	<d:index d:value="ackord"/>
+	<d:index d:value="ackorden"/>
+	<h1>ackord</h1>
+	<ol>
+		<li>
+				composition
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackreditera" d:title="ackreditera">
+	<d:index d:value="ackreditera"/>
+	<d:index d:value="ackrediterade"/>
+	<d:index d:value="ackrediterat"/>
+	<d:index d:value="ackreditera"/>
+	<d:index d:value="ackrediterar"/>
+	<h1>ackreditera</h1>
+	<ol>
+		<li>
+				accredit
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackumulera" d:title="ackumulera">
+	<d:index d:value="ackumulera"/>
+	<d:index d:value="ackumulerade"/>
+	<d:index d:value="ackumulerat"/>
+	<d:index d:value="ackumulera"/>
+	<d:index d:value="ackumulerar"/>
+	<h1>ackumulera</h1>
+	<ol>
+		<li>
+				accumulate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ackuratess" d:title="ackuratess">
+	<d:index d:value="ackuratess"/>
+	<d:index d:value="ackuratessen"/>
+	<h1>ackuratess</h1>
+	<ol>
+		<li>
+				accuracy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="acne" d:title="acne">
+	<d:index d:value="acne"/>
+	<d:index d:value="acnen"/>
+	<h1>acne</h1>
+	<ol>
+		<li>
+				acne
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="action" d:title="action">
+	<d:index d:value="action"/>
+	<d:index d:value="en"/>
+	<d:index d:value="action"/>
+	<h1>action</h1>
+	<ol>
+		<li>
+				action
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AD" d:title="AD">
+	<d:index d:value="AD"/>
+	<h1>AD</h1>
+	<ol>
+		<li>
+				AD
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AD" d:title="AD">
+	<d:index d:value="AD"/>
+	<h1>AD</h1>
+	<ol>
+		<li>
+				art director
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ad notam" d:title="ad notam">
+	<d:index d:value="ad notam"/>
+	<h1>ad notam</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="adams|äpple" d:title="adams|äpple">
+	<d:index d:value="adams|äpple"/>
+	<d:index d:value="adamsäpplet"/>
+	<d:index d:value="adamsäpplen"/>
+	<h1>adams|äpple</h1>
+	<ol>
+		<li>
+				Adam&amp;#39;s apple
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ADB" d:title="ADB">
+	<d:index d:value="ADB"/>
+	<h1>ADB</h1>
+	<ol>
+		<li>
+				ADP
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="addera" d:title="addera">
+	<d:index d:value="addera"/>
+	<d:index d:value="adderade"/>
+	<d:index d:value="adderat"/>
+	<d:index d:value="addera"/>
+	<d:index d:value="adderar"/>
+	<h1>addera</h1>
+	<ol>
+		<li>
+				add
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="addition" d:title="addition">
+	<d:index d:value="addition"/>
+	<d:index d:value="additionen"/>
+	<d:index d:value="additioner"/>
+	<h1>addition</h1>
+	<ol>
+		<li>
+				addition
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adekvat" d:title="adekvat">
+	<d:index d:value="adekvat"/>
+	<d:index d:value="adekvat"/>
+	<d:index d:value="adekvata"/>
+	<h1>adekvat</h1>
+	<ol>
+		<li>
+				adequate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adel" d:title="adel">
+	<d:index d:value="adel"/>
+	<d:index d:value="adeln"/>
+	<h1>adel</h1>
+	<ol>
+		<li>
+				nobility
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adept" d:title="adept">
+	<d:index d:value="adept"/>
+	<d:index d:value="adepten"/>
+	<d:index d:value="adepter"/>
+	<h1>adept</h1>
+	<ol>
+		<li>
+				novice
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aderton" d:title="aderton">
+	<d:index d:value="aderton"/>
+	<h1>aderton</h1>
+	<ol>
+		<li>
+				eighteen
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adjektiv" d:title="adjektiv">
+	<d:index d:value="adjektiv"/>
+	<d:index d:value="adjektivet"/>
+	<d:index d:value="adjektiv"/>
+	<d:index d:value="adjektiven"/>
+	<h1>adjektiv</h1>
+	<ol>
+		<li>
+				adjective
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adjungera" d:title="adjungera">
+	<d:index d:value="adjungera"/>
+	<d:index d:value="adjungerade"/>
+	<d:index d:value="adjungerat"/>
+	<d:index d:value="adjungera"/>
+	<d:index d:value="adjungerar"/>
+	<h1>adjungera</h1>
+	<ol>
+		<li>
+				call in
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adjunkt" d:title="adjunkt">
+	<d:index d:value="adjunkt"/>
+	<d:index d:value="adjunkten"/>
+	<d:index d:value="adjunkter"/>
+	<h1>adjunkt</h1>
+	<ol>
+		<li>
+				subject teacher
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adjö" d:title="adjö">
+	<d:index d:value="adjö"/>
+	<h1>adjö</h1>
+	<ol>
+		<li>
+				goodbye!
+		</li>
+		<li>
+				farewell!
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adla" d:title="adla">
+	<d:index d:value="adla"/>
+	<d:index d:value="adlade"/>
+	<d:index d:value="adlat"/>
+	<d:index d:value="adla"/>
+	<d:index d:value="adlar"/>
+	<h1>adla</h1>
+	<ol>
+		<li>
+				raise to the nobility
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="administration" d:title="administration">
+	<d:index d:value="administration"/>
+	<d:index d:value="administrationen"/>
+	<d:index d:value="administrationer"/>
+	<h1>administration</h1>
+	<ol>
+		<li>
+				administration
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="administrativ" d:title="administrativ">
+	<d:index d:value="administrativ"/>
+	<d:index d:value="administrativt"/>
+	<d:index d:value="administrativa"/>
+	<h1>administrativ</h1>
+	<ol>
+		<li>
+				administrative
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="administrera" d:title="administrera">
+	<d:index d:value="administrera"/>
+	<d:index d:value="administrerade"/>
+	<d:index d:value="administrerat"/>
+	<d:index d:value="administrera"/>
+	<d:index d:value="administrerar"/>
+	<h1>administrera</h1>
+	<ol>
+		<li>
+				administer
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adoptera" d:title="adoptera">
+	<d:index d:value="adoptera"/>
+	<d:index d:value="adopterade"/>
+	<d:index d:value="adopterat"/>
+	<d:index d:value="adoptera"/>
+	<d:index d:value="adopterar"/>
+	<h1>adoptera</h1>
+	<ol>
+		<li>
+				adopt
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adoption" d:title="adoption">
+	<d:index d:value="adoption"/>
+	<d:index d:value="adoptionen"/>
+	<d:index d:value="adoptioner"/>
+	<h1>adoption</h1>
+	<ol>
+		<li>
+				adoption
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adoptiv|barn" d:title="adoptiv|barn">
+	<d:index d:value="adoptiv|barn"/>
+	<d:index d:value="adoptivbarnet"/>
+	<d:index d:value="adoptivbarn"/>
+	<d:index d:value="adoptivbarnen"/>
+	<h1>adoptiv|barn</h1>
+	<ol>
+		<li>
+				adopted child
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adoptiv|förälder" d:title="adoptiv|förälder">
+	<d:index d:value="adoptiv|förälder"/>
+	<d:index d:value="adoptivföräldern"/>
+	<d:index d:value="adoptivföräldrar"/>
+	<h1>adoptiv|förälder</h1>
+	<ol>
+		<li>
+				adoptive parents
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adrenalin" d:title="adrenalin">
+	<d:index d:value="adrenalin"/>
+	<d:index d:value="adrenalinet"/>
+	<h1>adrenalin</h1>
+	<ol>
+		<li>
+				adrenaline
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adress" d:title="adress">
+	<d:index d:value="adress"/>
+	<d:index d:value="adressen"/>
+	<d:index d:value="adresser"/>
+	<h1>adress</h1>
+	<ol>
+		<li>
+				address
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adressat" d:title="adressat">
+	<d:index d:value="adressat"/>
+	<d:index d:value="adressaten"/>
+	<d:index d:value="adressater"/>
+	<h1>adressat</h1>
+	<ol>
+		<li>
+				addressee
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adressera" d:title="adressera">
+	<d:index d:value="adressera"/>
+	<d:index d:value="adresserade"/>
+	<d:index d:value="adresserat"/>
+	<d:index d:value="adressera"/>
+	<d:index d:value="adresserar"/>
+	<h1>adressera</h1>
+	<ol>
+		<li>
+				address
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="advent" d:title="advent">
+	<d:index d:value="advent"/>
+	<h1>advent</h1>
+	<ol>
+		<li>
+				Advent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adverb" d:title="adverb">
+	<d:index d:value="adverb"/>
+	<d:index d:value="adverbet"/>
+	<d:index d:value="adverb"/>
+	<d:index d:value="adverben"/>
+	<h1>adverb</h1>
+	<ol>
+		<li>
+				adverb
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="adverbial" d:title="adverbial">
+	<d:index d:value="adverbial"/>
+	<d:index d:value="adverbialet"/>
+	<d:index d:value="adverbial"/>
+	<d:index d:value="adverbialen"/>
+	<h1>adverbial</h1>
+	<ol>
+		<li>
+				adverbial phrase
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="advokat" d:title="advokat">
+	<d:index d:value="advokat"/>
+	<d:index d:value="advokaten"/>
+	<d:index d:value="advokater"/>
+	<h1>advokat</h1>
+	<ol>
+		<li>
+				solicitor
+		</li>
+		<li>
+				counsel
+		</li>
+		<li>
+				attorney
+		</li>
+		<li>
+				lawyer
+		</li>
+		<li>
+				barrister
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="advokat|byrå" d:title="advokat|byrå">
+	<d:index d:value="advokat|byrå"/>
+	<d:index d:value="advokatbyrån"/>
+	<d:index d:value="advokatbyråer"/>
+	<h1>advokat|byrå</h1>
+	<ol>
+		<li>
+				law office
+		</li>
+		<li>
+				solicitor&amp;#39;s office
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aero-" d:title="aero-">
+	<d:index d:value="aero-"/>
+	<h1>aero-</h1>
+	<ol>
+		<li>
+				aero-
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aero|dynamisk" d:title="aero|dynamisk">
+	<d:index d:value="aero|dynamisk"/>
+	<d:index d:value="aerodynamiskt"/>
+	<d:index d:value="aerodynamiska"/>
+	<h1>aero|dynamisk</h1>
+	<ol>
+		<li>
+				aerodynamic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aerogram" d:title="aerogram">
+	<d:index d:value="aerogram"/>
+	<d:index d:value="aerogrammet"/>
+	<d:index d:value="aerogram"/>
+	<d:index d:value="aerogrammen"/>
+	<h1>aerogram</h1>
+	<ol>
+		<li>
+				aerogram, aerogramme
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="afasi" d:title="afasi">
+	<d:index d:value="afasi"/>
+	<d:index d:value="afasien"/>
+	<h1>afasi</h1>
+	<ol>
+		<li>
+				aphasia
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affekt" d:title="affekt">
+	<d:index d:value="affekt"/>
+	<d:index d:value="affekten"/>
+	<d:index d:value="affekter"/>
+	<h1>affekt</h1>
+	<ol>
+		<li>
+				passion
+		</li>
+		<li>
+				(strong) emotion
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affekterad" d:title="affekterad">
+	<d:index d:value="affekterad"/>
+	<d:index d:value="affekterat"/>
+	<d:index d:value="affekterade"/>
+	<h1>affekterad</h1>
+	<ol>
+		<li>
+				affected
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affektion" d:title="affektion">
+	<d:index d:value="affektion"/>
+	<d:index d:value="affektionen"/>
+	<d:index d:value="affektioner"/>
+	<h1>affektion</h1>
+	<ol>
+		<li>
+				affection
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affektions|värde" d:title="affektions|värde">
+	<d:index d:value="affektions|värde"/>
+	<d:index d:value="affektionsvärden"/>
+	<d:index d:value="affektionsvärdena"/>
+	<h1>affektions|värde</h1>
+	<ol>
+		<li>
+				sentimental value
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affisch" d:title="affisch">
+	<d:index d:value="affisch"/>
+	<d:index d:value="affischen"/>
+	<d:index d:value="affischer"/>
+	<h1>affisch</h1>
+	<ol>
+		<li>
+				placard, poster, bill
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affischera" d:title="affischera">
+	<d:index d:value="affischera"/>
+	<d:index d:value="affischerade"/>
+	<d:index d:value="affischerat"/>
+	<d:index d:value="affischera"/>
+	<d:index d:value="affischerar"/>
+	<h1>affischera</h1>
+	<ol>
+		<li>
+				post (bills)
+		</li>
+		<li>
+				placard
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affär" d:title="affär">
+	<d:index d:value="affär"/>
+	<d:index d:value="affären"/>
+	<d:index d:value="affärer"/>
+	<h1>affär</h1>
+	<ol>
+		<li>
+				transaction
+		</li>
+		<li>
+				deal
+		</li>
+		<li>
+				business
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affär" d:title="affär">
+	<d:index d:value="affär"/>
+	<d:index d:value="affären"/>
+	<d:index d:value="affärer"/>
+	<h1>affär</h1>
+	<ol>
+		<li>
+				shop
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affär" d:title="affär">
+	<d:index d:value="affär"/>
+	<d:index d:value="affären"/>
+	<d:index d:value="affärer"/>
+	<h1>affär</h1>
+	<ol>
+		<li>
+				affair
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affär" d:title="affär">
+	<d:index d:value="affär"/>
+	<d:index d:value="affären"/>
+	<d:index d:value="affärer"/>
+	<h1>affär</h1>
+	<ol>
+		<li>
+				affair
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affärs|man" d:title="affärs|man">
+	<d:index d:value="affärs|man"/>
+	<d:index d:value="affärsmannen"/>
+	<d:index d:value="affärsmän"/>
+	<d:index d:value="affärsmännen"/>
+	<h1>affärs|man</h1>
+	<ol>
+		<li>
+				businessman
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aforism" d:title="aforism">
+	<d:index d:value="aforism"/>
+	<d:index d:value="aforismen"/>
+	<d:index d:value="aforismer"/>
+	<h1>aforism</h1>
+	<ol>
+		<li>
+				aphorism
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="afrikan" d:title="afrikan">
+	<d:index d:value="afrikan"/>
+	<d:index d:value="afrikanen"/>
+	<d:index d:value="afrikaner"/>
+	<h1>afrikan</h1>
+	<ol>
+		<li>
+				African
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="afrikansk" d:title="afrikansk">
+	<d:index d:value="afrikansk"/>
+	<d:index d:value="afrikanskt"/>
+	<d:index d:value="afrikanska"/>
+	<h1>afrikansk</h1>
+	<ol>
+		<li>
+				African
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="afro|frisyr" d:title="afro|frisyr">
+	<d:index d:value="afro|frisyr"/>
+	<d:index d:value="afrofrisyren"/>
+	<d:index d:value="afrofrisyrer"/>
+	<h1>afro|frisyr</h1>
+	<ol>
+		<li>
+				Afro hairdo
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="afton" d:title="afton">
+	<d:index d:value="afton"/>
+	<d:index d:value="aftonen"/>
+	<d:index d:value="aftnar"/>
+	<h1>afton</h1>
+	<ol>
+		<li>
+				evening
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aga" d:title="aga">
+	<d:index d:value="aga"/>
+	<d:index d:value="agan"/>
+	<h1>aga</h1>
+	<ol>
+		<li>
+				corporal punishment
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aga" d:title="aga">
+	<d:index d:value="aga"/>
+	<d:index d:value="agade"/>
+	<d:index d:value="agat"/>
+	<d:index d:value="aga"/>
+	<d:index d:value="agar"/>
+	<h1>aga</h1>
+	<ol>
+		<li>
+				chastise
+		</li>
+		<li>
+				beat
+		</li>
+		<li>
+				administer corporal punishment
+		</li>
+		<li>
+				discipline
+		</li>
+		<li>
+				flog
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AGB" d:title="AGB">
+	<d:index d:value="AGB"/>
+	<h1>AGB</h1>
+	<ol>
+		<li>
+				AGB
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agent" d:title="agent">
+	<d:index d:value="agent"/>
+	<d:index d:value="agenten"/>
+	<d:index d:value="agenter"/>
+	<h1>agent</h1>
+	<ol>
+		<li>
+				agent
+		</li>
+		<li>
+				spy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agent" d:title="agent">
+	<d:index d:value="agent"/>
+	<d:index d:value="agenten"/>
+	<d:index d:value="agenter"/>
+	<h1>agent</h1>
+	<ol>
+		<li>
+				agent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agera" d:title="agera">
+	<d:index d:value="agera"/>
+	<d:index d:value="agerade"/>
+	<d:index d:value="agerat"/>
+	<d:index d:value="agera"/>
+	<d:index d:value="agerar"/>
+	<h1>agera</h1>
+	<ol>
+		<li>
+				act as
+		</li>
+		<li>
+				act
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agera" d:title="agera">
+	<d:index d:value="agera"/>
+	<d:index d:value="agerade"/>
+	<d:index d:value="agerat"/>
+	<d:index d:value="agera"/>
+	<d:index d:value="agerar"/>
+	<h1>agera</h1>
+	<ol>
+		<li>
+				act
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agg" d:title="agg">
+	<d:index d:value="agg"/>
+	<d:index d:value="agget"/>
+	<h1>agg</h1>
+	<ol>
+		<li>
+				grudge
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aggregat" d:title="aggregat">
+	<d:index d:value="aggregat"/>
+	<d:index d:value="aggregatet"/>
+	<d:index d:value="aggregat"/>
+	<d:index d:value="aggregaten"/>
+	<h1>aggregat</h1>
+	<ol>
+		<li>
+				unit
+		</li>
+		<li>
+				aggregate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aggression" d:title="aggression">
+	<d:index d:value="aggression"/>
+	<d:index d:value="aggressionen"/>
+	<d:index d:value="aggressioner"/>
+	<h1>aggression</h1>
+	<ol>
+		<li>
+				aggression
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aggressiv" d:title="aggressiv">
+	<d:index d:value="aggressiv"/>
+	<d:index d:value="aggressivt"/>
+	<d:index d:value="aggressiva"/>
+	<h1>aggressiv</h1>
+	<ol>
+		<li>
+				aggressive
+		</li>
+		<li>
+				belligerent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agitera" d:title="agitera">
+	<d:index d:value="agitera"/>
+	<d:index d:value="agiterade"/>
+	<d:index d:value="agiterat"/>
+	<d:index d:value="agitera"/>
+	<d:index d:value="agiterar"/>
+	<h1>agitera</h1>
+	<ol>
+		<li>
+				agitate, arouse public opinion
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agn" d:title="agn">
+	<d:index d:value="agn"/>
+	<d:index d:value="agnet"/>
+	<d:index d:value="agn"/>
+	<d:index d:value="agnen"/>
+	<h1>agn</h1>
+	<ol>
+		<li>
+				bait
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agnar" d:title="agnar">
+	<d:index d:value="agnar"/>
+	<h1>agnar</h1>
+	<ol>
+		<li>
+				husks
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="agronom" d:title="agronom">
+	<d:index d:value="agronom"/>
+	<d:index d:value="agronomen"/>
+	<d:index d:value="agronomer"/>
+	<h1>agronom</h1>
+	<ol>
+		<li>
+				agronomist
+		</li>
+		<li>
+				graduate in agricultural sciences
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="AGS" d:title="AGS">
+	<d:index d:value="AGS"/>
+	<h1>AGS</h1>
+	<ol>
+		<li>
+				AGS
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aha-upplevelse" d:title="aha-upplevelse">
+	<d:index d:value="aha-upplevelse"/>
+	<d:index d:value="aha-upplevelsen"/>
+	<d:index d:value="aha-upplevelser"/>
+	<h1>aha-upplevelse</h1>
+	<ol>
+		<li>
+				aha experience
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aids" d:title="aids">
+	<d:index d:value="aids"/>
+	<h1>aids</h1>
+	<ol>
+		<li>
+				AIDS
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="A-inkomst" d:title="A-inkomst">
+	<d:index d:value="A-inkomst"/>
+	<d:index d:value="A-inkomsten"/>
+	<d:index d:value="A-inkomster"/>
+	<h1>A-inkomst</h1>
+	<ol>
+		<li>
+				income taxable at source
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aj" d:title="aj">
+	<d:index d:value="aj"/>
+	<h1>aj</h1>
+	<ol>
+		<li>
+				ow!, ouch!, oh!
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ajournera" d:title="ajournera">
+	<d:index d:value="ajournera"/>
+	<d:index d:value="ajournerade"/>
+	<d:index d:value="ajournerat"/>
+	<d:index d:value="ajournera"/>
+	<d:index d:value="ajournerar"/>
+	<h1>ajournera</h1>
+	<ol>
+		<li>
+				adjourn
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ajö" d:title="ajö">
+	<d:index d:value="ajö"/>
+	<h1>ajö</h1>
+	<ol>
+		<li>
+				bye-bye!
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akademi" d:title="akademi">
+	<d:index d:value="akademi"/>
+	<d:index d:value="akademien"/>
+	<d:index d:value="akademier"/>
+	<h1>akademi</h1>
+	<ol>
+		<li>
+				academy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akademiker" d:title="akademiker">
+	<d:index d:value="akademiker"/>
+	<d:index d:value="akademikern"/>
+	<d:index d:value="akademiker"/>
+	<d:index d:value="akademikerna"/>
+	<h1>akademiker</h1>
+	<ol>
+		<li>
+				academic
+		</li>
+		<li>
+				university graduate
+		</li>
+		<li>
+				academician
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akademisk" d:title="akademisk">
+	<d:index d:value="akademisk"/>
+	<d:index d:value="akademiskt"/>
+	<d:index d:value="akademiska"/>
+	<h1>akademisk</h1>
+	<ol>
+		<li>
+				academic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="A-kassa" d:title="A-kassa">
+	<d:index d:value="A-kassa"/>
+	<d:index d:value="A-kassan"/>
+	<d:index d:value="A-kassor"/>
+	<h1>A-kassa</h1>
+	<ol>
+		<li>
+				unemployment benefit society (fund)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akilles|häl" d:title="akilles|häl">
+	<d:index d:value="akilles|häl"/>
+	<d:index d:value="akilleshälen"/>
+	<d:index d:value="akilleshälar"/>
+	<h1>akilles|häl</h1>
+	<ol>
+		<li>
+				Achilles&amp;#39; heel
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akne" d:title="akne">
+	<d:index d:value="akne"/>
+	<d:index d:value="aknen"/>
+	<h1>akne</h1>
+	<ol>
+		<li>
+				acne
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akrobat" d:title="akrobat">
+	<d:index d:value="akrobat"/>
+	<d:index d:value="akrobaten"/>
+	<d:index d:value="akrobater"/>
+	<h1>akrobat</h1>
+	<ol>
+		<li>
+				acrobat
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akryl" d:title="akryl">
+	<d:index d:value="akryl"/>
+	<d:index d:value="akrylen"/>
+	<h1>akryl</h1>
+	<ol>
+		<li>
+				acrylic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akt" d:title="akt">
+	<d:index d:value="akt"/>
+	<d:index d:value="akten"/>
+	<d:index d:value="akter"/>
+	<h1>akt</h1>
+	<ol>
+		<li>
+				act
+		</li>
+		<li>
+				ceremony
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akt" d:title="akt">
+	<d:index d:value="akt"/>
+	<d:index d:value="akten"/>
+	<d:index d:value="akter"/>
+	<h1>akt</h1>
+	<ol>
+		<li>
+				act
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akt" d:title="akt">
+	<d:index d:value="akt"/>
+	<d:index d:value="akten"/>
+	<d:index d:value="akter"/>
+	<h1>akt</h1>
+	<ol>
+		<li>
+				document
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akt" d:title="akt">
+	<d:index d:value="akt"/>
+	<h1>akt</h1>
+	<ol>
+		<li>
+				attention
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akta" d:title="akta">
+	<d:index d:value="akta"/>
+	<d:index d:value="aktade"/>
+	<d:index d:value="aktat"/>
+	<d:index d:value="akta"/>
+	<d:index d:value="aktar"/>
+	<h1>akta</h1>
+	<ol>
+		<li>
+				guard
+		</li>
+		<li>
+				protect
+		</li>
+		<li>
+				take care of
+		</li>
+		<li>
+				be careful with
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akta sig" d:title="akta sig">
+	<d:index d:value="akta sig"/>
+	<d:index d:value="aktade sig"/>
+	<d:index d:value="aktat sig"/>
+	<d:index d:value="akta sig"/>
+	<d:index d:value="aktar sig"/>
+	<h1>akta sig</h1>
+	<ol>
+		<li>
+				be careful
+		</li>
+		<li>
+				take care
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akter" d:title="akter">
+	<d:index d:value="akter"/>
+	<d:index d:value="aktern"/>
+	<d:index d:value="aktrar"/>
+	<h1>akter</h1>
+	<ol>
+		<li>
+				stern
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akter|seglad" d:title="akter|seglad">
+	<d:index d:value="akter|seglad"/>
+	<d:index d:value="akterseglat"/>
+	<d:index d:value="akterseglade"/>
+	<h1>akter|seglad</h1>
+	<ol>
+		<li>
+				left behind (astern)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktie" d:title="aktie">
+	<d:index d:value="aktie"/>
+	<d:index d:value="aktien"/>
+	<d:index d:value="aktier"/>
+	<h1>aktie</h1>
+	<ol>
+		<li>
+				share, (stock [US])
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktie|bolag" d:title="aktie|bolag">
+	<d:index d:value="aktie|bolag"/>
+	<d:index d:value="aktiebolaget"/>
+	<d:index d:value="aktiebolag"/>
+	<d:index d:value="aktiebolagen"/>
+	<h1>aktie|bolag</h1>
+	<ol>
+		<li>
+				(corporation [US])
+		</li>
+		<li>
+				joint-stock company
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktion" d:title="aktion">
+	<d:index d:value="aktion"/>
+	<d:index d:value="aktionen"/>
+	<d:index d:value="aktioner"/>
+	<h1>aktion</h1>
+	<ol>
+		<li>
+				drive
+		</li>
+		<li>
+				campaign
+		</li>
+		<li>
+				action
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktiv" d:title="aktiv">
+	<d:index d:value="aktiv"/>
+	<d:index d:value="aktivt"/>
+	<d:index d:value="aktiva"/>
+	<h1>aktiv</h1>
+	<ol>
+		<li>
+				active
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktivera" d:title="aktivera">
+	<d:index d:value="aktivera"/>
+	<d:index d:value="aktiverade"/>
+	<d:index d:value="aktiverat"/>
+	<d:index d:value="aktivera"/>
+	<d:index d:value="aktiverar"/>
+	<h1>aktivera</h1>
+	<ol>
+		<li>
+				activate
+		</li>
+		<li>
+				make active
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktivist" d:title="aktivist">
+	<d:index d:value="aktivist"/>
+	<d:index d:value="aktivisten"/>
+	<d:index d:value="aktivister"/>
+	<h1>aktivist</h1>
+	<ol>
+		<li>
+				activist
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktivitet" d:title="aktivitet">
+	<d:index d:value="aktivitet"/>
+	<d:index d:value="aktiviteten"/>
+	<d:index d:value="aktiviteter"/>
+	<h1>aktivitet</h1>
+	<ol>
+		<li>
+				activity
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktivitetsersättning" d:title="aktivitetsersättning">
+	<d:index d:value="aktivitetsersättning"/>
+	<d:index d:value="aktivitetsersättningen"/>
+	<h1>aktivitetsersättning</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="aktning" d:title="aktning">
+	<d:index d:value="aktning"/>
+	<d:index d:value="aktningen"/>
+	<h1>aktning</h1>
+	<ol>
+		<li>
+				respect
+		</li>
+		<li>
+				esteem
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktris" d:title="aktris">
+	<d:index d:value="aktris"/>
+	<d:index d:value="aktrisen"/>
+	<d:index d:value="aktriser"/>
+	<h1>aktris</h1>
+	<ol>
+		<li>
+				actress
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktsam" d:title="aktsam">
+	<d:index d:value="aktsam"/>
+	<d:index d:value="aktsamt"/>
+	<d:index d:value="aktsamma"/>
+	<h1>aktsam</h1>
+	<ol>
+		<li>
+				cautious
+		</li>
+		<li>
+				careful
+		</li>
+		<li>
+				prudent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktualisera" d:title="aktualisera">
+	<d:index d:value="aktualisera"/>
+	<d:index d:value="aktualiserade"/>
+	<d:index d:value="aktualiserat"/>
+	<d:index d:value="aktualisera"/>
+	<d:index d:value="aktualiserar"/>
+	<h1>aktualisera</h1>
+	<ol>
+		<li>
+				update
+		</li>
+		<li>
+				bring to the fore
+		</li>
+		<li>
+				make topical
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktualitet" d:title="aktualitet">
+	<d:index d:value="aktualitet"/>
+	<d:index d:value="aktualiteten"/>
+	<d:index d:value="aktualiteter"/>
+	<h1>aktualitet</h1>
+	<ol>
+		<li>
+				current (immediate) interest (importance)
+		</li>
+		<li>
+				topicality
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktuell" d:title="aktuell">
+	<d:index d:value="aktuell"/>
+	<d:index d:value="aktuellt"/>
+	<d:index d:value="aktuella"/>
+	<h1>aktuell</h1>
+	<ol>
+		<li>
+				topical
+		</li>
+		<li>
+				of current (immediate) interest (importance)
+		</li>
+		<li>
+				current
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="Aktuellt" d:title="Aktuellt">
+	<d:index d:value="Aktuellt"/>
+	<h1>Aktuellt</h1>
+	<ol>
+		<li>
+				Aktuellt, the News
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aktör" d:title="aktör">
+	<d:index d:value="aktör"/>
+	<d:index d:value="aktören"/>
+	<d:index d:value="aktörer"/>
+	<h1>aktör</h1>
+	<ol>
+		<li>
+				player
+		</li>
+		<li>
+				operator
+		</li>
+		<li>
+				participant
+		</li>
+		<li>
+				actor
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akupunktur" d:title="akupunktur">
+	<d:index d:value="akupunktur"/>
+	<d:index d:value="akupunkturen"/>
+	<h1>akupunktur</h1>
+	<ol>
+		<li>
+				acupuncture
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akustik" d:title="akustik">
+	<d:index d:value="akustik"/>
+	<d:index d:value="akustiken"/>
+	<h1>akustik</h1>
+	<ol>
+		<li>
+				acoustics
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akustisk" d:title="akustisk">
+	<d:index d:value="akustisk"/>
+	<d:index d:value="akustiskt"/>
+	<d:index d:value="akustiska"/>
+	<h1>akustisk</h1>
+	<ol>
+		<li>
+				acoustic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akut" d:title="akut">
+	<d:index d:value="akut"/>
+	<d:index d:value="akut"/>
+	<d:index d:value="akuta"/>
+	<h1>akut</h1>
+	<ol>
+		<li>
+				immediate
+		</li>
+		<li>
+				acute
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akuten" d:title="akuten">
+	<d:index d:value="akuten"/>
+	<h1>akuten</h1>
+	<ol>
+		<li>
+				&amp;quot;casualties&amp;quot;, emergency ward
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akut|mottagning" d:title="akut|mottagning">
+	<d:index d:value="akut|mottagning"/>
+	<d:index d:value="akutmottagningen"/>
+	<d:index d:value="akutmottagningar"/>
+	<h1>akut|mottagning</h1>
+	<ol>
+		<li>
+				emergency (casualty) ward (department)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akvarell" d:title="akvarell">
+	<d:index d:value="akvarell"/>
+	<d:index d:value="akvarellen"/>
+	<d:index d:value="akvareller"/>
+	<h1>akvarell</h1>
+	<ol>
+		<li>
+				watercolour (painting)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="akvarium" d:title="akvarium">
+	<d:index d:value="akvarium"/>
+	<d:index d:value="akvariet"/>
+	<d:index d:value="akvarier"/>
+	<h1>akvarium</h1>
+	<ol>
+		<li>
+				aquarium
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="al" d:title="al">
+	<d:index d:value="al"/>
+	<d:index d:value="alen"/>
+	<d:index d:value="alar"/>
+	<h1>al</h1>
+	<ol>
+		<li>
+				alder
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alabaster" d:title="alabaster">
+	<d:index d:value="alabaster"/>
+	<d:index d:value="alabastern"/>
+	<h1>alabaster</h1>
+	<ol>
+		<li>
+				alabaster
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aladåb" d:title="aladåb">
+	<d:index d:value="aladåb"/>
+	<d:index d:value="aladåben"/>
+	<d:index d:value="aladåber"/>
+	<h1>aladåb</h1>
+	<ol>
+		<li>
+				aspic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alarmerande" d:title="alarmerande">
+	<d:index d:value="alarmerande"/>
+	<h1>alarmerande</h1>
+	<ol>
+		<li>
+				alarming
+		</li>
+		<li>
+				frightening
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alban" d:title="alban">
+	<d:index d:value="alban"/>
+	<d:index d:value="albanen"/>
+	<d:index d:value="albaner"/>
+	<h1>alban</h1>
+	<ol>
+		<li>
+				Albanian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="Albanien" d:title="Albanien">
+	<d:index d:value="Albanien"/>
+	<h1>Albanien</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="albansk" d:title="albansk">
+	<d:index d:value="albansk"/>
+	<d:index d:value="albanskt"/>
+	<d:index d:value="albanska"/>
+	<h1>albansk</h1>
+	<ol>
+		<li>
+				Albanian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="albanska" d:title="albanska">
+	<d:index d:value="albanska"/>
+	<d:index d:value="albanskan"/>
+	<h1>albanska</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="albanska" d:title="albanska">
+	<d:index d:value="albanska"/>
+	<d:index d:value="albanskan"/>
+	<d:index d:value="albanskor"/>
+	<h1>albanska</h1>
+	<ol>
+	</ol>
+</d:entry>
+<d:entry id="albino" d:title="albino">
+	<d:index d:value="albino"/>
+	<d:index d:value="albinon"/>
+	<d:index d:value="albinoer"/>
+	<h1>albino</h1>
+	<ol>
+		<li>
+				albino
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="album" d:title="album">
+	<d:index d:value="album"/>
+	<d:index d:value="albumet"/>
+	<d:index d:value="album"/>
+	<d:index d:value="albumen"/>
+	<h1>album</h1>
+	<ol>
+		<li>
+				album
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="aldrig" d:title="aldrig">
+	<d:index d:value="aldrig"/>
+	<h1>aldrig</h1>
+	<ol>
+		<li>
+				never
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alert" d:title="alert">
+	<d:index d:value="alert"/>
+	<d:index d:value="alert"/>
+	<d:index d:value="alerta"/>
+	<h1>alert</h1>
+	<ol>
+		<li>
+				alert
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alfabet" d:title="alfabet">
+	<d:index d:value="alfabet"/>
+	<d:index d:value="alfabetet"/>
+	<d:index d:value="alfabet"/>
+	<d:index d:value="alfabeten"/>
+	<h1>alfabet</h1>
+	<ol>
+		<li>
+				alphabet
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alfabetisera" d:title="alfabetisera">
+	<d:index d:value="alfabetisera"/>
+	<d:index d:value="alfabetiserade"/>
+	<d:index d:value="alfabetiserat"/>
+	<d:index d:value="alfabetisera"/>
+	<d:index d:value="alfabetiserar"/>
+	<h1>alfabetisera</h1>
+	<ol>
+		<li>
+				teach literacy
+		</li>
+		<li>
+				make (someone) literate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alfabetisera" d:title="alfabetisera">
+	<d:index d:value="alfabetisera"/>
+	<d:index d:value="alfabetiserade"/>
+	<d:index d:value="alfabetiserat"/>
+	<d:index d:value="alfabetisera"/>
+	<d:index d:value="alfabetiserar"/>
+	<h1>alfabetisera</h1>
+	<ol>
+		<li>
+				alphabetise
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alfabetisk" d:title="alfabetisk">
+	<d:index d:value="alfabetisk"/>
+	<d:index d:value="alfabetiskt"/>
+	<d:index d:value="alfabetiska"/>
+	<h1>alfabetisk</h1>
+	<ol>
+		<li>
+				alphabetical
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alg" d:title="alg">
+	<d:index d:value="alg"/>
+	<d:index d:value="algen"/>
+	<d:index d:value="alger"/>
+	<h1>alg</h1>
+	<ol>
+		<li>
+				alga
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="algerier" d:title="algerier">
+	<d:index d:value="algerier"/>
+	<d:index d:value="algeriern"/>
+	<d:index d:value="algerier"/>
+	<d:index d:value="algerierna"/>
+	<h1>algerier</h1>
+	<ol>
+		<li>
+				Algerian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="algerisk" d:title="algerisk">
+	<d:index d:value="algerisk"/>
+	<d:index d:value="algeriskt"/>
+	<d:index d:value="algeriska"/>
+	<h1>algerisk</h1>
+	<ol>
+		<li>
+				Algerian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alias" d:title="alias">
+	<d:index d:value="alias"/>
+	<h1>alias</h1>
+	<ol>
+		<li>
+				alias
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alibi" d:title="alibi">
+	<d:index d:value="alibi"/>
+	<d:index d:value="alibit"/>
+	<d:index d:value="alibin"/>
+	<d:index d:value="alibina"/>
+	<h1>alibi</h1>
+	<ol>
+		<li>
+				alibi
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alienation" d:title="alienation">
+	<d:index d:value="alienation"/>
+	<d:index d:value="alienationen"/>
+	<h1>alienation</h1>
+	<ol>
+		<li>
+				alienation
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alienerad" d:title="alienerad">
+	<d:index d:value="alienerad"/>
+	<d:index d:value="alienerat"/>
+	<d:index d:value="alienerade"/>
+	<h1>alienerad</h1>
+	<ol>
+		<li>
+				alienated
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alika" d:title="alika">
+	<d:index d:value="alika"/>
+	<d:index d:value="alikan"/>
+	<d:index d:value="alikor"/>
+	<h1>alika</h1>
+	<ol>
+		<li>
+				jackdaw
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkemi" d:title="alkemi">
+	<d:index d:value="alkemi"/>
+	<d:index d:value="alkemien"/>
+	<h1>alkemi</h1>
+	<ol>
+		<li>
+				alchemy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkohol" d:title="alkohol">
+	<d:index d:value="alkohol"/>
+	<d:index d:value="alkoholen"/>
+	<h1>alkohol</h1>
+	<ol>
+		<li>
+				alcohol
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkoholism" d:title="alkoholism">
+	<d:index d:value="alkoholism"/>
+	<d:index d:value="alkoholismen"/>
+	<h1>alkoholism</h1>
+	<ol>
+		<li>
+				alcoholism
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkoholist" d:title="alkoholist">
+	<d:index d:value="alkoholist"/>
+	<d:index d:value="alkoholisten"/>
+	<d:index d:value="alkoholister"/>
+	<h1>alkoholist</h1>
+	<ol>
+		<li>
+				alcoholic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkohol|poliklinik" d:title="alkohol|poliklinik">
+	<d:index d:value="alkohol|poliklinik"/>
+	<d:index d:value="alkoholpolikliniken"/>
+	<d:index d:value="alkoholpolikliniker"/>
+	<h1>alkohol|poliklinik</h1>
+	<ol>
+		<li>
+				alcohol addiction clinic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alko|test" d:title="alko|test">
+	<d:index d:value="alko|test"/>
+	<d:index d:value="alkotestet"/>
+	<d:index d:value="alkotest"/>
+	<d:index d:value="alkotesten"/>
+	<h1>alko|test</h1>
+	<ol>
+		<li>
+				breathalyser test
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alkov" d:title="alkov">
+	<d:index d:value="alkov"/>
+	<d:index d:value="alkoven"/>
+	<d:index d:value="alkover"/>
+	<h1>alkov</h1>
+	<ol>
+		<li>
+				alcove
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="all" d:title="all">
+	<d:index d:value="all"/>
+	<d:index d:value="allt"/>
+	<d:index d:value="alla"/>
+	<h1>all</h1>
+	<ol>
+		<li>
+				all
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="all" d:title="all">
+	<d:index d:value="all"/>
+	<d:index d:value="allt"/>
+	<d:index d:value="alla"/>
+	<h1>all</h1>
+	<ol>
+		<li>
+				all
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="all right" d:title="all right">
+	<d:index d:value="all right"/>
+	<h1>all right</h1>
+	<ol>
+		<li>
+				all right
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="all round" d:title="all round">
+	<d:index d:value="all round"/>
+	<h1>all round</h1>
+	<ol>
+		<li>
+				all round
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alldaglig" d:title="alldaglig">
+	<d:index d:value="alldaglig"/>
+	<d:index d:value="alldagligt"/>
+	<d:index d:value="alldagliga"/>
+	<h1>alldaglig</h1>
+	<ol>
+		<li>
+				ordinary
+		</li>
+		<li>
+				everyday
+		</li>
+		<li>
+				trite
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="alldeles" d:title="alldeles">
+	<d:index d:value="alldeles"/>
+	<h1>alldeles</h1>
+	<ol>
+		<li>
+				perfectly
+		</li>
+		<li>
+				altogether
+		</li>
+		<li>
+				quite
+		</li>
+		<li>
+				absolutely
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allé" d:title="allé">
+	<d:index d:value="allé"/>
+	<d:index d:value="allén"/>
+	<d:index d:value="alléer"/>
+	<h1>allé</h1>
+	<ol>
+		<li>
+				avenue
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allegori" d:title="allegori">
+	<d:index d:value="allegori"/>
+	<d:index d:value="allegorien"/>
+	<d:index d:value="allegorier"/>
+	<h1>allegori</h1>
+	<ol>
+		<li>
+				allegory
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allehanda" d:title="allehanda">
+	<d:index d:value="allehanda"/>
+	<h1>allehanda</h1>
+	<ol>
+		<li>
+				a variety of
+		</li>
+		<li>
+				of all sorts (kinds)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allemans|rätt" d:title="allemans|rätt">
+	<d:index d:value="allemans|rätt"/>
+	<d:index d:value="allemansrätten"/>
+	<h1>allemans|rätt</h1>
+	<ol>
+		<li>
+				right of common access
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allena" d:title="allena">
+	<d:index d:value="allena"/>
+	<h1>allena</h1>
+	<ol>
+		<li>
+				alone
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allena" d:title="allena">
+	<d:index d:value="allena"/>
+	<h1>allena</h1>
+	<ol>
+		<li>
+				alone
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allena|rådande" d:title="allena|rådande">
+	<d:index d:value="allena|rådande"/>
+	<h1>allena|rådande</h1>
+	<ol>
+		<li>
+				universally prevailing
+		</li>
+		<li>
+				in sole control
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allergi" d:title="allergi">
+	<d:index d:value="allergi"/>
+	<d:index d:value="allergien"/>
+	<d:index d:value="allergier"/>
+	<h1>allergi</h1>
+	<ol>
+		<li>
+				allergy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allergisk" d:title="allergisk">
+	<d:index d:value="allergisk"/>
+	<d:index d:value="allergiskt"/>
+	<d:index d:value="allergiska"/>
+	<h1>allergisk</h1>
+	<ol>
+		<li>
+				allergic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allesamman(s)" d:title="allesamman(s)">
+	<d:index d:value="allesamman(s)"/>
+	<h1>allesamman(s)</h1>
+	<ol>
+		<li>
+				all of us
+		</li>
+		<li>
+				one and all
+		</li>
+		<li>
+				everyone
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allestädes" d:title="allestädes">
+	<d:index d:value="allestädes"/>
+	<h1>allestädes</h1>
+	<ol>
+		<li>
+				everywhere
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allhelgonahelgen" d:title="allhelgonahelgen">
+	<d:index d:value="allhelgonahelgen"/>
+	<h1>allhelgonahelgen</h1>
+	<ol>
+		<li>
+				All Saints (public holiday)
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allians" d:title="allians">
+	<d:index d:value="allians"/>
+	<d:index d:value="alliansen"/>
+	<d:index d:value="allianser"/>
+	<h1>allians</h1>
+	<ol>
+		<li>
+				alliance
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allians|fri" d:title="allians|fri">
+	<d:index d:value="allians|fri"/>
+	<d:index d:value="alliansfritt"/>
+	<d:index d:value="alliansfria"/>
+	<h1>allians|fri</h1>
+	<ol>
+		<li>
+				non-aligned
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allierad" d:title="allierad">
+	<d:index d:value="allierad"/>
+	<d:index d:value="allierat"/>
+	<d:index d:value="allierade"/>
+	<h1>allierad</h1>
+	<ol>
+		<li>
+				allied
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allihop(a)" d:title="allihop(a)">
+	<d:index d:value="allihop(a)"/>
+	<h1>allihop(a)</h1>
+	<ol>
+		<li>
+				all
+		</li>
+		<li>
+				one and all
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="allmoge" d:title="allmoge">
+	<d:index d:value="allmoge"/>
+	<d:index d:value="allmogen"/>
+	<h1>allmoge</h1>
+	<ol>
+		<li>
+				countryfolk
+		</li>
+		<li>
+				country people
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="slott" d:title="slott">
+	<d:index d:value="slott"/>
+	<d:index d:value="slottet"/>
+	<d:index d:value="slott"/>
+	<d:index d:value="slotten"/>
+	<h1>slott</h1>
+	<ol>
+		<li>
+				manor house
+		</li>
+		<li>
+				castle
+		</li>
+		<li>
+				palace
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="durumvete" d:title="durumvete">
+	<d:index d:value="durumvete"/>
+	<h1>durumvete</h1>
+	<ol>
+		<li>
+				durum wheat
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ociviliserade" d:title="ociviliserade">
+	<d:index d:value="ociviliserade"/>
+	<h1>ociviliserade</h1>
+	<ol>
+		<li>
+				uncivilized
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="börsspekulation" d:title="börsspekulation">
+	<d:index d:value="börsspekulation"/>
+	<h1>börsspekulation</h1>
+	<ol>
+		<li>
+				stock market speculation
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="examinering" d:title="examinering">
+	<d:index d:value="examinering"/>
+	<h1>examinering</h1>
+	<ol>
+		<li>
+				examination
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skruvad" d:title="skruvad">
+	<d:index d:value="skruvad"/>
+	<h1>skruvad</h1>
+	<ol>
+		<li>
+				twisted
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="förnyelsebar" d:title="förnyelsebar">
+	<d:index d:value="förnyelsebar"/>
+	<h1>förnyelsebar</h1>
+	<ol>
+		<li>
+				renewable
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="halvårsgammal" d:title="halvårsgammal">
+	<d:index d:value="halvårsgammal"/>
+	<h1>halvårsgammal</h1>
+	<ol>
+		<li>
+				half-year-old
+		</li>
+		<li>
+				six months old
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="inåtvänd" d:title="inåtvänd">
+	<d:index d:value="inåtvänd"/>
+	<h1>inåtvänd</h1>
+	<ol>
+		<li>
+				introverted
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="vattenkraftverk" d:title="vattenkraftverk">
+	<d:index d:value="vattenkraftverk"/>
+	<h1>vattenkraftverk</h1>
+	<ol>
+		<li>
+				water-powered generator
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skoborste" d:title="skoborste">
+	<d:index d:value="skoborste"/>
+	<h1>skoborste</h1>
+	<ol>
+		<li>
+				shoe brush
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="långsiktsplanering" d:title="långsiktsplanering">
+	<d:index d:value="långsiktsplanering"/>
+	<h1>långsiktsplanering</h1>
+	<ol>
+		<li>
+				long-term planning
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="cymbaler" d:title="cymbaler">
+	<d:index d:value="cymbaler"/>
+	<h1>cymbaler</h1>
+	<ol>
+		<li>
+				cymbals
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="straffarbete" d:title="straffarbete">
+	<d:index d:value="straffarbete"/>
+	<h1>straffarbete</h1>
+	<ol>
+		<li>
+				enforced hard labor
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="destabilisera" d:title="destabilisera">
+	<d:index d:value="destabilisera"/>
+	<h1>destabilisera</h1>
+	<ol>
+		<li>
+				destabilize
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="varningsord" d:title="varningsord">
+	<d:index d:value="varningsord"/>
+	<h1>varningsord</h1>
+	<ol>
+		<li>
+				word of caution
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="återutnyttja" d:title="återutnyttja">
+	<d:index d:value="återutnyttja"/>
+	<h1>återutnyttja</h1>
+	<ol>
+		<li>
+				reuse
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="irakisk" d:title="irakisk">
+	<d:index d:value="irakisk"/>
+	<h1>irakisk</h1>
+	<ol>
+		<li>
+				Iraqi
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="nerräkning" d:title="nerräkning">
+	<d:index d:value="nerräkning"/>
+	<h1>nerräkning</h1>
+	<ol>
+		<li>
+				countdown
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="undervisningsmaterial" d:title="undervisningsmaterial">
+	<d:index d:value="undervisningsmaterial"/>
+	<h1>undervisningsmaterial</h1>
+	<ol>
+		<li>
+				school supplies
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="tävlingsbil" d:title="tävlingsbil">
+	<d:index d:value="tävlingsbil"/>
+	<h1>tävlingsbil</h1>
+	<ol>
+		<li>
+				racing car
+		</li>
+		<li>
+				racecar
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="smugglare" d:title="smugglare">
+	<d:index d:value="smugglare"/>
+	<h1>smugglare</h1>
+	<ol>
+		<li>
+				supplier
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="årsrapport" d:title="årsrapport">
+	<d:index d:value="årsrapport"/>
+	<h1>årsrapport</h1>
+	<ol>
+		<li>
+				annual report
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="pälskrage" d:title="pälskrage">
+	<d:index d:value="pälskrage"/>
+	<h1>pälskrage</h1>
+	<ol>
+		<li>
+				fur collar
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="inaktivera" d:title="inaktivera">
+	<d:index d:value="inaktivera"/>
+	<h1>inaktivera</h1>
+	<ol>
+		<li>
+				inactivate
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="välstrukturerad" d:title="välstrukturerad">
+	<d:index d:value="välstrukturerad"/>
+	<h1>välstrukturerad</h1>
+	<ol>
+		<li>
+				structured
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="samarbetspartner" d:title="samarbetspartner">
+	<d:index d:value="samarbetspartner"/>
+	<h1>samarbetspartner</h1>
+	<ol>
+		<li>
+				collaborator
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="informering" d:title="informering">
+	<d:index d:value="informering"/>
+	<h1>informering</h1>
+	<ol>
+		<li>
+				briefing
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="medelnivå" d:title="medelnivå">
+	<d:index d:value="medelnivå"/>
+	<h1>medelnivå</h1>
+	<ol>
+		<li>
+				medium level
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hiskelig" d:title="hiskelig">
+	<d:index d:value="hiskelig"/>
+	<h1>hiskelig</h1>
+	<ol>
+		<li>
+				horrible
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="tydligt" d:title="tydligt">
+	<d:index d:value="tydligt"/>
+	<h1>tydligt</h1>
+	<ol>
+		<li>
+				clearly
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="tillräckligt" d:title="tillräckligt">
+	<d:index d:value="tillräckligt"/>
+	<h1>tillräckligt</h1>
+	<ol>
+		<li>
+				enough
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="underhållningsartist" d:title="underhållningsartist">
+	<d:index d:value="underhållningsartist"/>
+	<h1>underhållningsartist</h1>
+	<ol>
+		<li>
+				entertainer
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="snöfri" d:title="snöfri">
+	<d:index d:value="snöfri"/>
+	<h1>snöfri</h1>
+	<ol>
+		<li>
+				snow free
+		</li>
+		<li>
+				Snowfree
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skådespelarprestation" d:title="skådespelarprestation">
+	<d:index d:value="skådespelarprestation"/>
+	<h1>skådespelarprestation</h1>
+	<ol>
+		<li>
+				actor performance
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="motargument" d:title="motargument">
+	<d:index d:value="motargument"/>
+	<h1>motargument</h1>
+	<ol>
+		<li>
+				counter-argument
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="nutidssamhälle" d:title="nutidssamhälle">
+	<d:index d:value="nutidssamhälle"/>
+	<h1>nutidssamhälle</h1>
+	<ol>
+		<li>
+				contemporary society
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="upprorsman" d:title="upprorsman">
+	<d:index d:value="upprorsman"/>
+	<h1>upprorsman</h1>
+	<ol>
+		<li>
+				rebel
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="självmedvetenhet" d:title="självmedvetenhet">
+	<d:index d:value="självmedvetenhet"/>
+	<h1>självmedvetenhet</h1>
+	<ol>
+		<li>
+				self awareness
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="kärnbränsle" d:title="kärnbränsle">
+	<d:index d:value="kärnbränsle"/>
+	<h1>kärnbränsle</h1>
+	<ol>
+		<li>
+				nuclear fuel
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="religionshistoriker" d:title="religionshistoriker">
+	<d:index d:value="religionshistoriker"/>
+	<h1>religionshistoriker</h1>
+	<ol>
+		<li>
+				religion historian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="analyseringsmetod" d:title="analyseringsmetod">
+	<d:index d:value="analyseringsmetod"/>
+	<h1>analyseringsmetod</h1>
+	<ol>
+		<li>
+				analysis methodology
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="gruvarbetarna" d:title="gruvarbetarna">
+	<d:index d:value="gruvarbetarna"/>
+	<h1>gruvarbetarna</h1>
+	<ol>
+		<li>
+				the miners
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ouppfostrad" d:title="ouppfostrad">
+	<d:index d:value="ouppfostrad"/>
+	<h1>ouppfostrad</h1>
+	<ol>
+		<li>
+				unbehavied
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="matkorg" d:title="matkorg">
+	<d:index d:value="matkorg"/>
+	<h1>matkorg</h1>
+	<ol>
+		<li>
+				food basket
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="krossad" d:title="krossad">
+	<d:index d:value="krossad"/>
+	<h1>krossad</h1>
+	<ol>
+		<li>
+				shattered
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="elektrolyt" d:title="elektrolyt">
+	<d:index d:value="elektrolyt"/>
+	<h1>elektrolyt</h1>
+	<ol>
+		<li>
+				electrolyte
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="yrkesarmé" d:title="yrkesarmé">
+	<d:index d:value="yrkesarmé"/>
+	<h1>yrkesarmé</h1>
+	<ol>
+		<li>
+				professional army
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="översvämningsområde" d:title="översvämningsområde">
+	<d:index d:value="översvämningsområde"/>
+	<h1>översvämningsområde</h1>
+	<ol>
+		<li>
+				flooded area
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ungdomsförening" d:title="ungdomsförening">
+	<d:index d:value="ungdomsförening"/>
+	<h1>ungdomsförening</h1>
+	<ol>
+		<li>
+				youth organisation
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="superordinate" d:title="superordinate">
+	<d:index d:value="superordinate"/>
+	<h1>superordinate</h1>
+	<ol>
+		<li>
+				överordnad
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="djupare" d:title="djupare">
+	<d:index d:value="djupare"/>
+	<h1>djupare</h1>
+	<ol>
+		<li>
+				deeper
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="simhoppare" d:title="simhoppare">
+	<d:index d:value="simhoppare"/>
+	<h1>simhoppare</h1>
+	<ol>
+		<li>
+				diver
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="utrikespolitisk" d:title="utrikespolitisk">
+	<d:index d:value="utrikespolitisk"/>
+	<h1>utrikespolitisk</h1>
+	<ol>
+		<li>
+				foreign politic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="stenkastning" d:title="stenkastning">
+	<d:index d:value="stenkastning"/>
+	<h1>stenkastning</h1>
+	<ol>
+		<li>
+				stone throwing
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="patentinnehavare" d:title="patentinnehavare">
+	<d:index d:value="patentinnehavare"/>
+	<h1>patentinnehavare</h1>
+	<ol>
+		<li>
+				patent-holder
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="omgivande" d:title="omgivande">
+	<d:index d:value="omgivande"/>
+	<h1>omgivande</h1>
+	<ol>
+		<li>
+				surrounding
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skogsbär" d:title="skogsbär">
+	<d:index d:value="skogsbär"/>
+	<h1>skogsbär</h1>
+	<ol>
+		<li>
+				forest berries
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="analysmetod" d:title="analysmetod">
+	<d:index d:value="analysmetod"/>
+	<h1>analysmetod</h1>
+	<ol>
+		<li>
+				analysis method
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="lufttorkning" d:title="lufttorkning">
+	<d:index d:value="lufttorkning"/>
+	<h1>lufttorkning</h1>
+	<ol>
+		<li>
+				air drying
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skyddare" d:title="skyddare">
+	<d:index d:value="skyddare"/>
+	<h1>skyddare</h1>
+	<ol>
+		<li>
+				protector
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="värktablett" d:title="värktablett">
+	<d:index d:value="värktablett"/>
+	<h1>värktablett</h1>
+	<ol>
+		<li>
+				pain killer
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hjärtefråga" d:title="hjärtefråga">
+	<d:index d:value="hjärtefråga"/>
+	<h1>hjärtefråga</h1>
+	<ol>
+		<li>
+				matter of heart
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="köttfärs sås" d:title="köttfärs sås">
+	<d:index d:value="köttfärs sås"/>
+	<h1>köttfärs sås</h1>
+	<ol>
+		<li>
+				meat sauce
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="fordonsverkstad" d:title="fordonsverkstad">
+	<d:index d:value="fordonsverkstad"/>
+	<h1>fordonsverkstad</h1>
+	<ol>
+		<li>
+				vehicle repair shop
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hushållsredskap" d:title="hushållsredskap">
+	<d:index d:value="hushållsredskap"/>
+	<h1>hushållsredskap</h1>
+	<ol>
+		<li>
+				Household appliances
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="eventuellt" d:title="eventuellt">
+	<d:index d:value="eventuellt"/>
+	<h1>eventuellt</h1>
+	<ol>
+		<li>
+				eventually
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="jaktlycka" d:title="jaktlycka">
+	<d:index d:value="jaktlycka"/>
+	<h1>jaktlycka</h1>
+	<ol>
+		<li>
+				hunting enjoyment
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="nollpunkt" d:title="nollpunkt">
+	<d:index d:value="nollpunkt"/>
+	<h1>nollpunkt</h1>
+	<ol>
+		<li>
+				point zero
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="respektfull" d:title="respektfull">
+	<d:index d:value="respektfull"/>
+	<h1>respektfull</h1>
+	<ol>
+		<li>
+				respectfull
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="silkespapper" d:title="silkespapper">
+	<d:index d:value="silkespapper"/>
+	<h1>silkespapper</h1>
+	<ol>
+		<li>
+				silk paper
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="turkosfärgad" d:title="turkosfärgad">
+	<d:index d:value="turkosfärgad"/>
+	<h1>turkosfärgad</h1>
+	<ol>
+		<li>
+				tourquoise coloured
+		</li>
+		<li>
+				turquoise
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="utled" d:title="utled">
+	<d:index d:value="utled"/>
+	<h1>utled</h1>
+	<ol>
+		<li>
+				sick and tired
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hyttnummer" d:title="hyttnummer">
+	<d:index d:value="hyttnummer"/>
+	<h1>hyttnummer</h1>
+	<ol>
+		<li>
+				cabin number
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="nersliten" d:title="nersliten">
+	<d:index d:value="nersliten"/>
+	<h1>nersliten</h1>
+	<ol>
+		<li>
+				worn down
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="krigsförklaring" d:title="krigsförklaring">
+	<d:index d:value="krigsförklaring"/>
+	<h1>krigsförklaring</h1>
+	<ol>
+		<li>
+				declaration of war
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="omformulera" d:title="omformulera">
+	<d:index d:value="omformulera"/>
+	<h1>omformulera</h1>
+	<ol>
+		<li>
+				re-wording
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="returmöte" d:title="returmöte">
+	<d:index d:value="returmöte"/>
+	<h1>returmöte</h1>
+	<ol>
+		<li>
+				second  meeting
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skrotad" d:title="skrotad">
+	<d:index d:value="skrotad"/>
+	<h1>skrotad</h1>
+	<ol>
+		<li>
+				scrapped
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="folkhälsoproblem" d:title="folkhälsoproblem">
+	<d:index d:value="folkhälsoproblem"/>
+	<h1>folkhälsoproblem</h1>
+	<ol>
+		<li>
+				egnaff
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="bilfri" d:title="bilfri">
+	<d:index d:value="bilfri"/>
+	<h1>bilfri</h1>
+	<ol>
+		<li>
+				car free
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="fönsterkuvert" d:title="fönsterkuvert">
+	<d:index d:value="fönsterkuvert"/>
+	<h1>fönsterkuvert</h1>
+	<ol>
+		<li>
+				window envelope
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="jordlott" d:title="jordlott">
+	<d:index d:value="jordlott"/>
+	<h1>jordlott</h1>
+	<ol>
+		<li>
+				plot
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="uppvärmningsprocess" d:title="uppvärmningsprocess">
+	<d:index d:value="uppvärmningsprocess"/>
+	<h1>uppvärmningsprocess</h1>
+	<ol>
+		<li>
+				heatingprocess
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="sorterad" d:title="sorterad">
+	<d:index d:value="sorterad"/>
+	<h1>sorterad</h1>
+	<ol>
+		<li>
+				sorted
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="rockficka" d:title="rockficka">
+	<d:index d:value="rockficka"/>
+	<h1>rockficka</h1>
+	<ol>
+		<li>
+				coat pocket
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affischtavlor" d:title="affischtavlor">
+	<d:index d:value="affischtavlor"/>
+	<h1>affischtavlor</h1>
+	<ol>
+		<li>
+				posters
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="samhällsmedborgare" d:title="samhällsmedborgare">
+	<d:index d:value="samhällsmedborgare"/>
+	<h1>samhällsmedborgare</h1>
+	<ol>
+		<li>
+				citizen
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="teaterhistorisk" d:title="teaterhistorisk">
+	<d:index d:value="teaterhistorisk"/>
+	<h1>teaterhistorisk</h1>
+	<ol>
+		<li>
+				blanket
+		</li>
+		<li>
+				theater historical
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="häftigt" d:title="häftigt">
+	<d:index d:value="häftigt"/>
+	<h1>häftigt</h1>
+	<ol>
+		<li>
+				awesome
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="dagdröm" d:title="dagdröm">
+	<d:index d:value="dagdröm"/>
+	<h1>dagdröm</h1>
+	<ol>
+		<li>
+				day-dream
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="överdimensionerade" d:title="överdimensionerade">
+	<d:index d:value="överdimensionerade"/>
+	<h1>överdimensionerade</h1>
+	<ol>
+		<li>
+				oversized
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="okontroversiell" d:title="okontroversiell">
+	<d:index d:value="okontroversiell"/>
+	<h1>okontroversiell</h1>
+	<ol>
+		<li>
+				uncontroversial
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="lastbilssläp" d:title="lastbilssläp">
+	<d:index d:value="lastbilssläp"/>
+	<h1>lastbilssläp</h1>
+	<ol>
+		<li>
+				Truck trailer
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="uppfödning" d:title="uppfödning">
+	<d:index d:value="uppfödning"/>
+	<h1>uppfödning</h1>
+	<ol>
+		<li>
+				raise
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="programmerad" d:title="programmerad">
+	<d:index d:value="programmerad"/>
+	<h1>programmerad</h1>
+	<ol>
+		<li>
+				programmed
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ersättningsprodukt" d:title="ersättningsprodukt">
+	<d:index d:value="ersättningsprodukt"/>
+	<h1>ersättningsprodukt</h1>
+	<ol>
+		<li>
+				replacement product
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="sjömansbyxor" d:title="sjömansbyxor">
+	<d:index d:value="sjömansbyxor"/>
+	<h1>sjömansbyxor</h1>
+	<ol>
+		<li>
+				sailor pants
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="innebana" d:title="innebana">
+	<d:index d:value="innebana"/>
+	<h1>innebana</h1>
+	<ol>
+		<li>
+				indoor track
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="tillgängliggöra" d:title="tillgängliggöra">
+	<d:index d:value="tillgängliggöra"/>
+	<h1>tillgängliggöra</h1>
+	<ol>
+		<li>
+				make availeble
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="styrande" d:title="styrande">
+	<d:index d:value="styrande"/>
+	<h1>styrande</h1>
+	<ol>
+		<li>
+				ruling
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="mjukglass" d:title="mjukglass">
+	<d:index d:value="mjukglass"/>
+	<h1>mjukglass</h1>
+	<ol>
+		<li>
+				soft icecream
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="gränsstation" d:title="gränsstation">
+	<d:index d:value="gränsstation"/>
+	<h1>gränsstation</h1>
+	<ol>
+		<li>
+				border post
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="kidnapparna" d:title="kidnapparna">
+	<d:index d:value="kidnapparna"/>
+	<h1>kidnapparna</h1>
+	<ol>
+		<li>
+				the kidnappers
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="georgien" d:title="georgien">
+	<d:index d:value="georgien"/>
+	<h1>georgien</h1>
+	<ol>
+		<li>
+				georgia
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="sojaböna" d:title="sojaböna">
+	<d:index d:value="sojaböna"/>
+	<h1>sojaböna</h1>
+	<ol>
+		<li>
+				soybean
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="stenkista" d:title="stenkista">
+	<d:index d:value="stenkista"/>
+	<h1>stenkista</h1>
+	<ol>
+		<li>
+				stone coffin
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="säsongvis" d:title="säsongvis">
+	<d:index d:value="säsongvis"/>
+	<h1>säsongvis</h1>
+	<ol>
+		<li>
+				seasonal
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="torrhet" d:title="torrhet">
+	<d:index d:value="torrhet"/>
+	<h1>torrhet</h1>
+	<ol>
+		<li>
+				dryness
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="uppgradera" d:title="uppgradera">
+	<d:index d:value="uppgradera"/>
+	<h1>uppgradera</h1>
+	<ol>
+		<li>
+				upgrade
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="metafysiker" d:title="metafysiker">
+	<d:index d:value="metafysiker"/>
+	<h1>metafysiker</h1>
+	<ol>
+		<li>
+				metaphysicist
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="familjeliv" d:title="familjeliv">
+	<d:index d:value="familjeliv"/>
+	<h1>familjeliv</h1>
+	<ol>
+		<li>
+				family life
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="flygmekaniker" d:title="flygmekaniker">
+	<d:index d:value="flygmekaniker"/>
+	<h1>flygmekaniker</h1>
+	<ol>
+		<li>
+				maintenance aeroplane mechanic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="heldag" d:title="heldag">
+	<d:index d:value="heldag"/>
+	<h1>heldag</h1>
+	<ol>
+		<li>
+				whole-day
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="förlikningsman" d:title="förlikningsman">
+	<d:index d:value="förlikningsman"/>
+	<h1>förlikningsman</h1>
+	<ol>
+		<li>
+				arbitrator
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="uppnåeliga" d:title="uppnåeliga">
+	<d:index d:value="uppnåeliga"/>
+	<h1>uppnåeliga</h1>
+	<ol>
+		<li>
+				attainable
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="försvarsstrid" d:title="försvarsstrid">
+	<d:index d:value="försvarsstrid"/>
+	<h1>försvarsstrid</h1>
+	<ol>
+		<li>
+				defensive battle
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="biffkött" d:title="biffkött">
+	<d:index d:value="biffkött"/>
+	<h1>biffkött</h1>
+	<ol>
+		<li>
+				beef meat
+		</li>
+		<li>
+				beef
+		</li>
+		<li>
+				steak meat
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="brandman" d:title="brandman">
+	<d:index d:value="brandman"/>
+	<h1>brandman</h1>
+	<ol>
+		<li>
+				firefighter
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="försvarsrelaterad" d:title="försvarsrelaterad">
+	<d:index d:value="försvarsrelaterad"/>
+	<h1>försvarsrelaterad</h1>
+	<ol>
+		<li>
+				defence-related
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="avslutad" d:title="avslutad">
+	<d:index d:value="avslutad"/>
+	<h1>avslutad</h1>
+	<ol>
+		<li>
+				finished
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="kontorsflicka" d:title="kontorsflicka">
+	<d:index d:value="kontorsflicka"/>
+	<h1>kontorsflicka</h1>
+	<ol>
+		<li>
+				office girl
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="sydost" d:title="sydost">
+	<d:index d:value="sydost"/>
+	<h1>sydost</h1>
+	<ol>
+		<li>
+				southeast
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="båtresa" d:title="båtresa">
+	<d:index d:value="båtresa"/>
+	<h1>båtresa</h1>
+	<ol>
+		<li>
+				boat trip
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="småslantar" d:title="småslantar">
+	<d:index d:value="småslantar"/>
+	<h1>småslantar</h1>
+	<ol>
+		<li>
+				change
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hyresförmedling" d:title="hyresförmedling">
+	<d:index d:value="hyresförmedling"/>
+	<h1>hyresförmedling</h1>
+	<ol>
+		<li>
+				rental agency
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="obestridliga" d:title="obestridliga">
+	<d:index d:value="obestridliga"/>
+	<h1>obestridliga</h1>
+	<ol>
+		<li>
+				pliers
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="jaktskytte" d:title="jaktskytte">
+	<d:index d:value="jaktskytte"/>
+	<h1>jaktskytte</h1>
+	<ol>
+		<li>
+				hunting, shooting, game shoot
+		</li>
+		<li>
+				Hunt shooting
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="insjuknande" d:title="insjuknande">
+	<d:index d:value="insjuknande"/>
+	<h1>insjuknande</h1>
+	<ol>
+		<li>
+				get ill
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="helgtrafik" d:title="helgtrafik">
+	<d:index d:value="helgtrafik"/>
+	<h1>helgtrafik</h1>
+	<ol>
+		<li>
+				weekend traffic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="chauvinistisk" d:title="chauvinistisk">
+	<d:index d:value="chauvinistisk"/>
+	<h1>chauvinistisk</h1>
+	<ol>
+		<li>
+				chauvinistic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="vetenskapsakademi" d:title="vetenskapsakademi">
+	<d:index d:value="vetenskapsakademi"/>
+	<h1>vetenskapsakademi</h1>
+	<ol>
+		<li>
+				science academy
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="djurart" d:title="djurart">
+	<d:index d:value="djurart"/>
+	<h1>djurart</h1>
+	<ol>
+		<li>
+				species
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="drastiskt" d:title="drastiskt">
+	<d:index d:value="drastiskt"/>
+	<h1>drastiskt</h1>
+	<ol>
+		<li>
+				drastic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="hjärttransplantation" d:title="hjärttransplantation">
+	<d:index d:value="hjärttransplantation"/>
+	<h1>hjärttransplantation</h1>
+	<ol>
+		<li>
+				heart transplant
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="holografi" d:title="holografi">
+	<d:index d:value="holografi"/>
+	<h1>holografi</h1>
+	<ol>
+		<li>
+				holography
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="svensktillverkad" d:title="svensktillverkad">
+	<d:index d:value="svensktillverkad"/>
+	<h1>svensktillverkad</h1>
+	<ol>
+		<li>
+				Swedish-made
+		</li>
+		<li>
+				made in sweden
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="trumpinne" d:title="trumpinne">
+	<d:index d:value="trumpinne"/>
+	<h1>trumpinne</h1>
+	<ol>
+		<li>
+				drumstick
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skolvecka" d:title="skolvecka">
+	<d:index d:value="skolvecka"/>
+	<h1>skolvecka</h1>
+	<ol>
+		<li>
+				school week
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="tillgodogöra" d:title="tillgodogöra">
+	<d:index d:value="tillgodogöra"/>
+	<h1>tillgodogöra</h1>
+	<ol>
+		<li>
+				utilize
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="försvarspolitik" d:title="försvarspolitik">
+	<d:index d:value="försvarspolitik"/>
+	<h1>försvarspolitik</h1>
+	<ol>
+		<li>
+				defence politics
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="affärsidé" d:title="affärsidé">
+	<d:index d:value="affärsidé"/>
+	<h1>affärsidé</h1>
+	<ol>
+		<li>
+				business concept
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="migranter" d:title="migranter">
+	<d:index d:value="migranter"/>
+	<h1>migranter</h1>
+	<ol>
+		<li>
+				migrants
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="omskolningsläger" d:title="omskolningsläger">
+	<d:index d:value="omskolningsläger"/>
+	<h1>omskolningsläger</h1>
+	<ol>
+		<li>
+				re-education camp
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="notpapper" d:title="notpapper">
+	<d:index d:value="notpapper"/>
+	<h1>notpapper</h1>
+	<ol>
+		<li>
+				sheet music
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="skogsområde" d:title="skogsområde">
+	<d:index d:value="skogsområde"/>
+	<h1>skogsområde</h1>
+	<ol>
+		<li>
+				forest area
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="avgångstid" d:title="avgångstid">
+	<d:index d:value="avgångstid"/>
+	<h1>avgångstid</h1>
+	<ol>
+		<li>
+				departure 
+		</li>
+		<li>
+				departure time
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="grundligt" d:title="grundligt">
+	<d:index d:value="grundligt"/>
+	<h1>grundligt</h1>
+	<ol>
+		<li>
+				thourough
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="utspridning" d:title="utspridning">
+	<d:index d:value="utspridning"/>
+	<h1>utspridning</h1>
+	<ol>
+		<li>
+				spreading
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="möbelaffär" d:title="möbelaffär">
+	<d:index d:value="möbelaffär"/>
+	<h1>möbelaffär</h1>
+	<ol>
+		<li>
+				furniture store
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="malariasjuk" d:title="malariasjuk">
+	<d:index d:value="malariasjuk"/>
+	<h1>malariasjuk</h1>
+	<ol>
+		<li>
+				sick with malaria
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="sjukhuspersonal" d:title="sjukhuspersonal">
+	<d:index d:value="sjukhuspersonal"/>
+	<h1>sjukhuspersonal</h1>
+	<ol>
+		<li>
+				hospital staff
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="inkapslingen" d:title="inkapslingen">
+	<d:index d:value="inkapslingen"/>
+	<h1>inkapslingen</h1>
+	<ol>
+		<li>
+				the encapsulation
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="blekningsmedel" d:title="blekningsmedel">
+	<d:index d:value="blekningsmedel"/>
+	<h1>blekningsmedel</h1>
+	<ol>
+		<li>
+				whitener
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="åkande" d:title="åkande">
+	<d:index d:value="åkande"/>
+	<h1>åkande</h1>
+	<ol>
+		<li>
+				riding
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="parkeringsplats" d:title="parkeringsplats">
+	<d:index d:value="parkeringsplats"/>
+	<h1>parkeringsplats</h1>
+	<ol>
+		<li>
+				parking place
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="diskmedel" d:title="diskmedel">
+	<d:index d:value="diskmedel"/>
+	<h1>diskmedel</h1>
+	<ol>
+		<li>
+				dishwashing detergent
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="damtidning" d:title="damtidning">
+	<d:index d:value="damtidning"/>
+	<h1>damtidning</h1>
+	<ol>
+		<li>
+				women&amp;#39;s magazine
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="obehagskänsla" d:title="obehagskänsla">
+	<d:index d:value="obehagskänsla"/>
+	<h1>obehagskänsla</h1>
+	<ol>
+		<li>
+				discomfort
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="dödstyst" d:title="dödstyst">
+	<d:index d:value="dödstyst"/>
+	<h1>dödstyst</h1>
+	<ol>
+		<li>
+				dead silence
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="distributionssystem" d:title="distributionssystem">
+	<d:index d:value="distributionssystem"/>
+	<h1>distributionssystem</h1>
+	<ol>
+		<li>
+				distribution system
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="felplacerad" d:title="felplacerad">
+	<d:index d:value="felplacerad"/>
+	<h1>felplacerad</h1>
+	<ol>
+		<li>
+				misplaced
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="jetbränsle" d:title="jetbränsle">
+	<d:index d:value="jetbränsle"/>
+	<h1>jetbränsle</h1>
+	<ol>
+		<li>
+				jet fuel
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="jättevinst" d:title="jättevinst">
+	<d:index d:value="jättevinst"/>
+	<h1>jättevinst</h1>
+	<ol>
+		<li>
+				huge profits
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="inåtböjning" d:title="inåtböjning">
+	<d:index d:value="inåtböjning"/>
+	<h1>inåtböjning</h1>
+	<ol>
+		<li>
+				inward bending
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="historieskrivare" d:title="historieskrivare">
+	<d:index d:value="historieskrivare"/>
+	<h1>historieskrivare</h1>
+	<ol>
+		<li>
+				historian
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="konferenssal" d:title="konferenssal">
+	<d:index d:value="konferenssal"/>
+	<h1>konferenssal</h1>
+	<ol>
+		<li>
+				conference room
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="klädedräkt" d:title="klädedräkt">
+	<d:index d:value="klädedräkt"/>
+	<h1>klädedräkt</h1>
+	<ol>
+		<li>
+				costume
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="förankrad" d:title="förankrad">
+	<d:index d:value="förankrad"/>
+	<h1>förankrad</h1>
+	<ol>
+		<li>
+				rooted;stable; fastened
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="miljörörelse" d:title="miljörörelse">
+	<d:index d:value="miljörörelse"/>
+	<h1>miljörörelse</h1>
+	<ol>
+		<li>
+				environmental movement
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="literflaska" d:title="literflaska">
+	<d:index d:value="literflaska"/>
+	<h1>literflaska</h1>
+	<ol>
+		<li>
+				litre bottle
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="baltikum" d:title="baltikum">
+	<d:index d:value="baltikum"/>
+	<h1>baltikum</h1>
+	<ol>
+		<li>
+				baltic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="kamratkänsla" d:title="kamratkänsla">
+	<d:index d:value="kamratkänsla"/>
+	<h1>kamratkänsla</h1>
+	<ol>
+		<li>
+				companionship
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="kosttillskott" d:title="kosttillskott">
+	<d:index d:value="kosttillskott"/>
+	<h1>kosttillskott</h1>
+	<ol>
+		<li>
+				nutritional supplement
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="dekontamineringen" d:title="dekontamineringen">
+	<d:index d:value="dekontamineringen"/>
+	<h1>dekontamineringen</h1>
+	<ol>
+		<li>
+				the decontamination
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="nygift" d:title="nygift">
+	<d:index d:value="nygift"/>
+	<h1>nygift</h1>
+	<ol>
+		<li>
+				newlywed
+		</li>
+		<li>
+				newly wed
+		</li>
+		<li>
+				newly married
+		</li>
+		<li>
+				just married
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="salmonellabakterie" d:title="salmonellabakterie">
+	<d:index d:value="salmonellabakterie"/>
+	<h1>salmonellabakterie</h1>
+	<ol>
+		<li>
+				salmonella bacteria
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="fetaost" d:title="fetaost">
+	<d:index d:value="fetaost"/>
+	<h1>fetaost</h1>
+	<ol>
+		<li>
+				feta cheese
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="järnvägsbiljett" d:title="järnvägsbiljett">
+	<d:index d:value="järnvägsbiljett"/>
+	<h1>järnvägsbiljett</h1>
+	<ol>
+		<li>
+				train ticket
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="fyrverkerierna" d:title="fyrverkerierna">
+	<d:index d:value="fyrverkerierna"/>
+	<h1>fyrverkerierna</h1>
+	<ol>
+		<li>
+				Fireworks
+		</li>
+		<li>
+				the fireworks
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="reaktorhaveri" d:title="reaktorhaveri">
+	<d:index d:value="reaktorhaveri"/>
+	<h1>reaktorhaveri</h1>
+	<ol>
+		<li>
+				reactor malfunktion
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="soldäck" d:title="soldäck">
+	<d:index d:value="soldäck"/>
+	<h1>soldäck</h1>
+	<ol>
+		<li>
+				terace
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="ödelagda" d:title="ödelagda">
+	<d:index d:value="ödelagda"/>
+	<h1>ödelagda</h1>
+	<ol>
+		<li>
+				Wrecked
+		</li>
+		<li>
+				devastated
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="idrottsorganisation" d:title="idrottsorganisation">
+	<d:index d:value="idrottsorganisation"/>
+	<h1>idrottsorganisation</h1>
+	<ol>
+		<li>
+				sports organization
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="bilkrock" d:title="bilkrock">
+	<d:index d:value="bilkrock"/>
+	<h1>bilkrock</h1>
+	<ol>
+		<li>
+				car crash
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="glesbygd" d:title="glesbygd">
+	<d:index d:value="glesbygd"/>
+	<h1>glesbygd</h1>
+	<ol>
+		<li>
+				rural
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="miljöförändringar" d:title="miljöförändringar">
+	<d:index d:value="miljöförändringar"/>
+	<h1>miljöförändringar</h1>
+	<ol>
+		<li>
+				environmental changes
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="centralbank" d:title="centralbank">
+	<d:index d:value="centralbank"/>
+	<h1>centralbank</h1>
+	<ol>
+		<li>
+				central bank
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="gästhandduk" d:title="gästhandduk">
+	<d:index d:value="gästhandduk"/>
+	<h1>gästhandduk</h1>
+	<ol>
+		<li>
+				guest towel
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="egoistisk" d:title="egoistisk">
+	<d:index d:value="egoistisk"/>
+	<h1>egoistisk</h1>
+	<ol>
+		<li>
+				egoistic
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="monokel" d:title="monokel">
+	<d:index d:value="monokel"/>
+	<h1>monokel</h1>
+	<ol>
+		<li>
+				monocle
+		</li>
+	</ol>
+</d:entry>
+<d:entry id="slott" d:title="slott">
+	<d:index d:value="slott"/>
+	<d:index d:value="slottet"/>
+	<d:index d:value="slott"/>
+	<d:index d:value="slotten"/>
+	<h1>slott</h1>
+	<ol>
+		<li>
+				manor house
+		</li>
+		<li>
+				castle
+		</li>
+		<li>
+				palace
+		</li>
+	</ol>
+</d:entry>
+
 <d:entry id="front_back_matter" d:title="Front/Back Matter">
 	<h1><b>My Dictionary</b></h1>
 	<h2>Front/Back Matter</h2>
