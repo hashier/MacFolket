@@ -63,7 +63,7 @@
 								adverb
 							</xsl:when>
 							<xsl:otherwise>
-								unknown
+								not yet tracked
 							</xsl:otherwise>
 						</xsl:choose>
 					</span><br/>
