@@ -50,7 +50,24 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-					<span><xsl:value-of select="phonetic/@value"/></span>
+					<span>|<xsl:value-of select="phonetic/@value"/>|</span><br/>
+					<span>
+						<xsl:choose>
+							<xsl:when test="@class = 'nn'">
+								substantiv
+							</xsl:when>
+							<xsl:when test="@class = 'jj'">
+								adjektiv
+							</xsl:when>
+							<xsl:when test="@class = 'vb'">
+								adverb
+							</xsl:when>
+							<xsl:otherwise>
+								unknown
+							</xsl:otherwise>
+						</xsl:choose>
+					</span><br/>
+					<span><xsl:value-of select="definition/@value"/></span><br/>
 					<ol>
 						<xsl:for-each select="translation">
 							<li>
