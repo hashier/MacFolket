@@ -69,11 +69,15 @@ reinstall: clean all install
 
 convert:
 	xsltproc -o words.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
-	cat header.xml words.xml footer.xml > MyDictionary.xml
+	cat header.xml > MyDictionary.xml
+	tail -n +2 words.xml  >> MyDictionary.xml
+	cat footer.xml >> MyDictionary.xml
 
 small:
 	xsltproc -o words.xml folkets_sv_en_to_dic.xslt small.xml
-	cat header.xml words.xml footer.xml > MyDictionary.xml
+	cat header.xml > MyDictionary.xml
+	tail -n +2 words.xml  >> MyDictionary.xml
+	cat footer.xml >> MyDictionary.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list

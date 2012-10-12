@@ -7,8 +7,8 @@
 
 		<xsl:for-each select="dictionary/word">
 
-			<xsl:text disable-output-escaping="yes">&lt;d:entry id="</xsl:text>
-			<xsl:value-of select="@value"/>
+			<xsl:text disable-output-escaping="yes">&lt;d:entry id="id_</xsl:text>
+			<xsl:number value="position()"/>
 			<xsl:text disable-output-escaping="yes">" d:title="</xsl:text>
 			<xsl:value-of select="@value"/>
 			
