@@ -78,7 +78,11 @@
 
 					<xsl:if test="definition/@value">
 						<xsl:for-each select="definition">
-							<span>Definition: <xsl:value-of select="@value"/></span><br/>
+							<span>Definition: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
 						</xsl:for-each>
 					</xsl:if>
 
