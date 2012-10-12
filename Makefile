@@ -66,7 +66,7 @@ fetch:
 	sh get_files.sh
 
 # for me to quickly test builds
-reinstall: clean small build install
+reinstall: clean convert build install
 
 reinstallsmall: clean small build install
 
