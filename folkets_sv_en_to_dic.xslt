@@ -50,15 +50,14 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-		<ol>
-			<xsl:for-each select="translation">
-				<li>
-					<xsl:value-of select="@value"/>
-				</li>
-
-			</xsl:for-each>
-		</ol>
-
+					<span><xsl:value-of select="phonetic/@value"/></span>
+					<ol>
+						<xsl:for-each select="translation">
+							<li>
+								<xsl:value-of select="@value"/>
+							</li>
+						</xsl:for-each>
+					</ol>
 
 				</d:entry>
 <xsl:text>
