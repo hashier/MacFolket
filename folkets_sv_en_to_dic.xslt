@@ -71,12 +71,15 @@
 							</xsl:choose>
 						</span><br/>
 					</xsl:if>
+					
 					<xsl:if test="paradigm/inflection/@value">
 						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
+
 					<xsl:if test="definition/@value">
 						<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
 					</xsl:if>
+
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
@@ -86,6 +89,7 @@
 							</xsl:for-each>
 						</ol>
 					</xsl:if>
+
 				</d:entry>
 <xsl:text>
 </xsl:text>
