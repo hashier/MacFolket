@@ -50,25 +50,30 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-					<span>|<xsl:value-of select="phonetic/@value"/>|</span><br/>
-					<span>
-						<xsl:choose>
-							<xsl:when test="@class = 'nn'">
-								substantiv
-							</xsl:when>
-							<xsl:when test="@class = 'jj'">
-								adjektiv
-							</xsl:when>
-							<xsl:when test="@class = 'vb'">
-								adverb
-							</xsl:when>
-							<xsl:otherwise>
-								not yet tracked
-							</xsl:otherwise>
-						</xsl:choose>
-					</span><br/>
-					<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
-					<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
+					<xsl:if test="phoneetic/@value">
+						<span>Uttal: |<xsl:value-of select="phonetic/@value"/>|</span><br/>
+					</xsl:if>
+					<xsl:if test="@class">
+						<span>Word class:
+							<xsl:choose>
+								<xsl:when test="@class = 'nn'">
+									substantiv
+								</xsl:when>
+								<xsl:when test="@class = 'jj'">
+									adjektiv
+								</xsl:when>
+								<xsl:when test="@class = 'vb'">
+									adverb
+								</xsl:when>
+							</xsl:choose>
+						</span><br/>
+					</xsl:if>
+					<xsl:if test="paradigm/inflection/@value">
+						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+					</xsl:if>
+					<xsl:if test="definition/@value">
+						<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
+					</xsl:if>
 					<ol>
 						<xsl:for-each select="translation">
 							<li>
