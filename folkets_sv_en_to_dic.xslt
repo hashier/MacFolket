@@ -110,6 +110,10 @@
 						</ol>
 					</xsl:if>
 
+<!-- 
+					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
+ -->
+ 
 				</d:entry>
 <xsl:text>
 </xsl:text>
