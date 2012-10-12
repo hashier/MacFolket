@@ -102,7 +102,6 @@
 </xsl:stylesheet>
 
 <!-- 
-
 <word value="slott" lang="sv" class="nn">
 	<translation value="manor house" />
 	<translation value="castle" />
@@ -121,4 +120,4 @@
 	<definition value="pampigt bostadshus för kungliga eller adliga personer" />
 </word>
 
-
+ -->
