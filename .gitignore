@@ -8,3 +8,8 @@ objects/
 folkets_en_sv_public.xml
 folkets_sv_en_public.xml
 macfolket.sublime-workspace
+Dictionary Development Kit
+jing-20091111
+*.swp
+words.xml
+MyDictionary.xml

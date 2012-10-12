@@ -1,0 +1,25 @@
+<d:entry id="front_back_matter" d:title="Front/Back Matter">
+	<h1><b>My Dictionary</b></h1>
+	<h2>Front/Back Matter</h2>
+	<div>
+		This is a front matter page of the sample dictionary.<br/><br/>
+	</div>
+	<div>
+		<b>To see</b> this page,
+		<ol>
+			<li>Open "Go" menu.</li>
+			<li>Choose "Front/Back Matter" menu item. 
+			If it has sub-menu items, choose one of them.</li>
+		</ol>
+	</div>
+	<div>
+		<b>To prepare</b> the menu item, do the followings.
+		<ol>
+			<li>Prepare this page source as an entry.</li>
+			<li>Add "DCSDictionaryFrontMatterReferenceID" key and its value to the plist of the dictionary.
+			The value should be the string of this page entry id. </li>
+		</ol>
+	</div>
+	<br/>
+</d:entry>
+</d:dictionary>

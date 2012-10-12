@@ -5,17 +5,18 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.dictionary.MySample</string>
+	<string>org.loessl.dictionary.sven</string>
 	<key>CFBundleName</key>
 	<string>MyDictionary</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright © 2007 Apple Inc.</string>
+	<string>Code from Christopher Loessl. Dataset from http://folkets-lexikon.csc.kth.se</string>
 	<key>DCSDictionaryManufacturerName</key>
-	<string>Apple Inc.</string>
+	<string>Christopher Loessl</string>
 	<key>DCSDictionaryFrontMatterReferenceID</key>
 	<string>front_back_matter</string>
+<!--
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>MyDictionary_prefs.html</string>
 	<key>DCSDictionaryXSL</key>
@@ -31,5 +32,6 @@
 		<key>version</key>
 		<string>1</string>
 	</dict>
+-->
 </dict>
 </plist>
