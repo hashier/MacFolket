@@ -100,6 +100,16 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<xsl:if test="idiom/@value">
+						<xsl:for-each select="idiom">
+							<span>Idiom: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
@@ -113,7 +123,7 @@
 <!-- 
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
  -->
- 
+
 				</d:entry>
 <xsl:text>
 </xsl:text>
