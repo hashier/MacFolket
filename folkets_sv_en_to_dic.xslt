@@ -52,9 +52,17 @@
 <xsl:text>
 	</xsl:text>
 					<h1><xsl:value-of select="@value"/></h1>
-					<xsl:if test="phonetic/@value">
-						<span>Uttal: |<xsl:value-of select="phonetic/@value"/>|</span><br/>
+
+					<xsl:if test="@comment">
+						<span>Comment: <xsl:value-of select="@comment"/></span><br/>
 					</xsl:if>
+
+					<xsl:if test="phonetic/@value">
+						<xsl:for-each select="phonetic">
+							<span>Uttal: |<xsl:value-of select="@value"/>|</span><br/>
+						</xsl:for-each>
+					</xsl:if>
+
 					<xsl:if test="@class">
 						<span>
 							<xsl:choose>
@@ -67,12 +75,66 @@
 							</xsl:choose>
 						</span><br/>
 					</xsl:if>
+
+					<xsl:if test="synonym/@value">
+						<span>Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+					</xsl:if>
+
 					<xsl:if test="paradigm/inflection/@value">
 						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
+
 					<xsl:if test="definition/@value">
-						<span>Definition: <xsl:value-of select="definition/@value"/></span><br/>
+						<xsl:for-each select="definition">
+							<span>Definition: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
 					</xsl:if>
+
+					<xsl:if test="example/@value">
+						<xsl:for-each select="example">
+							<span>Example: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
+					<xsl:if test="idiom/@value">
+						<xsl:for-each select="idiom">
+							<span>Idiom: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
+					<xsl:if test="derivation/@value">
+						<xsl:for-each select="derivation">
+							<span>Avledningar: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
+					<xsl:if test="compound/@value">
+						<xsl:for-each select="compound">
+							<span>Sammansättningar: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
+
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
@@ -82,6 +144,11 @@
 							</xsl:for-each>
 						</ol>
 					</xsl:if>
+
+<!-- 
+					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
+ -->
+
 				</d:entry>
 <xsl:text>
 </xsl:text>
@@ -96,14 +163,12 @@
 				</p>
 				<div>
 					<b>Usage</b>
-					<p>
 						<ul>
 							<li>Double tab a word with 3 fingers on your track-pad</li>
 							<li>Select a word and press cmd-ctrl-d</li>
 							<li>Use the dictionary application</li>
 							<li>...</li>
 						</ul>
-					</p>
 					<b>License</b>
 					<p>
 						The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.

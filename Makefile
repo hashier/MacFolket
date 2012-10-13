@@ -33,6 +33,7 @@ export	DICT_DEV_KIT_OBJ_DIR
 
 DESTINATION_FOLDER	=	~/Library/Dictionaries
 RM					=	/bin/rm
+MV					=	/bin/mv
 
 ###########################
 
@@ -66,15 +67,19 @@ fetch:
 	sh get_files.sh
 
 # for me to quickly test builds
-reinstall: clean small build install
+reinstall: clean convert build install
 
 reinstallsmall: clean small build install
 
 convert:
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
+	sed 's/amp;//g' MyDictionary.xml > out.xml
+	$(MV) out.xml MyDictionary.xml
 
 small:
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt small.xml
+	sed 's/amp;//g' MyDictionary.xml > out.xml
+	$(MV) out.xml MyDictionary.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list

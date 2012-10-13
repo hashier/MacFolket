@@ -21,3 +21,9 @@ span.column {
 	margin-bottom: 0.5em;
 	padding: 0.5em;
 }
+
+.footer {
+	font-size: 80%;
+	color: gray;
+	text-align: right;
+}
