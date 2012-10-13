@@ -1,7 +1,13 @@
 macfolket
 =========
 
-A Swedish - English dictionary for Mac OS X
+A Swedish - English dictionary for Mac OS X which is integrated into the system.
+
+
+Screenshot
+----------
+
+![screenshot](http://loessl.org/projekte/macfolket/images/svendict.jpg)
 
 
 Building
