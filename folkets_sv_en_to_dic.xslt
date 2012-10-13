@@ -83,12 +83,12 @@
 
 					<!-- All synonyms -->
 					<xsl:if test="synonym/@value">
-						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
 					</xsl:if>
 
 					<!-- All inflections -->
 					<xsl:if test="paradigm/inflection/@value">
-						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
 					</xsl:if>
 
 					<!-- Definitions -->
@@ -116,33 +116,27 @@
 					<!-- Idioms -->
 					<xsl:if test="idiom/@value">
 						<xsl:for-each select="idiom">
-							<span d:priority="2">Idiom: <xsl:value-of select="@value"/></span>
-							<xsl:if test="translation/@value">
-								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
-							</xsl:if>
-							<br/>
+							<span d:priority="2">Idiom: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
 					<!-- Derivations -->
 					<xsl:if test="derivation/@value">
 						<xsl:for-each select="derivation">
-							<span d:priority="2">Avledningar: <xsl:value-of select="@value"/></span>
-							<xsl:if test="translation/@value">
-								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
-							</xsl:if>
-							<br/>
+							<span d:priority="2">Avledningar: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
 					<!-- Compounds -->
 					<xsl:if test="compound/@value">
 						<xsl:for-each select="compound">
-							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/></span>
-							<xsl:if test="translation/@value">
-								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
-							</xsl:if>
-							<br/>
+							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
