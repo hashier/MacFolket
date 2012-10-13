@@ -42,6 +42,7 @@ all: fetch convert build
 	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
 build:
+	echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
 install:
@@ -53,6 +54,7 @@ install:
 	echo "To test the new dictionary, try Dictionary.app."
 
 uninstall:
+	echo "Uninstalling dictionary from system"
 	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
 	touch $(DESTINATION_FOLDER)
 
@@ -64,18 +66,22 @@ pristine: clean
 	$(RM) -rf folkets_sv_en_public.xml
 
 fetch:
+	echo "Fetching needed files"
 	sh get_files.sh
 
-# for me to quickly test builds
-reinstall: clean convert build install
-
-reinstallsmall: clean small build install
-
 convert:
+	echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
+# for testing/development
+reinstall: clean convert build install
+
+# for testing/development
+reinstallsmall: clean small build install
+
+# for testing/development
 small:
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt small.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
