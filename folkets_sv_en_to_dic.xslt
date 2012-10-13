@@ -126,9 +126,9 @@
 
 					<xsl:if test="compound/@value">
 						<xsl:for-each select="compound">
-							<span>Sammansättningar: <xsl:value-of select="@value"/></span>
+							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/></span>
 							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
+								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
 							</xsl:if>
 							<br/>
 						</xsl:for-each>
