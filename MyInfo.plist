@@ -9,7 +9,7 @@
 	<key>CFBundleName</key>
 	<string>SV-EN</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.4</string>
+	<string>0.4.5</string>
 	<key>DCSDictionaryCopyright</key>
 	<string>Code from Christopher Loessl. Dataset from Folkets lexikon</string>
 	<key>DCSDictionaryManufacturerName</key>
