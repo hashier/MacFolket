@@ -83,7 +83,7 @@
 
 					<!-- All synonyms -->
 					<xsl:if test="synonym/@value">
-						<span>Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
 
 					<!-- All inflections -->
@@ -116,9 +116,9 @@
 					<!-- Idioms -->
 					<xsl:if test="idiom/@value">
 						<xsl:for-each select="idiom">
-							<span>Idiom: <xsl:value-of select="@value"/></span>
+							<span d:priority="2">Idiom: <xsl:value-of select="@value"/></span>
 							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
+								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
 							</xsl:if>
 							<br/>
 						</xsl:for-each>
@@ -127,9 +127,9 @@
 					<!-- Derivations -->
 					<xsl:if test="derivation/@value">
 						<xsl:for-each select="derivation">
-							<span>Avledningar: <xsl:value-of select="@value"/></span>
+							<span d:priority="2">Avledningar: <xsl:value-of select="@value"/></span>
 							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
+								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
 							</xsl:if>
 							<br/>
 						</xsl:for-each>
@@ -138,9 +138,9 @@
 					<!-- Compounds -->
 					<xsl:if test="compound/@value">
 						<xsl:for-each select="compound">
-							<span>Sammansättningar: <xsl:value-of select="@value"/></span>
+							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/></span>
 							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
+								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
 							</xsl:if>
 							<br/>
 						</xsl:for-each>
@@ -204,27 +204,3 @@
 	</xsl:template>
 
 </xsl:stylesheet>
-
-<!-- 
-<word value="slott" lang="sv" class="nn">
-	<translation value="manor house" />
-	<translation value="castle" />
-	<translation value="palace" />
-	<phonetic value="slåt:" soundFile="slott.swf" />
-	<paradigm>
-		<inflection value="slottet" />
-		<inflection value="slott" />
-		<inflection value="slotten" />
-	</paradigm>
-
-	<synonym value="palats" level="4.3" />
-	<see value="slott||slott..1||slott..nn.1" type="saldo" />
-
-	<compound value="slotts|byggnad">
-		<translation value="palace building" />
-	</compound>
-
-	<definition value="pampigt bostadshus för kungliga eller adliga personer" />
-</word>
-
- -->
