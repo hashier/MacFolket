@@ -20,5 +20,4 @@ Caveats
 -------
 
 - Right now only Swedish -> English is supported
-- To much information is displayed in pop-up mode
 - Only the first entry is displayed in pop-up mode instead of all (e.g. "boken" shows only "beech")
