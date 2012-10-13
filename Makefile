@@ -60,8 +60,8 @@ clean:
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
 
 pristine: clean
-	$(RM) -rf folket_en_sv_public.xml
-	$(RM) -rf folket_sv_en_public.xml
+	$(RM) -rf folkets_en_sv_public.xml
+	$(RM) -rf folkets_sv_en_public.xml
 
 fetch:
 	sh get_files.sh
