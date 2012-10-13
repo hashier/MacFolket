@@ -35,34 +35,39 @@
 
 				<d:entry>
 
+					<!-- id should be unique -> running number -->
+					<!-- Never figured out what this d:title is actually for -->
 					<xsl:attribute name="id">id_<xsl:number value="position()"/></xsl:attribute>
 					<xsl:attribute name="d:title"><xsl:value-of select="@value"/></xsl:attribute>
-
 <xsl:text>
 	</xsl:text>
+					<!-- Make sure that the actual word has an entry -->
 					<d:index d:value="{@value}"></d:index>
 
+					<!-- Add all inflections to the search index so we will be able to find bil even so we search for bilen -->
 					<xsl:for-each select="paradigm/inflection">
-
 <xsl:text>
 	</xsl:text>
 						<d:index d:value="{@value}"></d:index>
-
 					</xsl:for-each>
 <xsl:text>
 	</xsl:text>
+					<!-- Heading -->
 					<h1><xsl:value-of select="@value"/></h1>
 
+					<!-- Comment -->
 					<xsl:if test="@comment">
 						<span>Comment: <xsl:value-of select="@comment"/></span><br/>
 					</xsl:if>
 
+					<!-- Phonetic -->
 					<xsl:if test="phonetic/@value">
 						<xsl:for-each select="phonetic">
 							<span>Uttal: |<xsl:value-of select="@value"/>|</span><br/>
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- What kind of word is it (word class) -->
 					<xsl:if test="@class">
 						<span>
 							<xsl:choose>
@@ -76,14 +81,17 @@
 						</span><br/>
 					</xsl:if>
 
+					<!-- All synonyms -->
 					<xsl:if test="synonym/@value">
 						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
 
+					<!-- All inflections -->
 					<xsl:if test="paradigm/inflection/@value">
 						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
 
+					<!-- Definitions -->
 					<xsl:if test="definition/@value">
 						<xsl:for-each select="definition">
 							<span>Definition: <xsl:value-of select="@value"/></span>
@@ -94,6 +102,7 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Examples -->
 					<xsl:if test="example/@value">
 						<xsl:for-each select="example">
 							<span>Example: <xsl:value-of select="@value"/></span>
@@ -104,6 +113,7 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Idioms -->
 					<xsl:if test="idiom/@value">
 						<xsl:for-each select="idiom">
 							<span d:priority="2">Idiom: <xsl:value-of select="@value"/></span>
@@ -114,6 +124,7 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Derivations -->
 					<xsl:if test="derivation/@value">
 						<xsl:for-each select="derivation">
 							<span d:priority="2">Avledningar: <xsl:value-of select="@value"/></span>
@@ -124,6 +135,7 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Compounds -->
 					<xsl:if test="compound/@value">
 						<xsl:for-each select="compound">
 							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/></span>
@@ -135,6 +147,8 @@
 					</xsl:if>
 
 
+					<!-- These are actually the real stuff -->
+					<!-- All translations here -->
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
