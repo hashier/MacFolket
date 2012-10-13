@@ -114,6 +114,17 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<xsl:if test="derivation/@value">
+						<xsl:for-each select="derivation">
+							<span>Avledningar: <xsl:value-of select="@value"/></span>
+							<xsl:if test="translation/@value">
+								<span> (<xsl:value-of select="translation/@value"/>)</span>
+							</xsl:if>
+							<br/>
+						</xsl:for-each>
+					</xsl:if>
+
+
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
