@@ -190,27 +190,3 @@
 	</xsl:template>
 
 </xsl:stylesheet>
-
-<!-- 
-<word value="slott" lang="sv" class="nn">
-	<translation value="manor house" />
-	<translation value="castle" />
-	<translation value="palace" />
-	<phonetic value="slåt:" soundFile="slott.swf" />
-	<paradigm>
-		<inflection value="slottet" />
-		<inflection value="slott" />
-		<inflection value="slotten" />
-	</paradigm>
-
-	<synonym value="palats" level="4.3" />
-	<see value="slott||slott..1||slott..nn.1" type="saldo" />
-
-	<compound value="slotts|byggnad">
-		<translation value="palace building" />
-	</compound>
-
-	<definition value="pampigt bostadshus för kungliga eller adliga personer" />
-</word>
-
- -->
