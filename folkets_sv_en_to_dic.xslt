@@ -106,9 +106,9 @@
 
 					<xsl:if test="idiom/@value">
 						<xsl:for-each select="idiom">
-							<span>Idiom: <xsl:value-of select="@value"/></span>
+							<span d:priority="2">Idiom: <xsl:value-of select="@value"/></span>
 							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
+								<span d:priority="2"> (<xsl:value-of select="translation/@value"/>)</span>
 							</xsl:if>
 							<br/>
 						</xsl:for-each>
