@@ -77,7 +77,7 @@
 					</xsl:if>
 
 					<xsl:if test="synonym/@value">
-						<span>Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
+						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each></span><br/>
 					</xsl:if>
 
 					<xsl:if test="paradigm/inflection/@value">
