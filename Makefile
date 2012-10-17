@@ -71,7 +71,7 @@ fetch:
 
 convert:
 	echo "Converting Folkets dictionary file into Apples DictionarySchema"
-	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt folkets_sv_en_public.xml
+	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xsl folkets_sv_en_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
@@ -83,7 +83,7 @@ reinstallsmall: clean small build install
 
 # for testing/development
 small:
-	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xslt small.xml
+	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xsl small.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
