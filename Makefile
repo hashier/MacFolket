@@ -59,9 +59,11 @@ uninstall:
 	touch $(DESTINATION_FOLDER)
 
 clean:
+	@echo "Clean up"
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
 
 pristine: clean
+	@echo "Thoroughly clean up"
 	$(RM) -rf folkets_en_sv_public.xml
 	$(RM) -rf folkets_sv_en_public.xml
 
@@ -70,13 +72,13 @@ fetch:
 	sh get_files.sh
 
 convert_sven:
-	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 convert_ensv:
-	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_en_sv_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
