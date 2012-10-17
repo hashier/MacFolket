@@ -39,9 +39,11 @@
 					<!-- Never figured out what this d:title is actually for -->
 					<xsl:attribute name="id">id_<xsl:number value="position()"/></xsl:attribute>
 					<xsl:attribute name="d:title"><xsl:value-of select="@value"/></xsl:attribute>
+
+
 <xsl:text>
 	</xsl:text>
-					<!-- Make sure that the actual word has an entry -->
+					<!-- Make sure that the actual word has an index entry -->
 					<d:index d:value="{@value}"></d:index>
 
 					<!-- Add all inflections to the search index so we will be able to find bil even so we search for bilen -->
@@ -50,6 +52,22 @@
 	</xsl:text>
 						<d:index d:value="{@value}"></d:index>
 					</xsl:for-each>
+
+					<!-- Add all the translations to the search index as well -->
+
+					<!-- Yeah! Sure! The syntax sucks -->
+					<!-- 
+					test <- Attribute
+					cs   <- Element 
+					-->
+					<!-- <xsl:for-each select="catalog/cd[artist/@test='a']"> -->
+					<xsl:for-each select="translation[@value!='']">
+<xsl:text>
+	</xsl:text>
+						<d:index d:value="{@value}"></d:index>
+					</xsl:for-each>
+
+
 <xsl:text>
 	</xsl:text>
 					<!-- Heading -->
@@ -140,6 +158,15 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Förklaring -->
+					<xsl:if test="explanation/@value">
+						<xsl:for-each select="explanation">
+							<span d:priority="2">Förklaring: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
+						</xsl:for-each>
+					</xsl:if>
+
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
@@ -147,7 +174,7 @@
 						<ol>
 							<xsl:for-each select="translation">
 								<li>
-									<xsl:value-of select="@value"/>
+									<xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if>
 								</li>
 							</xsl:for-each>
 						</ol>
