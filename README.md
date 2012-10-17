@@ -1,4 +1,4 @@
-macfolket
+MacFolket
 =========
 
 A Swedish - English dictionary for Mac OS X which is integrated into the system.
