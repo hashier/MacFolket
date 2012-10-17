@@ -1,4 +1,4 @@
-macfolket
+MacFolket
 =========
 
 A Swedish - English dictionary for Mac OS X which is integrated into the system.
@@ -25,5 +25,5 @@ Building
 Caveats
 -------
 
-- Right now only Swedish -> English is supported
 - Only the first entry is displayed in pop-up mode instead of all (e.g. "boken" shows only "beech")
+
