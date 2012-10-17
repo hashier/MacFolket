@@ -38,7 +38,7 @@ MV					=	/bin/mv
 ###########################
 
 
-all: fetch convert build
+all: fetch convert_all build
 	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
 build:
@@ -69,14 +69,31 @@ fetch:
 	echo "Fetching needed files"
 	sh get_files.sh
 
-convert:
+convert_sven:
 	echo "Converting Folkets dictionary file into Apples DictionarySchema"
-	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xsl folkets_sv_en_public.xml
+	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
+	sed 's/amp;//g' MyDictionary.xml > out.xml
+	$(MV) out.xml MyDictionary.xml
+
+convert_ensv:
+	echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	xsltproc -o MyDictionary.xml transform.xsl folkets_en_sv_public.xml
+	sed 's/amp;//g' MyDictionary.xml > out.xml
+	$(MV) out.xml MyDictionary.xml
+
+convert_all:
+	echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	sed '$$ d' folkets_sv_en_public.xml > start.xml # WTF? In Makefiles you escape with $????
+	tail -n +3 folkets_en_sv_public.xml > end.xml
+	cat start.xml end.xml > all.xml
+	$(RM) start.xml end.xml
+	xsltproc -o MyDictionary.xml transform.xsl all.xml
+	$(RM) all.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 # for testing/development
-reinstall: clean convert build install
+reinstall: clean convert_all build install
 
 # for testing/development
 reinstallsmall: clean small build install
