@@ -39,22 +39,22 @@ MV					=	/bin/mv
 
 
 all: fetch convert_all build
-	echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
+	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
 build:
-	echo "Building dictionary"
+	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
 install:
-	echo "Installing into $(DESTINATION_FOLDER)".
+	@echo "Installing into $(DESTINATION_FOLDER)".
 	mkdir -p $(DESTINATION_FOLDER)
 	ditto --noextattr --norsrc $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary  $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
 	touch $(DESTINATION_FOLDER)
-	echo "Done."
-	echo "To test the new dictionary, try Dictionary.app."
+	@echo "Done."
+	@echo "To test the new dictionary, try Dictionary.app."
 
 uninstall:
-	echo "Uninstalling dictionary from system"
+	@echo "Uninstalling dictionary from system"
 	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
 	touch $(DESTINATION_FOLDER)
 
@@ -66,23 +66,23 @@ pristine: clean
 	$(RM) -rf folkets_sv_en_public.xml
 
 fetch:
-	echo "Fetching needed files"
+	@echo "Fetching needed files"
 	sh get_files.sh
 
 convert_sven:
-	echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 convert_ensv:
-	echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_en_sv_public.xml
 	sed 's/amp;//g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 convert_all:
-	echo "Converting Folkets dictionary file into Apples DictionarySchema"
+	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	sed '$$ d' folkets_sv_en_public.xml > start.xml # WTF? In Makefiles you escape with $????
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
