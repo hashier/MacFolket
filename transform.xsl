@@ -140,6 +140,15 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Förklaring -->
+					<xsl:if test="explanation/@value">
+						<xsl:for-each select="explanation">
+							<span d:priority="2">Förklaring: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
+						</xsl:for-each>
+					</xsl:if>
+
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
