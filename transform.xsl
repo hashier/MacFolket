@@ -147,7 +147,7 @@
 						<ol>
 							<xsl:for-each select="translation">
 								<li>
-									<xsl:value-of select="@value"/>
+									<xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if>
 								</li>
 							</xsl:for-each>
 						</ol>
