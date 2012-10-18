@@ -86,7 +86,7 @@ convert_ensv:
 
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
-	# WTF? In Makefiles you escape with $????
+	@# WTF? In Makefiles you escape with $????
 	sed '$$ d' folkets_sv_en_public.xml > start.xml
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
