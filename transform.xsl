@@ -170,6 +170,15 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Not really working yet because there are a lot of '&' inside here -->
+					<!-- Grammar -->
+					<!-- <xsl:if test="grammar/@value">
+						<xsl:for-each select="grammar">
+							<span d:priority="2">Grammatikkommentar: <xsl:value-of select="@value"/>
+							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
+							<br/></span>
+						</xsl:for-each>
+					</xsl:if> -->
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
