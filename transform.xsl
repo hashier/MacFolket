@@ -94,7 +94,10 @@
 								<xsl:when test="@class = 'vb'">Word class: adverb</xsl:when>
 								<xsl:when test="@class = 'in'">Word class: interjektion</xsl:when>
 								<xsl:when test="@class = 'pp'">Word class: preposition</xsl:when>
-								<xsl:otherwise>Word class: not tracked yet</xsl:otherwise>
+								<xsl:when test="@class = 'pn'">Word class: pronomen</xsl:when>
+								<xsl:when test="@class = 'abbrev'">Word class: förkortning</xsl:when>
+								<xsl:when test="@class = 'ab'">Word class: adverb</xsl:when>
+								<xsl:otherwise>Word class: DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
 							</xsl:choose>
 						</span><br/>
 					</xsl:if>
