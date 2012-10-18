@@ -61,6 +61,7 @@ uninstall:
 clean:
 	@echo "Clean up"
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
+	$(RM) -rf MyDictionary.xml
 
 pristine: clean
 	@echo "Thoroughly clean up"
