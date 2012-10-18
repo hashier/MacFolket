@@ -75,24 +75,25 @@ fetch:
 convert_sven:
 	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
-	sed 's/amp;//g' MyDictionary.xml > out.xml
+	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 convert_ensv:
 	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_en_sv_public.xml
-	sed 's/amp;//g' MyDictionary.xml > out.xml
+	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
-	sed '$$ d' folkets_sv_en_public.xml > start.xml # WTF? In Makefiles you escape with $????
+	# WTF? In Makefiles you escape with $????
+	sed '$$ d' folkets_sv_en_public.xml > start.xml
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
 	$(RM) start.xml end.xml
 	xsltproc -o MyDictionary.xml transform.xsl all.xml
 	$(RM) all.xml
-	sed 's/amp;//g' MyDictionary.xml > out.xml
+	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 # for testing/development
@@ -104,7 +105,7 @@ reinstallsmall: clean small build install
 # for testing/development
 small:
 	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xsl small.xml
-	sed 's/amp;//g' MyDictionary.xml > out.xml
+	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
