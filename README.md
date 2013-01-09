@@ -27,3 +27,9 @@ Caveats
 
 - Only the first entry is displayed in pop-up mode instead of all (e.g. "boken" shows only "beech")
 
+
+Thanks
+------
+I have used an English <-> German dictionary for a couple of years which brought the idea to me to build an Swedish <-> English one.
+Here you can find the English <-> German one: http://lipflip.org/articles/dictcc-dictionary-plugin
+
