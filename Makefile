@@ -6,7 +6,7 @@
 
 ###########################
 
-DICT_NAME			=	"Swedish -> English dictionary"
+DICT_NAME			=	"Svensk-English dictionary"
 DICT_SRC_PATH		=	MyDictionary.xml
 CSS_PATH			=	MyDictionary.css
 PLIST_PATH			=	MyInfo.plist
