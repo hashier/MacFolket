@@ -15,8 +15,7 @@ Building
 
 - Clone this git repository
 - Download Apples [Dictionary Development Kit](https://developer.apple.com/downloads/) (The packages is called "Auxiliary Tools for Xcode")
-- Copy the "Dictionary Development Kit" into the repo
-- make sure you have $REPOSITORY/Dictionary\ Development\ Kit/bin in your $PATH
+- Copy the "Dictionary Development Kit" somewhere and adjust the Makefile accordingly
 - make
 - Optional make validate (you need to install jing for that)
 - make install
