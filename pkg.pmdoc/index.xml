@@ -1,12 +1,4 @@
-<pkmkdoc spec="1.12"><properties><title>MacFolket Swedish &lt; - > English Dictionary</title><build>/Users/hashier/Downloads/MacFolket.pkg</build><organization>org.loessl</organization><userSees ui="easy"/><min-target os="3"/><domain system="true" user="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><contents><choice title="Svensk-English dictionary" id="choice6" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="org.loessl.macfolketSwedishEnglishDictionary.Svensk-Englishdictionary.pkg"/></choice></contents><resources bg-scale="none" bg-align="topleft"><locale lang="en"><resource mime-type="text/rtf" kind="embedded" type="readme"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
-{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
-
-\f0\b\fs28 \cf0 MacFolket\
-
-\b0 \
-After installation just restart the dictionary application and you should see the Swedish < - > English dictionary.}]]></resource><resource mime-type="text/rtf" kind="embedded" type="welcome"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+<pkmkdoc spec="1.12"><properties><title>MacFolket Swedish &lt; - > English Dictionary</title><build>/Users/hashier/Downloads/MacFolket.pkg</build><organization>org.loessl</organization><userSees ui="easy"/><min-target os="3"/><domain system="true" user="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><contents><choice title="Svensk-English dictionary" id="choice6" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="org.loessl.macfolketSwedishEnglishDictionary.Svensk-Englishdictionary.pkg"/></choice></contents><resources bg-scale="none" bg-align="topleft"><locale lang="en"><resource mime-type="text/rtf" kind="embedded" type="welcome"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
 {\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
@@ -14,10 +6,11 @@ After installation just restart the dictionary application and you should see th
 \deftab720
 \pard\pardeftab720\sa260
 
-\f0\b\fs40 \cf0 Svensk <-> English\
+\f0\b\fs28 \cf0 Svensk <-> English
+\fs40 \
 \pard\pardeftab720\sa200
 
-\b0\fs28 \cf0 Dictionary from Swedish to English and English to Swedish. With the dataset from {\field{\*\fldinst{HYPERLINK "http://folkets-lexikon.csc.kth.se/folkets/"}}{\fldrslt \cf2 \ul \ulc2 Folkets lexikon}}. Sourcecode from {\field{\*\fldinst{HYPERLINK "http://loessl.org/"}}{\fldrslt \cf2 \ul \ulc2 Christopher Loessl}}\cf2 \ul \ulc2 \
+\b0\fs24 \cf0 Dictionary from Swedish to English and English to Swedish. With the dataset from {\field{\*\fldinst{HYPERLINK "http://folkets-lexikon.csc.kth.se/folkets/"}}{\fldrslt \cf2 \ul \ulc2 Folkets lexikon}}. Sourcecode from {\field{\*\fldinst{HYPERLINK "http://loessl.org/"}}{\fldrslt \cf2 \ul \ulc2 Christopher Loessl}}\cf2 \ul \ulc2 \
 
 \b \cf0 \ulnone Usage:
 \b0 \
@@ -26,12 +19,16 @@ After installation just restart the dictionary application and you should see th
 {\listtext	\'95	}Select a word and press cmd-ctrl-d\
 {\listtext	\'95	}Use the dictionary application\
 {\listtext	\'95	}...\
-\pard\pardeftab720
+\pard\tx566\pardeftab720
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
-\b \cf0 \
-License:
+\b \cf0 After Installation:\
+
 \b0 \
-The People's dictionary is free. Both the whole {\field{\*\fldinst{HYPERLINK "file:///Applications/Dictionary.app/Contents/Resources/folkets_en_sv_public.xml"}}{\fldrslt \cf2 \ul English-Swedish dictionary}} and the {\field{\*\fldinst{HYPERLINK "file:///Applications/Dictionary.app/Contents/Resources/folkets_sv_en_public.xml"}}{\fldrslt \cf2 \ul Swedish-English dictionary}} can be downloaded for use under the {\field{\*\fldinst{HYPERLINK "http://creativecommons.org/licenses/by-sa/2.5/"}}{\fldrslt \cf2 \ul Distributed Creative Commons Attribution-Share Alike 2.5 Generic license}}.\
-The source code to create this dictionary can be found {\field{\*\fldinst{HYPERLINK "http://hashier.github.com/MacFolket/"}}{\fldrslt \cf2 \ul here}}.\
-Christopher Loessl's homepage can be found {\field{\*\fldinst{HYPERLINK "http://loessl.org/"}}{\fldrslt \cf2 \ul here}}.\
-}]]></resource></locale></resources><requirements><requirement id="kilo" operator="ge" value="70"><message>You need at least 70MB free disk space to install the dictionary</message></requirement></requirements><flags/><item type="file">01svensk.xml</item><mod>properties.title</mod><mod>properties.userDomain</mod><mod>properties.anywhereDomain</mod><mod>properties.systemDomain</mod></pkmkdoc>
+After installation just restart the dictionary application and you should see the Swedish < - > English dictionary. If it wasn't activated automatically you can activate it manually in the preferences.\
+\
+
+\b Note:\
+\
+To be able to use the dictionary inside an application you have to restart that application first!}]]></resource></locale></resources><requirements><requirement id="kilo" operator="ge" value="70"><message>You need at least 70MB free disk space to install the dictionary</message></requirement></requirements><flags/><item type="file">01svensk.xml</item><mod>properties.title</mod><mod>properties.userDomain</mod><mod>properties.anywhereDomain</mod><mod>properties.systemDomain</mod></pkmkdoc>
