@@ -10,7 +10,7 @@
 		<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
 
 			<!-- HEADER -->
-<!-- 
+<!--
 			<d:entry id="dictionary_application" d:title="Dictionary application">
 				<d:index d:value="Dictionary application"/>
 				<h1>Dictionary application </h1>
@@ -56,9 +56,9 @@
 					<!-- Add all the translations to the search index as well -->
 
 					<!-- Yeah! Sure! The syntax sucks -->
-					<!-- 
+					<!--
 					test <- Attribute
-					cs   <- Element 
+					cs   <- Element
 					-->
 					<!-- <xsl:for-each select="catalog/cd[artist/@test='a']"> -->
 					<xsl:for-each select="translation[@value!='']">
@@ -94,7 +94,10 @@
 								<xsl:when test="@class = 'vb'">Word class: adverb</xsl:when>
 								<xsl:when test="@class = 'in'">Word class: interjektion</xsl:when>
 								<xsl:when test="@class = 'pp'">Word class: preposition</xsl:when>
-								<xsl:otherwise>Word class: not tracked yet</xsl:otherwise>
+								<xsl:when test="@class = 'pn'">Word class: pronomen</xsl:when>
+								<xsl:when test="@class = 'abbrev'">Word class: förkortning</xsl:when>
+								<xsl:when test="@class = 'ab'">Word class: adverb</xsl:when>
+								<xsl:otherwise>Word class: DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
 							</xsl:choose>
 						</span><br/>
 					</xsl:if>
@@ -167,6 +170,8 @@
 						</xsl:for-each>
 					</xsl:if>
 
+					<!-- Grammar -->
+					<!-- TODO -->
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
@@ -180,7 +185,7 @@
 						</ol>
 					</xsl:if>
 
-<!-- 
+<!--
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
  -->
 

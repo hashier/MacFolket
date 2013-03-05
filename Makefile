@@ -6,7 +6,7 @@
 
 ###########################
 
-DICT_NAME			=	"Swedish -> English dictionary"
+DICT_NAME			=	"Svensk-English dictionary"
 DICT_SRC_PATH		=	MyDictionary.xml
 CSS_PATH			=	MyDictionary.css
 PLIST_PATH			=	MyInfo.plist
@@ -35,16 +35,23 @@ DESTINATION_FOLDER	=	~/Library/Dictionaries
 RM					=	/bin/rm
 MV					=	/bin/mv
 
+JING				=	tools/jing-20091111/bin/jing.jar
+
 ###########################
 
 
 all: fetch convert_all build
 	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
 
+fetch:
+	@echo "Fetching needed files"
+	sh get_files.sh
+
 build:
 	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
+# install for current user
 install:
 	@echo "Installing into $(DESTINATION_FOLDER)".
 	mkdir -p $(DESTINATION_FOLDER)
@@ -53,6 +60,7 @@ install:
 	@echo "Done."
 	@echo "To test the new dictionary, try Dictionary.app."
 
+# uninstall for current user
 uninstall:
 	@echo "Uninstalling dictionary from system"
 	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
@@ -68,10 +76,6 @@ pristine: clean
 	$(RM) -rf folkets_en_sv_public.xml
 	$(RM) -rf folkets_sv_en_public.xml
 
-fetch:
-	@echo "Fetching needed files"
-	sh get_files.sh
-
 convert_sven:
 	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
 	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
@@ -86,7 +90,7 @@ convert_ensv:
 
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
-	# WTF? In Makefiles you escape with $????
+	@# WTF? In Makefiles you escape with $?
 	sed '$$ d' folkets_sv_en_public.xml > start.xml
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
@@ -95,6 +99,11 @@ convert_all:
 	$(RM) all.xml
 	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
 	$(MV) out.xml MyDictionary.xml
+
+
+##
+# Development stuff
+##
 
 # for testing/development
 reinstall: clean convert_all build install
@@ -111,8 +120,8 @@ small:
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list
 # you MUST download and unzip the apple Dictionary Development Kit in the same folder as the make file
-# AND 
+# AND
 # you MUST download and unzip jing here as well
 validate:
-	java -jar jing-20091111/bin/jing.jar Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MyDictionary.xml
+	java -jar $(JING) Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MyDictionary.xml
 
