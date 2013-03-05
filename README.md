@@ -31,6 +31,6 @@ Caveats
 Thanks to
 ---------
 
-Philipp Brauner how build an English <-> German dictionary which I have used now for a couple of years. His plugin gave me the idea to build an Engish <-> Swedish one.
+Philipp Brauner who build an English <-> German dictionary which I have used now for a couple of years. His plugin gave me the idea to build an Engish <-> Swedish one.
 Here you can find his English <-> German one: http://lipflip.org/articles/dictcc-dictionary-plugin
 
