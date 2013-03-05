@@ -10,7 +10,7 @@
 		<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
 
 			<!-- HEADER -->
-<!-- 
+<!--
 			<d:entry id="dictionary_application" d:title="Dictionary application">
 				<d:index d:value="Dictionary application"/>
 				<h1>Dictionary application </h1>
@@ -56,9 +56,9 @@
 					<!-- Add all the translations to the search index as well -->
 
 					<!-- Yeah! Sure! The syntax sucks -->
-					<!-- 
+					<!--
 					test <- Attribute
-					cs   <- Element 
+					cs   <- Element
 					-->
 					<!-- <xsl:for-each select="catalog/cd[artist/@test='a']"> -->
 					<xsl:for-each select="translation[@value!='']">
@@ -170,15 +170,8 @@
 						</xsl:for-each>
 					</xsl:if>
 
-					<!-- Not really working yet because there are a lot of '&' inside here -->
 					<!-- Grammar -->
-					<!-- <xsl:if test="grammar/@value">
-						<xsl:for-each select="grammar">
-							<span d:priority="2">Grammatikkommentar: <xsl:value-of select="@value"/>
-							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
-							<br/></span>
-						</xsl:for-each>
-					</xsl:if> -->
+					<!-- TODO -->
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
@@ -192,7 +185,7 @@
 						</ol>
 					</xsl:if>
 
-<!-- 
+<!--
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
  -->
 
