@@ -202,14 +202,14 @@
 					Dictionary from Swedish to English and English to Swedish.With the dataset from <a href="http://folkets-lexikon.csc.kth.se/folkets/">Folkets lexikon</a>. Sourcecode from <a href="http://loessl.org">Christopher Loessl</a>
 				</p>
 				<div>
-					<b>Usage</b>
+					<b>Usage:</b>
 						<ul>
 							<li>Double tab a word with 3 fingers on your track-pad</li>
 							<li>Select a word and press cmd-ctrl-d</li>
 							<li>Use the dictionary application</li>
 							<li>...</li>
 						</ul>
-					<b>License</b>
+					<b>License:</b>
 					<p>
 						The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
 					</p>
