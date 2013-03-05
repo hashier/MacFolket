@@ -15,8 +15,7 @@ Building
 
 - Clone this git repository
 - Download Apples [Dictionary Development Kit](https://developer.apple.com/downloads/) (The packages is called "Auxiliary Tools for Xcode")
-- Copy the "Dictionary Development Kit" into the repo
-- make sure you have $REPOSITORY/Dictionary\ Development\ Kit/bin in your $PATH
+- Copy the "Dictionary Development Kit" somewhere and adjust the Makefile accordingly
 - make
 - Optional make validate (you need to install jing for that)
 - make install
@@ -31,6 +30,6 @@ Caveats
 Thanks to
 ---------
 
-Philipp Brauner who build an English <-> German dictionary which I have used now for a couple of years. His plugin gave me the idea to build an Engish <-> Swedish one.
+Philipp Brauner who build an English <-> German dictionary which I have used now for a couple of years. His plugin gave me the idea to build an English <-> Swedish one.
 Here you can find his English <-> German one: http://lipflip.org/articles/dictcc-dictionary-plugin
 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.loessl.dictionary.sven</string>
+	<key>CFBundleName</key>
+	<string>SV-EN</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.4.7</string>
+	<key>DCSDictionaryCopyright</key>
+	<string><![CDATA[<h1><b>Svensk &lt;-&gt; English</b></h1> <p> Dictionary from Swedish to English and English to Swedish. With the dataset from <a href="http://folkets-lexikon.csc.kth.se/folkets/">Folkets lexikon</a>. Sourcecode from <a href="http://loessl.org">Christopher Loessl</a> </p> <div> <b>Usage:</b> <ul> <li>Double tab a word with 3 fingers on your track-pad</li> <li>Select a word and press cmd-ctrl-d</li> <li>Use the dictionary application</li> <li>...</li> </ul> <b>License:</b> <p> The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>. </p> <p> The source code to create this dictionary can be found <a href="http://hashier.github.com/MacFolket/">here</a>. </p> <p> Christopher Loessl's homepage can be found <a href="http://loessl.org">here</a>. </p> </div> ]]></string>
+	<key>DCSDictionaryManufacturerName</key>
+	<string>Christopher Loessl</string>
+	<key>DCSDictionaryFrontMatterReferenceID</key>
+	<string>front_back_matter</string>
+<!-- Values for dictionary preferences keys -->
+<!--
+	<key>DCSDictionaryPrefsHTML</key>
+	<string>MyDictionary_prefs.html</string>
+	<key>DCSDictionaryXSL</key>
+	<string>MyDictionary.xsl</string>
+	<key>DCSDictionaryDefaultPrefs</key>
+	<dict>
+		<key>pronunciation</key>
+		<string>0</string>
+		<key>display-column</key>
+		<string>1</string>
+		<key>display-picture</key>
+		<string>1</string>
+		<key>version</key>
+		<string>1</string>
+	</dict>
+-->
+</dict>
+</plist>
