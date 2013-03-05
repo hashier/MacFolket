@@ -18,15 +18,9 @@ DICT_BUILD_OPTS		=
 
 ###########################
 
-# The DICT_BUILD_TOOL_DIR value was used also in "build_dict.sh" script.
-# So if you use an old version or modified version of "build_dict.sh" you might
-# need to set it here.
-# I just assume that build_dict.sh is in your $PATH
+DICT_BUILD_TOOL_DIR	=	"/Users/hashier/script/Dictionary Development Kit"
 
-DICT_BUILD_TOOL_DIR	=	"/DevTools/Utilities/Dictionary Development Kit/"
-
-DICT_BUILD_TOOL_BIN	=	"$(DICT_BUILD_TOOL_DIR)bin"
-DICT_BUILD_TOOL_BIN	=	""
+DICT_BUILD_TOOL_BIN	=	"$(DICT_BUILD_TOOL_DIR)/bin"
 
 ###########################
 
@@ -52,7 +46,7 @@ fetch:
 
 build:
 	@echo "Building dictionary"
-	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
+	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
 install:
 	@echo "Installing into $(DESTINATION_FOLDER)".
@@ -116,7 +110,8 @@ reinstallsmall: clean small build install
 
 # for testing/development
 small:
-	xsltproc -o MacFolket.xml folkets_sv_en_to_dic.xsl small.xml
+	@echo SMALL
+	xsltproc -o MacFolket.xml MacFolket.xsl small.xml
 	sed 's/amp;#/#/g' MacFolket.xml > out.xml
 	$(MV) out.xml MacFolket.xml
 
@@ -126,5 +121,5 @@ small:
 # AND
 # you MUST download and unzip jing here as well
 validate:
-	java -jar $(JING) Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
+	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
 
