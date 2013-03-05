@@ -1,2 +1,6 @@
 - remove the ", " after the last entry
 - display the word class behind the word in light gray
+- create a pkg file
+    - user
+    - system
+- add the grammar (branch already started)
