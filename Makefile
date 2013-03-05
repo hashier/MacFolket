@@ -7,9 +7,10 @@
 ###########################
 
 DICT_NAME			=	"Svensk-English dictionary"
-DICT_SRC_PATH		=	MyDictionary.xml
-CSS_PATH			=	MyDictionary.css
-PLIST_PATH			=	MyInfo.plist
+
+DICT_SRC_PATH		=	MacFolket.xml
+CSS_PATH			=	MacFolket.css
+PLIST_PATH			=	MacFolket.plist
 
 DICT_BUILD_OPTS		=
 # Suppress adding supplementary key.
@@ -23,6 +24,7 @@ DICT_BUILD_OPTS		=
 # I just assume that build_dict.sh is in your $PATH
 
 DICT_BUILD_TOOL_DIR	=	"/DevTools/Utilities/Dictionary Development Kit/"
+
 DICT_BUILD_TOOL_BIN	=	"$(DICT_BUILD_TOOL_DIR)bin"
 DICT_BUILD_TOOL_BIN	=	""
 
@@ -31,6 +33,7 @@ DICT_BUILD_TOOL_BIN	=	""
 DICT_DEV_KIT_OBJ_DIR	=	./objects
 export	DICT_DEV_KIT_OBJ_DIR
 
+DESTINATION_FOLDER	=	/Library/Dictionaries
 DESTINATION_FOLDER	=	~/Library/Dictionaries
 RM					=	/bin/rm
 MV					=	/bin/mv
@@ -51,7 +54,6 @@ build:
 	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
-# install for current user
 install:
 	@echo "Installing into $(DESTINATION_FOLDER)".
 	mkdir -p $(DESTINATION_FOLDER)
@@ -60,7 +62,6 @@ install:
 	@echo "Done."
 	@echo "To test the new dictionary, try Dictionary.app."
 
-# uninstall for current user
 uninstall:
 	@echo "Uninstalling dictionary from system"
 	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
@@ -69,24 +70,26 @@ uninstall:
 clean:
 	@echo "Clean up"
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
-	$(RM) -rf MyDictionary.xml
+	$(RM) -rf MacFolket.xml
 
 pristine: clean
 	@echo "Thoroughly clean up"
 	$(RM) -rf folkets_en_sv_public.xml
 	$(RM) -rf folkets_sv_en_public.xml
 
+# This was used in the beginning, not needed anymore
 convert_sven:
 	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
-	xsltproc -o MyDictionary.xml transform.xsl folkets_sv_en_public.xml
-	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
-	$(MV) out.xml MyDictionary.xml
+	xsltproc -o MacFolket.xml MacFolket.xsl folkets_sv_en_public.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
 
+# This was used in the beginning, not needed anymore
 convert_ensv:
 	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
-	xsltproc -o MyDictionary.xml transform.xsl folkets_en_sv_public.xml
-	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
-	$(MV) out.xml MyDictionary.xml
+	xsltproc -o MacFolket.xml MacFolket.xsl folkets_en_sv_public.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
 
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
@@ -95,10 +98,10 @@ convert_all:
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
 	$(RM) start.xml end.xml
-	xsltproc -o MyDictionary.xml transform.xsl all.xml
+	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
 	$(RM) all.xml
-	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
-	$(MV) out.xml MyDictionary.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
 
 
 ##
@@ -113,9 +116,9 @@ reinstallsmall: clean small build install
 
 # for testing/development
 small:
-	xsltproc -o MyDictionary.xml folkets_sv_en_to_dic.xsl small.xml
-	sed 's/amp;#/#/g' MyDictionary.xml > out.xml
-	$(MV) out.xml MyDictionary.xml
+	xsltproc -o MacFolket.xml folkets_sv_en_to_dic.xsl small.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list
@@ -123,5 +126,5 @@ small:
 # AND
 # you MUST download and unzip jing here as well
 validate:
-	java -jar $(JING) Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MyDictionary.xml
+	java -jar $(JING) Dictionary\ Development\ Kit/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
 

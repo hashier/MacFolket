@@ -9,13 +9,14 @@
 	<key>CFBundleName</key>
 	<string>SV-EN</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.4.5</string>
+	<string>0.4.7</string>
 	<key>DCSDictionaryCopyright</key>
 	<string>Code from Christopher Loessl. Dataset from Folkets lexikon</string>
 	<key>DCSDictionaryManufacturerName</key>
 	<string>Christopher Loessl</string>
 	<key>DCSDictionaryFrontMatterReferenceID</key>
 	<string>front_back_matter</string>
+<!-- Values for dictionary preferences keys -->
 <!--
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>MyDictionary_prefs.html</string>
