@@ -19,7 +19,7 @@ Video
 Installation
 ------------
 
-You can find ready to install .pkg file here: [Download](http://code.google.com/p/macfolket/)
+You can find ready to install .pkg file here: [Download](http://code.google.com/p/macfolket/downloads/list)
 
 
 Building
