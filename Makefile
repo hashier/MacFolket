@@ -6,7 +6,7 @@
 
 ###########################
 
-DICT_NAME			=	"Svensk-English dictionary"
+DICT_NAME			=	"Svensk-English"
 
 DICT_SRC_PATH		=	MacFolket.xml
 CSS_PATH			=	MacFolket.css
@@ -71,20 +71,6 @@ pristine: clean
 	$(RM) -rf folkets_en_sv_public.xml
 	$(RM) -rf folkets_sv_en_public.xml
 
-# This was used in the beginning, not needed anymore
-convert_sven:
-	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
-	xsltproc -o MacFolket.xml MacFolket.xsl folkets_sv_en_public.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
-
-# This was used in the beginning, not needed anymore
-convert_ensv:
-	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
-	xsltproc -o MacFolket.xml MacFolket.xsl folkets_en_sv_public.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
-
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	@# WTF? In Makefiles you escape with $?
@@ -112,6 +98,27 @@ reinstallsmall: clean small build install
 small:
 	@echo SMALL
 	xsltproc -o MacFolket.xml MacFolket.xsl small.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
+
+devuninstall:
+	@echo "DEVELOP Uninstalling dictionary from system"
+	rm -rf ~/Library/Dictionaries/$(DICT_NAME).dictionary
+	touch ~/Library/Dictionaries/
+	sudo rm -rf /Library/Dictionaries/$(DICT_NAME).dictionary
+	sudo touch /Library/Dictionaries/
+
+# This was used in the beginning, not needed anymore
+convert_sven:
+	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
+	xsltproc -o MacFolket.xml MacFolket.xsl folkets_sv_en_public.xml
+	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	$(MV) out.xml MacFolket.xml
+
+# This was used in the beginning, not needed anymore
+convert_ensv:
+	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
+	xsltproc -o MacFolket.xml MacFolket.xsl folkets_en_sv_public.xml
 	sed 's/amp;#/#/g' MacFolket.xml > out.xml
 	$(MV) out.xml MacFolket.xml
 
