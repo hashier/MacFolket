@@ -8,6 +8,8 @@
 	<xsl:template match="/">
 
 		<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
+<xsl:text>
+</xsl:text>
 
 			<!-- HEADER -->
 <!--
@@ -66,7 +68,6 @@
 	</xsl:text>
 						<d:index d:value="{@value}"></d:index>
 					</xsl:for-each>
-
 
 <xsl:text>
 	</xsl:text>
@@ -170,8 +171,8 @@
 						</xsl:for-each>
 					</xsl:if>
 
-					<!-- Grammar -->
 					<!-- TODO -->
+					<!-- Grammar -->
 
 					<!-- These are actually the real stuff -->
 					<!-- All translations here -->
@@ -188,12 +189,12 @@
 <!--
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
  -->
-
+<xsl:text>
+</xsl:text>
 				</d:entry>
 <xsl:text>
 </xsl:text>
 			</xsl:for-each>
-
 
 			<!-- FOOTER -->
 			<d:entry id="front_back_matter" d:title="Front/Back Matter">
@@ -201,25 +202,29 @@
 				<p>
 					Dictionary from Swedish to English and English to Swedish.With the dataset from <a href="http://folkets-lexikon.csc.kth.se/folkets/">Folkets lexikon</a>. Sourcecode from <a href="http://loessl.org">Christopher Loessl</a>
 				</p>
-				<div>
-					<b>Usage:</b>
-						<ul>
-							<li>Double tab a word with 3 fingers on your track-pad</li>
-							<li>Select a word and press cmd-ctrl-d</li>
-							<li>Use the dictionary application</li>
-							<li>...</li>
-						</ul>
-					<b>License:</b>
-					<p>
-						The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
-					</p>
-					<p>
-						The source code to create this dictionary can be found <a href="http://hashier.github.com/MacFolket/">here</a>.
-					</p>
-					<p>
-						Christopher Loessl's homepage can be found <a href="http://loessl.org">here</a>.
-					</p>
-				</div>
+				<b>Usage:</b>
+					<ul>
+						<li>Double tab a word with 3 fingers on your track-pad</li>
+						<li>Select a word and press cmd-ctrl-d</li>
+						<li>Use the dictionary application</li>
+						<li>...</li>
+					</ul>
+				<b>MacFolket Version:</b>
+				<p>
+					Build on: 2013-03-06
+				</p>
+				<b>License:</b>
+				<p>
+					The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
+				</p>
+				<p>
+					The source code to create this dictionary can be found <a href="http://hashier.github.com/MacFolket/">here</a>.
+				</p>
+				<p>
+					Christopher Loessl's homepage can be found under <a href="http://loessl.org">http://loessl.org</a>.
+				</p>
+<xsl:text>
+</xsl:text>
 			</d:entry>
 <xsl:text>
 </xsl:text>
