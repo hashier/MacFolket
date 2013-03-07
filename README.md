@@ -13,7 +13,7 @@ Screenshot
 Video
 -----
 
-[Youtube-Video](http://youtu.be/gWR_BvioaVw)
+[![Video](http://img.youtube.com/vi/gWR_BvioaVw/0.jpg)](http://youtu.be/gWR_BvioaVw "This video shows the installation")
 
 
 Installation
