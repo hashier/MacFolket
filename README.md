@@ -13,13 +13,13 @@ Screenshot
 Video
 -----
 
-[Youtube-Video](http://youtu.be/gWR_BvioaVw)
+[![Video](http://img.youtube.com/vi/gWR_BvioaVw/0.jpg)](http://youtu.be/gWR_BvioaVw "This video shows the installation")
 
 
 Installation
 ------------
 
-You can find ready to install .pkg file here: [Download](http://code.google.com/p/macfolket/)
+You can find ready to install .pkg file here: [Download](http://code.google.com/p/macfolket/downloads/list)
 
 
 Building
