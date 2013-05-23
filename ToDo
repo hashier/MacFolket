@@ -2,3 +2,15 @@
 - display the word class behind the word in light gray
     - css file from dict.cc
 - add the grammar
+- CSS + HTML
+    .example { color: gray; }
+    .gender { font-style: italic; }
+    .gender { color: gray; }
+
+    <br /> + <span class="example">
+    or
+    <span class="example"> + .example { display: block; }
+- Order
+    - Translations first
+- popover
+    - only translation + {gender}
