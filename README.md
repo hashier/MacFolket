@@ -3,6 +3,8 @@ MacFolket
 
 A Swedish - English dictionary for Mac OS X which is nicely integrated into the system.
 
+**[Download](http://macfolket.googlecode.com/files/MacFolket-2013-03-06.pkg)**
+
 
 Screenshot
 ----------
