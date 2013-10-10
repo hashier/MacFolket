@@ -10,8 +10,6 @@
     <br /> + <span class="example">
     or
     <span class="example"> + .example { display: block; }
-- Order
-    - Translations first
 - popover
     - only translation + {gender}
 - Add settings

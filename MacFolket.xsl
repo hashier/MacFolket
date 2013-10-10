@@ -11,6 +11,7 @@
 <xsl:text>
 </xsl:text>
 
+
 			<!-- HEADER -->
 <!--
 			<d:entry id="dictionary_application" d:title="Dictionary application">
@@ -37,11 +38,11 @@
 
 				<d:entry>
 
+					<!-- Needed META DATA information -->
 					<!-- id should be unique -> running number -->
 					<!-- Never figured out what this d:title is actually for -->
 					<xsl:attribute name="id">id_<xsl:number value="position()"/></xsl:attribute>
 					<xsl:attribute name="d:title"><xsl:value-of select="@value"/></xsl:attribute>
-
 
 <xsl:text>
 	</xsl:text>
@@ -56,7 +57,6 @@
 					</xsl:for-each>
 
 					<!-- Add all the translations to the search index as well -->
-
 					<!-- Yeah! Sure! The syntax sucks -->
 					<!--
 					test <- Attribute
@@ -73,6 +73,18 @@
 	</xsl:text>
 					<!-- Heading -->
 					<h1><xsl:value-of select="@value"/></h1>
+
+					<!-- This is actually the real stuff -->
+					<!-- All translations here -->
+					<xsl:if test="translation/@value">
+						<ol>
+							<xsl:for-each select="translation">
+								<li>
+									<xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if>
+								</li>
+							</xsl:for-each>
+						</ol>
+					</xsl:if>
 
 					<!-- Comment -->
 					<xsl:if test="@comment">
@@ -175,18 +187,6 @@
 
 					<!-- TODO -->
 					<!-- Grammar -->
-
-					<!-- These are actually the real stuff -->
-					<!-- All translations here -->
-					<xsl:if test="translation/@value">
-						<ol>
-							<xsl:for-each select="translation">
-								<li>
-									<xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if>
-								</li>
-							</xsl:for-each>
-						</ol>
-					</xsl:if>
 
 <!--
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
