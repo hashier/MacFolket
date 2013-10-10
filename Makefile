@@ -27,8 +27,8 @@ DICT_BUILD_TOOL_BIN	=	"$(DICT_BUILD_TOOL_DIR)/bin"
 DICT_DEV_KIT_OBJ_DIR	=	./objects
 export	DICT_DEV_KIT_OBJ_DIR
 
-DESTINATION_FOLDER	=	/Library/Dictionaries
-DESTINATION_FOLDER	=	~/Library/Dictionaries
+DESTINATION_FOLDER_USER 	=	~/Library/Dictionaries
+DESTINATION_FOLDER_SYSTEM	=	/Library/Dictionaries
 RM					=	/bin/rm
 MV					=	/bin/mv
 
@@ -49,17 +49,17 @@ build:
 	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
 install:
-	@echo "Installing into $(DESTINATION_FOLDER)".
-	mkdir -p $(DESTINATION_FOLDER)
-	ditto --noextattr --norsrc $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary  $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
-	touch $(DESTINATION_FOLDER)
+	@echo "Installing into $(DESTINATION_FOLDER_USER)".
+	mkdir -p $(DESTINATION_FOLDER_USER)
+	ditto --noextattr --norsrc $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary  $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
+	touch $(DESTINATION_FOLDER_USER)
 	@echo "Done."
 	@echo "To test the new dictionary, try Dictionary.app."
 
 uninstall:
 	@echo "Uninstalling dictionary from system"
-	$(RM) -rf $(DESTINATION_FOLDER)/$(DICT_NAME).dictionary
-	touch $(DESTINATION_FOLDER)
+	$(RM) -rf $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
+	touch $(DESTINATION_FOLDER_USER)
 
 clean:
 	@echo "Clean up"
@@ -102,11 +102,11 @@ small:
 	$(MV) out.xml MacFolket.xml
 
 devuninstall:
-	@echo "DEVELOP Uninstalling dictionary from system"
-	rm -rf ~/Library/Dictionaries/$(DICT_NAME).dictionary
-	touch ~/Library/Dictionaries/
-	sudo rm -rf /Library/Dictionaries/$(DICT_NAME).dictionary
-	sudo touch /Library/Dictionaries/
+	@echo "DEVELOP Uninstalling dictionary from system and user"
+	rm -rf $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
+	touch $(DESTINATION_FOLDER_USER)/
+	sudo rm -rf $(DESTINATION_FOLDER_SYSTEM)/$(DICT_NAME).dictionary
+	sudo touch $(DESTINATION_FOLDER_SYSTEM)/
 
 # This was used in the beginning, not needed anymore
 convert_sven:
@@ -126,7 +126,7 @@ convert_ensv:
 # http://code.google.com/p/jing-trang/downloads/list
 # you MUST download and unzip the apple Dictionary Development Kit in the same folder as the make file
 # AND
-# you MUST download and unzip jing here as well
+# you MUST download and unzip jing here as well if you want to validate
 validate:
 	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
 

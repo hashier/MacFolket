@@ -462,6 +462,10 @@
 <definition value="ren tankeskapelse"><translation value="a product of thought; a general idea or term" />
 </definition>
 </word>
+<word class="" lang="sv" value="vant"><translation value="used to" />
+<phonetic soundFile="vant.swf" value="va:nt" />
+<see value="vänja" />
+</word>
 <word class="jj" lang="sv" value="absurd"><translation value="absurd" />
 <phonetic soundFile="absurd.swf" value="absUr:d" />
 <paradigm><inflection value="absurt" />
@@ -2412,6 +2416,40 @@
 <see type="saldo" value="algerisk||algerisk..1||algerisk..av.1" />
 <definition value="som är från el. avser Algeriet"><translation value="of or from Algeria, pertaining to Algeria" />
 </definition>
+</word>
+<word value="bil" lang="sv" class="nn"><translation value="motorcar" />
+<translation value="car" />
+<translation value="(automobile [US])" />
+<translation value="(auto [US])" />
+<phonetic value="bi:l" soundFile="bil.swf" />
+<paradigm><inflection value="bilen" />
+<inflection value="bilar" />
+</paradigm>
+<synonym value="automobil" level="4.8" />
+<synonym value="motorfordon" level="3.5" />
+<synonym value="åkdon" level="3.5" />
+<see value="bil||bil..1||bil..nn.1" type="saldo" />
+<example value="åka bil"><translation value="go by car" />
+</example>
+<compound value="bil|trafik"><translation value="motor traffic" />
+</compound>
+<compound value="lastbil"><translation value="lorry, (truck [US])" />
+</compound>
+<compound value="bil|sjuka"><translation value="carsickness" />
+</compound>
+<compound value="bil|telefon"><translation value="car phone" />
+</compound>
+<compound value="bil|fri"><translation value="free of cars" />
+</compound>
+<compound value="bil|sjuk"><translation value="carsick" />
+</compound>
+<compound value="personbil"><translation value="passenger car" />
+</compound>
+<compound value="bil|buren"><translation value="motorized" />
+</compound>
+<definition value="ett slags motordrivet fordon" />
+<url value="17/bil1.swf" type="any" />
+<url value="16/stad1.swf" type="any" />
 </word>
 <word class="ab" lang="sv" value="alias"><translation value="alias" />
 <phonetic soundFile="alias.swf" value="A:lias" />

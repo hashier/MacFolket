@@ -2,4 +2,18 @@
 - display the word class behind the word in light gray
     - css file from dict.cc
 - add the grammar
-- sourcecode from christopher -> written by christopher
+- CSS + HTML
+    .example { color: gray; }
+    .gender { font-style: italic; }
+    .gender { color: gray; }
+
+    <br /> + <span class="example">
+    or
+    <span class="example"> + .example { display: block; }
+- popover
+    - only translation + {gender}
+- Add settings
+    - be able to choose what is displayed in popover / dictionary
+
+// ???:
+- I think I saw some broken & // amp
