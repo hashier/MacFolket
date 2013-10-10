@@ -99,6 +99,7 @@
 								<xsl:when test="@class = 'abbrev'">Word class: förkortning</xsl:when>
 								<xsl:when test="@class = 'ab'">Word class: adverb</xsl:when>
 								<xsl:when test="@class = 'rg'">Word class: grundtal</xsl:when>
+								<xsl:when test="@class = ''"></xsl:when>
 								<xsl:otherwise>Word class: DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
 							</xsl:choose>
 						</span><br/>

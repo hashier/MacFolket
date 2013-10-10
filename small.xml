@@ -462,6 +462,10 @@
 <definition value="ren tankeskapelse"><translation value="a product of thought; a general idea or term" />
 </definition>
 </word>
+<word class="" lang="sv" value="vant"><translation value="used to" />
+<phonetic soundFile="vant.swf" value="va:nt" />
+<see value="vänja" />
+</word>
 <word class="jj" lang="sv" value="absurd"><translation value="absurd" />
 <phonetic soundFile="absurd.swf" value="absUr:d" />
 <paradigm><inflection value="absurt" />
