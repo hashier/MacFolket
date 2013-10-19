@@ -11,6 +11,10 @@
 <xsl:text>
 </xsl:text>
 
+<!-- Documentation -->
+<!--
+https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/DictionaryServicesProgGuide/Introduction/Introduction.html
+-->
 
 			<!-- HEADER -->
 <!--
