@@ -18,7 +18,7 @@ DICT_BUILD_OPTS		=
 
 ###########################
 
-DICT_BUILD_TOOL_DIR	=	"/Users/hashier/script/Dictionary Development Kit"
+DICT_BUILD_TOOL_DIR	=	"./Dictionary Development Kit"
 
 DICT_BUILD_TOOL_BIN	=	"$(DICT_BUILD_TOOL_DIR)/bin"
 
