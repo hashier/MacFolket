@@ -92,19 +92,19 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 
 					<!-- Comment -->
 					<xsl:if test="@comment">
-						<span>Comment: <xsl:value-of select="@comment"/></span><br/>
+						<span d:priority="2">Comment: <xsl:value-of select="@comment"/><br/></span>
 					</xsl:if>
 
 					<!-- Phonetic -->
 					<xsl:if test="phonetic/@value">
 						<xsl:for-each select="phonetic">
-							<span>Uttal: |<xsl:value-of select="@value"/>|</span><br/>
+							<span d:priority="2">Uttal: |<xsl:value-of select="@value"/>|<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
 					<!-- What kind of word is it (word class) -->
 					<xsl:if test="@class">
-						<span>
+						<span d:priority="2">
 							<xsl:choose>
 								<xsl:when test="@class = 'nn'">Word class: substantiv</xsl:when>
 								<xsl:when test="@class = 'jj'">Word class: adjektiv</xsl:when>
@@ -118,7 +118,8 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 								<xsl:when test="@class = ''"></xsl:when>
 								<xsl:otherwise>Word class: DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
 							</xsl:choose>
-						</span><br/>
+							<br/>
+						</span>
 					</xsl:if>
 
 					<!-- All synonyms -->
@@ -128,7 +129,7 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 
 					<!-- All inflections -->
 					<xsl:if test="paradigm/inflection/@value">
-						<span>Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
+						<span d:priority="2">Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
 					</xsl:if>
 
 					<!-- Definitions -->
