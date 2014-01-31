@@ -10,3 +10,14 @@ folkets_sv_en_public.xml
 macfolket.sublime-workspace
 Macfolket.xml
 Dictionary Development Kit
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+eght-V100Trashes
+Ieon?
+ehthumbs.db
+Thumbs.db
