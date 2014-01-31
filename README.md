@@ -7,7 +7,7 @@ A Swedish - English dictionary for Mac OS X which is nicely integrated into the 
 
 ## Screenshot
 
-![Screenshot](http://loessl.org/projekte/macfolket/images/svendict.jpg)
+![Screenshot](https://github.com/hashier/MacFolket/raw/master/images/svendict.jpg)
 
 
 ## Video
@@ -21,7 +21,7 @@ You can find ready to install .pkg file here: [Download](http://macfolket.google
 
 If you run into problems while opening the .pkg file like this:
 
-![Undef](http://loessl.org/projekte/macfolket/images/undef.png)
+![Undef](https://github.com/hashier/MacFolket/raw/master/images/undef.png)
 
 You can work around this problem by right clicking or Ctrl+clicking on the .pkg file and select "Open" from the context menu. On [imore](http://www.imore.com/how-open-apps-unidentified-developer-os-x-mountain-lion) you can find pictures how to do it and even a second way.
 
