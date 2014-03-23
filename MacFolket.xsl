@@ -219,8 +219,8 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					</ul>
 				</p>
 				<p>
-					<b>MacFolket Version:</b><br/>
-					Build on: 2013-03-06
+					<b>MacFolket Version: 1.2</b><br/>
+					Build on: 2014-03-23
 				</p>
 				<p>
 					<b>License:</b><br/>
