@@ -1,6 +1,6 @@
 #
 # Makefile for creating a Swedish - English dictionary based on data acquired
-# from folket lexikon http://folkets-lexikon.csc.kth.se/
+# from folkets lexikon http://folkets-lexikon.csc.kth.se/
 #
 #
 
@@ -36,6 +36,7 @@ JING				=	tools/jing-20091111/bin/jing.jar
 
 ###########################
 
+.PHONY: all fetch build install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall convert_all validate
 
 all: fetch convert_all build
 	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
@@ -80,25 +81,19 @@ convert_all:
 	$(RM) start.xml end.xml
 	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
 	$(RM) all.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
 	$(MV) out.xml MacFolket.xml
 
-
-##
-# Development stuff
-##
-
 # for testing/development
+
 reinstall: clean convert_all build install
 
-# for testing/development
 reinstallsmall: clean small build install
 
-# for testing/development
 small:
 	@echo SMALL
 	xsltproc -o MacFolket.xml MacFolket.xsl small.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
+	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
 	$(MV) out.xml MacFolket.xml
 
 devuninstall:
@@ -107,20 +102,6 @@ devuninstall:
 	touch $(DESTINATION_FOLDER_USER)/
 	sudo rm -rf $(DESTINATION_FOLDER_SYSTEM)/$(DICT_NAME).dictionary
 	sudo touch $(DESTINATION_FOLDER_SYSTEM)/
-
-# This was used in the beginning, not needed anymore
-convert_sven:
-	@echo "Converting Folkets (SV -> EN) dictionary file into Apples DictionarySchema"
-	xsltproc -o MacFolket.xml MacFolket.xsl folkets_sv_en_public.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
-
-# This was used in the beginning, not needed anymore
-convert_ensv:
-	@echo "Converting Folkets (EN -> SV) dictionary file into Apples DictionarySchema"
-	xsltproc -o MacFolket.xml MacFolket.xsl folkets_en_sv_public.xml
-	sed 's/amp;#/#/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
 
 # http://www.thaiopensource.com/relaxng/jing.html
 # http://code.google.com/p/jing-trang/downloads/list
