@@ -209,6 +209,7 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 				<p>
 					Dictionary from Swedish to English and English to Swedish. With the dataset from <a href="http://folkets-lexikon.csc.kth.se/folkets/">Folkets lexikon</a>. Written by <a href="http://loessl.org">Christopher Loessl</a>
 				</p>
+				<p>
 				<b>Usage:</b>
 					<ul>
 						<li>Double tab a word with 3 fingers on your track-pad</li>
@@ -216,12 +217,13 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 						<li>Use the dictionary application</li>
 						<li>...</li>
 					</ul>
-				<b>MacFolket Version:</b>
+				</p>
 				<p>
+					<b>MacFolket Version:</b><br/>
 					Build on: 2013-03-06
 				</p>
-				<b>License:</b>
 				<p>
+					<b>License:</b><br/>
 					The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
 				</p>
 				<p>
