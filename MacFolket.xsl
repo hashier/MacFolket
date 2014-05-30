@@ -108,7 +108,7 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 							<xsl:choose>
 								<xsl:when test="@class = 'nn'">Word class: substantiv</xsl:when>
 								<xsl:when test="@class = 'jj'">Word class: adjektiv</xsl:when>
-								<xsl:when test="@class = 'vb'">Word class: adverb</xsl:when>
+								<xsl:when test="@class = 'vb'">Word class: verb</xsl:when>
 								<xsl:when test="@class = 'in'">Word class: interjektion</xsl:when>
 								<xsl:when test="@class = 'pp'">Word class: preposition</xsl:when>
 								<xsl:when test="@class = 'pn'">Word class: pronomen</xsl:when>
