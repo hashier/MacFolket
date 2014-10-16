@@ -5,6 +5,22 @@ A Swedish - English dictionary for Mac OS X which is nicely integrated into the 
 **[Download Version v1.2 here](https://github.com/hashier/MacFolket/releases/download/v1.2/MacFolket-2014-03-23-v1.2.pkg.zip)**
 
 
+## Installation guide
+
+1. Download the zip file from above
+2. Unzip the file
+3. Install the .pkg file (Ctrl click on the .pkg file and chose "open")
+4. Open the dictionary app and activate the Swedish - English dictionary in the settings
+
+You can see a vieo of the installation process below.
+
+**If you run into problems while opening the .pkg file like this:**
+
+![Undef](https://github.com/hashier/MacFolket/raw/master/images/undef.png)
+
+You can work around this problem by right clicking or Ctrl+clicking on the .pkg file and select "Open" from the context menu. On [imore](http://www.imore.com/how-open-apps-unidentified-developer-os-x-mountain-lion) you can find pictures how to do it and even a second way.
+
+
 ## Screenshot
 
 ![Screenshot](https://github.com/hashier/MacFolket/raw/master/images/svendict.jpg)
@@ -13,17 +29,6 @@ A Swedish - English dictionary for Mac OS X which is nicely integrated into the 
 ## Video
 
 [![Video](http://img.youtube.com/vi/gWR_BvioaVw/0.jpg)](http://youtu.be/gWR_BvioaVw "This video shows the installation")
-
-
-## Installation
-
-You can find ready to install .pkg file here: [Download](http://macfolket.googlecode.com/files/MacFolket-2013-03-06.pkg)
-
-If you run into problems while opening the .pkg file like this:
-
-![Undef](https://github.com/hashier/MacFolket/raw/master/images/undef.png)
-
-You can work around this problem by right clicking or Ctrl+clicking on the .pkg file and select "Open" from the context menu. On [imore](http://www.imore.com/how-open-apps-unidentified-developer-os-x-mountain-lion) you can find pictures how to do it and even a second way.
 
 
 ## Building
