@@ -66,6 +66,10 @@ clean:
 	@echo "Clean up"
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
 	$(RM) -rf MacFolket.xml
+	$(RM) -rf all.xml
+	$(RM) -rf out.xml
+	$(RM) -rf start.xml
+	$(RM) -rf end.xml
 
 pristine: clean
 	@echo "Thoroughly clean up"
