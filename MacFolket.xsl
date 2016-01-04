@@ -98,7 +98,7 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					<!-- Phonetic -->
 					<xsl:if test="phonetic/@value">
 						<xsl:for-each select="phonetic">
-							<span d:priority="2">Uttal: |<xsl:value-of select="@value"/>|<br/></span>
+							<span d:priority="2">Pronunciation: |<xsl:value-of select="@value"/>|<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
@@ -124,12 +124,12 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 
 					<!-- All synonyms -->
 					<xsl:if test="synonym/@value">
-						<span d:priority="2">Synonymer: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
+						<span d:priority="2">Synonyms: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
 					</xsl:if>
 
 					<!-- All inflections -->
 					<xsl:if test="paradigm/inflection/@value">
-						<span d:priority="2">Böjningar: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
+						<span d:priority="2">Inflections: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
 					</xsl:if>
 
 					<!-- Definitions -->
@@ -166,7 +166,7 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					<!-- Derivations -->
 					<xsl:if test="derivation/@value">
 						<xsl:for-each select="derivation">
-							<span d:priority="2">Avledningar: <xsl:value-of select="@value"/>
+							<span d:priority="2">Derivation: <xsl:value-of select="@value"/>
 							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
 							<br/></span>
 						</xsl:for-each>
@@ -175,16 +175,16 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					<!-- Compounds -->
 					<xsl:if test="compound/@value">
 						<xsl:for-each select="compound">
-							<span d:priority="2">Sammansättningar: <xsl:value-of select="@value"/>
+							<span d:priority="2">Compound: <xsl:value-of select="@value"/>
 							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
 							<br/></span>
 						</xsl:for-each>
 					</xsl:if>
 
-					<!-- Förklaring -->
+					<!-- Explanations -->
 					<xsl:if test="explanation/@value">
 						<xsl:for-each select="explanation">
-							<span d:priority="2">Förklaring: <xsl:value-of select="@value"/>
+							<span d:priority="2">Explanation: <xsl:value-of select="@value"/>
 							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
 							<br/></span>
 						</xsl:for-each>
