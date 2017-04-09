@@ -86,7 +86,9 @@ convert_all:
 	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
 	$(RM) all.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
+	sed 's/\&[, ]/\&amp;/g' out.xml > MacFolket.xml 
+	$(RM) out.xml
+	# $(MV) out.xml MacFolket.xml
 
 # for testing/development
 
