@@ -2,7 +2,7 @@
 
 A Swedish - English dictionary for Mac OS X which is nicely integrated into the system.
 
-### **[Download Version v1.2](https://github.com/hashier/MacFolket/releases/download/v1.2/MacFolket-2014-03-23-v1.2.pkg.zip)**
+### **[Download Version v1.3](https://github.com/hashier/MacFolket/releases/download/v1.3/MacFolket-1.3.pkg)**
 
 
 ## Installation guide
