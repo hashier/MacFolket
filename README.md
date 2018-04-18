@@ -49,5 +49,5 @@ You can work around this problem by right clicking or Ctrl+clicking on the .pkg 
 ## Thanks to
 
 Philipp Brauner who build an English <-> German dictionary which I have used now for a couple of years. His plugin gave me the idea to build an English <-> Swedish one.
-You can find his English <-> German one dictionary [here](http://lipflip.org/articles/dictcc-dictionary-plugin).
+You can find his English <-> German one [here](http://lipflip.org/articles/dictcc-dictionary-plugin).
 
