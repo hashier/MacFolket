@@ -1,0 +1,8 @@
+title: MacFolket
+description: A Swedish <-> English dictionary for Mac OS X
+google_analytics: UA-40437058-3
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
