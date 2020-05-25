@@ -3286,6 +3286,6 @@
 <definition value="pampigt bostadshus för kungliga eller adliga personer" />
 </word>
 <word value="ampersand" lang="en" class="nn"><translation value="et-tecken" />
-<explanation value="tecknet &, tecknet för och" />
+<explanation value="tecknet &amp;, tecknet för och" />
 </word>
 </dictionary>
