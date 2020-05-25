@@ -3288,4 +3288,98 @@
 <word value="ampersand" lang="en" class="nn"><translation value="et-tecken" />
 <explanation value="tecknet &amp;, tecknet för och" />
 </word>
+
+<word value="bok" lang="sv" class="nn"><translation value="beech" />
+<phonetic value="bo:k" soundFile="bok.swf" />
+<paradigm><inflection value="boken" />
+<inflection value="bokar" />
+</paradigm>
+<see value="bok||bok..1||bok..nn.1" type="saldo" />
+<see value="bok||bok..2||bok..nn.2" type="saldo" />
+<compound value="bok|skog"><translation value="beech wood" />
+</compound>
+<definition value="lövträdet Fagus silvatica"><translation value="the deciduous tree Fagus silvatica" />
+</definition>
+<url value="22/loev.swf" type="any" />
+</word>
+
+<word value="bok" lang="sv" class="nn"><translation value="book" />
+<phonetic value="bo:k" soundFile="bok.swf" />
+<paradigm><inflection value="boken" />
+<inflection value="böcker" />
+</paradigm>
+<see value="bok||bok..1||bok..nn.1" type="saldo" />
+<see value="bok||bok..2||bok..nn.2" type="saldo" />
+<compound value="barnbok"><translation value="children&amp;#39;s book" />
+</compound>
+<compound value="bok|handel"><translation value="bookshop" />
+</compound>
+<compound value="bok|anmälan"><translation value="book review" />
+</compound>
+<compound value="bok|binderi"><translation value="bookbinder&amp;#39;s" />
+</compound>
+<compound value="bok|marknad"><translation value="book fair" />
+</compound>
+<compound value="bok|märke"><translation value="bookmark" />
+</compound>
+<compound value="bok|förlag"><translation value="publishing house" />
+</compound>
+<compound value="bok|kafé"><translation value="literary café" />
+</compound>
+<compound value="bok|klubb"><translation value="book club" />
+</compound>
+<compound value="bok|mal"><translation value="bookworm" />
+</compound>
+<definition value="tryckt skrift, volym, band" />
+</word>
+
+<word value="bok" lang="sv" class="nn"><translation value="book" />
+<phonetic value="bo:k" soundFile="bok.swf" />
+<paradigm><inflection value="boken" />
+<inflection value="böcker" />
+</paradigm>
+<see value="bok||bok..1||bok..nn.1" type="saldo" />
+<see value="bok||bok..2||bok..nn.2" type="saldo" />
+<compound value="checkbok"><translation value="chequebook" />
+</compound>
+<compound value="anteckningsbok"><translation value="note pad" />
+</compound>
+<compound value="tentamensbok"><translation value="examination book" />
+</compound>
+<definition value="samling häftade blad för viss typ av uppgifter" />
+</word>
+
+
+<word value="beech" lang="en" class="nn"><translation value="bok" />
+<explanation value="the deciduous tree Fagus silvatica" />
+</word>
+
+<word value="book" lang="en" class="nn"><translation value="bok" />
+<translation value="häfte" />
+<idiom value="according to the book"><translation value="enligt ritningarna, enligt reglerna" />
+</idiom>
+<idiom value="be in somebody&amp;#39;s good (bad) book"><translation value="ligga bra (dåligt) till hos någon" />
+</idiom>
+<idiom value="do something by the book"><translation value="göra något enligt (efter) reglerna, enligt (efter) regelboken" />
+</idiom>
+<idiom value="in my book"><translation value="(bildligt) enligt min åskit (mening)" />
+</idiom>
+<idiom value="not be in the book"><translation value="vara förbjuden" />
+</idiom>
+<idiom value="read somebody like a book"><translation value="känna någon utan och innan, läsa någon som en öppen bok" />
+</idiom>
+<idiom value="take a leaf out of somebody&amp;#39;s book"><translation value="ta efter någon, följa någons exempel" />
+</idiom>
+<idiom value="throw the book at somebody"><translation value="ge någon en riktig utskällning" />
+</idiom>
+<idiom value="try every trick in the book"><translation value="försöka alla möjliga knep" />
+</idiom>
+</word>
+
+<word value="release" lang="en" class="nn"><translation value="bok" comment="vardaglig stil" />
+<translation value="skiva" />
+<translation value="platta" />
+<translation value="album" />
+<translation value="film" />
+</word>
 </dictionary>
