@@ -88,7 +88,7 @@ convert_all:
 	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
 	# $(RM) all.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
-	sed 's/\&[, ]/\&amp;/g' out.xml > MacFolket.xml
+	sed 's/\&\([, ]\)/\&amp;\1/g' out.xml > MacFolket.xml
 	$(RM) out.xml
 
 # for testing/development
@@ -101,7 +101,8 @@ small:
 	@echo SMALL
 	xsltproc -o MacFolket.xml MacFolket.xsl small.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
-	$(MV) out.xml MacFolket.xml
+	sed 's/\&\([, ]\)/\&amp;\1/g' out.xml > MacFolket.xml
+	$(RM) out.xml
 
 devuninstall:
 	@echo "DEVELOP Uninstalling dictionary from system and user"
