@@ -34,5 +34,7 @@
 		<string>1</string>
 	</dict>
 -->
+	<key>DCSDictionaryUseSystemAppearance</key>
+	<true/>
 </dict>
 </plist>

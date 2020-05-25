@@ -31,10 +31,6 @@ span.column {
 /* Text and background color for dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fefefe;
-    background-color: #2f2e31;
-    margin-right: 0em;
-    margin-bottom: 0em;
-    padding: 0em;
+    color: white;
   }
 }
