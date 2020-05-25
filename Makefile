@@ -36,7 +36,7 @@ JING				=	tools/jing-20091111/bin/jing.jar
 
 ###########################
 
-.PHONY: all fetch build install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall convert_all validate
+.PHONY: all fetch build install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
 
 all: fetch convert_all build
 	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
@@ -79,14 +79,16 @@ pristine: clean
 convert_all:
 	@echo "Converting Folkets dictionary file into Apples DictionarySchema"
 	@# WTF? In Makefiles you escape with $?
+	# Delete last line
 	sed '$$ d' folkets_sv_en_public.xml > start.xml
+	# Delete first 2 lines (yes +3 is first 2 lines)
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
 	$(RM) start.xml end.xml
 	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
 	$(RM) all.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
-	sed 's/\&[, ]/\&amp;/g' out.xml > MacFolket.xml 
+	sed 's/\&[, ]/\&amp;/g' out.xml > MacFolket.xml
 	$(RM) out.xml
 	# $(MV) out.xml MacFolket.xml
 
