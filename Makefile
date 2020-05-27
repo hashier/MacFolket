@@ -49,7 +49,7 @@ build:
 	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 
-install:
+install: all
 	@echo "Installing into $(DESTINATION_FOLDER_USER)".
 	mkdir -p $(DESTINATION_FOLDER_USER)
 	ditto --noextattr --norsrc $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary  $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
