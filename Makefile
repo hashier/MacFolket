@@ -89,7 +89,7 @@ convert_all:
 	tail -n +3 folkets_en_sv_public.xml > end.xml
 	cat start.xml end.xml > all.xml
 	$(RM) start.xml end.xml
-	xsltproc -o MacFolket.xml MacFolket.xsl all.xml
+	xsltproc --stringparam version "$(VERSION)" --stringparam buildDate "$(BUILD_DATE)" -o MacFolket.xml MacFolket.xsl all.xml
 	# $(RM) all.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
 	sed 's/\&\([, ]\)/\&amp;\1/g' out.xml > MacFolket.xml
@@ -103,7 +103,7 @@ reinstallsmall: clean small build install
 
 small:
 	@echo SMALL
-	xsltproc -o MacFolket.xml MacFolket.xsl small.xml
+	xsltproc --stringparam version "$(VERSION)" --stringparam buildDate "$(BUILD_DATE)" -o MacFolket.xml MacFolket.xsl small.xml
 	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
 	sed 's/\&\([, ]\)/\&amp;\1/g' out.xml > MacFolket.xml
 	$(RM) out.xml

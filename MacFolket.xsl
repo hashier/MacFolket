@@ -5,6 +5,9 @@
 	<!-- <xsl:output method="xml" encoding="utf-8" indent="yes || no"/> -->
 	<xsl:output method="xml" encoding="utf-8"/>
 
+	<xsl:param name="version" select="'1.3'"/>
+	<xsl:param name="buildDate" select="'2017-04-09'"/>
+
 	<xsl:template match="/">
 
 		<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
@@ -219,8 +222,8 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					</ul>
 				</p>
 				<p>
-					<b>MacFolket Version: 1.3</b><br/>
-					Build on: 2017-04-09
+					<b>MacFolket Version: <xsl:value-of select="$version"/></b><br/>
+					Build on: <xsl:value-of select="$buildDate"/>
 				</p>
 				<p>
 					<b>MacFolket Version: 1.2</b><br/>
