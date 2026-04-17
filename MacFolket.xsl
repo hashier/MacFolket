@@ -226,10 +226,6 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					Build on: <xsl:value-of select="$buildDate"/>
 				</p>
 				<p>
-					<b>MacFolket Version: 1.2</b><br/>
-					Build on: 2014-03-23
-				</p>
-				<p>
 					<b>License:</b><br/>
 					The People's dictionary is free. Both the whole <a href="folkets_en_sv_public.xml">English-Swedish dictionary</a> and the <a href="folkets_sv_en_public.xml">Swedish-English dictionary</a> can be downloaded for use under the <a href="http://creativecommons.org/licenses/by-sa/2.5/">Distributed Creative Commons Attribution-Share Alike 2.5 Generic license</a>.
 				</p>
