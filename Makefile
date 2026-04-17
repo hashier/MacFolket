@@ -11,6 +11,7 @@ DICT_NAME			=	"Svensk-English"
 # Single source of truth for version — flows to xsl and plist at build time
 VERSION             =   1.3
 BUILD_DATE          =   $(shell date +%Y-%m-%d)
+PKG_NAME            =   MacFolket-$(VERSION).pkg
 
 DICT_SRC_PATH		=	MacFolket.xml
 CSS_PATH			=	MacFolket.css
@@ -40,7 +41,7 @@ JING				=	tools/jing-20091111/bin/jing.jar
 
 ###########################
 
-.PHONY: all fetch build plist install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
+.PHONY: all fetch build plist pkg install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
 
 all: fetch convert_all build
 	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
@@ -58,6 +59,15 @@ plist:
 	sed -i '' '/<key>CFBundleShortVersionString<\/key>/{n;s/<string>[^<]*<\/string>/<string>$(VERSION)<\/string>/;}' $(PLIST_PATH)
 	sed -i '' 's/MacFolket Version: [0-9.]*</MacFolket Version: $(VERSION)</' $(PLIST_PATH)
 	sed -i '' 's/Build on: [0-9-]*<\//Build on: $(BUILD_DATE)<\//' $(PLIST_PATH)
+
+pkg: all
+	@echo "Building installer package $(PKG_NAME)"
+	pkgbuild --component $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary \
+		--install-location /Library/Dictionaries \
+		--identifier org.loessl.dictionary.sven \
+		--version $(VERSION) \
+		$(PKG_NAME)
+	@echo "Created $(PKG_NAME)"
 
 install: all
 	@echo "Installing into $(DESTINATION_FOLDER_USER)".
@@ -80,6 +90,7 @@ clean:
 	$(RM) -rf out.xml
 	$(RM) -rf start.xml
 	$(RM) -rf end.xml
+	$(RM) -rf *.pkg
 
 pristine: clean
 	@echo "Thoroughly clean up"
