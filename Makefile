@@ -40,7 +40,7 @@ JING				=	tools/jing-20091111/bin/jing.jar
 
 ###########################
 
-.PHONY: all fetch build install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
+.PHONY: all fetch build plist install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
 
 all: fetch convert_all build
 	@echo -e "\n\nDone building the dictionary.\nTo install the dictionary run make install\n"
@@ -49,9 +49,15 @@ fetch:
 	@echo "Fetching needed files"
 	sh get_files.sh
 
-build:
+build: plist
 	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
+
+plist:
+	@echo "Updating plist version to $(VERSION)"
+	plutil -replace CFBundleShortVersionString -string "$(VERSION)" $(PLIST_PATH)
+	sed -i '' 's/MacFolket Version: [0-9.]*</MacFolket Version: $(VERSION)</' $(PLIST_PATH)
+	sed -i '' 's/Build on: [0-9-]*<\//Build on: $(BUILD_DATE)<\//' $(PLIST_PATH)
 
 install: all
 	@echo "Installing into $(DESTINATION_FOLDER_USER)".
