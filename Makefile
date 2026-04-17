@@ -6,7 +6,7 @@
 DICT_NAME        = "Svensk-English"
 
 # Single source of truth for version — flows to xsl and plist at build time
-VERSION          = 1.3
+VERSION          = 2026.1
 BUILD_DATE       = $(shell date +%Y-%m-%d)
 PKG_NAME         = MacFolket-$(VERSION).pkg
 ZIP_NAME         = MacFolket-$(VERSION).zip
