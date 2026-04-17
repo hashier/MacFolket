@@ -19,6 +19,12 @@ You can see a video of the installation process below.
 
 You can work around this problem by right clicking or Ctrl+clicking on the .pkg file and select "Open" from the context menu. On [imore](https://www.imore.com/how-open-apps-unidentified-developer-os-x-mountain-lion) you can find pictures how to do it and even a second way.
 
+## Usage
+
+- Three-finger tap on a word on your trackpad
+- Select a word and press Cmd+Ctrl+D
+- Open Dictionary.app and search directly
+
 ## Screenshot
 
 ![Screenshot](https://github.com/hashier/MacFolket/raw/master/images/svendict.jpg)
