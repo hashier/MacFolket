@@ -55,7 +55,7 @@ build: plist
 
 plist:
 	@echo "Updating plist version to $(VERSION)"
-	plutil -replace CFBundleShortVersionString -string "$(VERSION)" $(PLIST_PATH)
+	sed -i '' '/<key>CFBundleShortVersionString<\/key>/{n;s/<string>[^<]*<\/string>/<string>$(VERSION)<\/string>/;}' $(PLIST_PATH)
 	sed -i '' 's/MacFolket Version: [0-9.]*</MacFolket Version: $(VERSION)</' $(PLIST_PATH)
 	sed -i '' 's/Build on: [0-9-]*<\//Build on: $(BUILD_DATE)<\//' $(PLIST_PATH)
 
