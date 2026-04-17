@@ -8,6 +8,10 @@
 
 DICT_NAME			=	"Svensk-English"
 
+# Single source of truth for version — flows to xsl and plist at build time
+VERSION             =   1.3
+BUILD_DATE          =   $(shell date +%Y-%m-%d)
+
 DICT_SRC_PATH		=	MacFolket.xml
 CSS_PATH			=	MacFolket.css
 PLIST_PATH			=	MacFolket.plist
@@ -119,9 +123,4 @@ devuninstall:
 validate:
 	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
 
-# 4 places where the readme has to get fixed for new update
-# 1. readme.rtf -> displayed in installer
-# 2. MacFolket.xsl -> Back / Front matter
-# 3. plist file -> showed in dictionary config pane (2 places)
-# 4. In the pkg package
 
