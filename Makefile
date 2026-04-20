@@ -3,7 +3,7 @@
 # from folkets lexikon http://folkets-lexikon.csc.kth.se/
 #
 
-DICT_NAME        = "Svensk-English"
+DICT_NAME        = Svensk-English
 
 # Single source of truth for version — flows to xsl and plist at build time
 VERSION          = 2026.1
