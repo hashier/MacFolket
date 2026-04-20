@@ -30,11 +30,8 @@ DESTINATION_FOLDER_SYSTEM = /Library/Dictionaries
 
 JING = tools/jing-20091111/bin/jing.jar
 
-# Post-process xsltproc output to fix ampersand encoding
 define fix_ampersands
-	sed 's/\&amp;/\&/g' MacFolket.xml > out.xml
-	sed 's/\&\([, ]\)/\&amp;\1/g' out.xml > MacFolket.xml
-	rm -f out.xml
+	python3 fix_ampersands.py MacFolket.xml
 endef
 
 .PHONY: all fetch plist release install uninstall clean pristine reinstall reinstallsmall small devuninstall validate test-cask
