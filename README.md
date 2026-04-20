@@ -1,23 +1,40 @@
 # MacFolket
 
-A Swedish - English dictionary for Mac OS X which is nicely integrated into the system.
+A Swedish–English dictionary for macOS, integrated into Dictionary.app and system-wide look-up.
 
-### **[Download Version v1.3](https://github.com/hashier/MacFolket/releases/download/v1.3/MacFolket-1.3.pkg)**
+## Installation
 
-## Installation guide
+The dictionary can live in one of two places:
 
-1. Download the zip file from above
-2. Unzip the file
-3. Install the .pkg file (Ctrl click on the .pkg file and chose "open")
-4. Open the dictionary app and activate the Swedish - English dictionary in the settings
+| Location | Scope | Requires admin |
+|----------|-------|----------------|
+| `~/Library/Dictionaries` | Current user only | No |
+| `/Library/Dictionaries` | All users on the Mac | Yes |
 
-You can see a video of the installation process below.
+### Homebrew (recommended)
 
-**If you run into problems while opening the .pkg file like this:**
+```sh
+brew tap hashier/macfolket
+brew install --cask macfolket
+```
 
-![Undef](https://github.com/hashier/MacFolket/raw/master/images/undef.png)
+Installs to `~/Library/Dictionaries` (current user). Updatable via `brew upgrade`.
 
-You can work around this problem by right clicking or Ctrl+clicking on the .pkg file and select "Open" from the context menu. On [imore](https://www.imore.com/how-open-apps-unidentified-developer-os-x-mountain-lion) you can find pictures how to do it and even a second way.
+### Installer package
+
+Download the latest `.pkg` from the [Releases](https://github.com/hashier/MacFolket/releases) page and open it.
+
+> **Note:** The pkg installer places the dictionary in `/Library/Dictionaries` (system-wide, all users, requires root). If you only need it for yourself, use Homebrew or the manual zip instead.
+
+If macOS blocks the installer because it's from an unidentified developer, right-click (or Ctrl-click) the `.pkg` file and choose **Open** from the context menu.
+
+### Manual (zip)
+
+Download the `.zip` from the [Releases](https://github.com/hashier/MacFolket/releases) page, unzip it, and copy the `Svensk-English.dictionary` bundle into either location above.
+
+### After installing
+
+Open **Dictionary.app** → **Settings** (Cmd+,) and enable the **Svensk-English** dictionary.
 
 ## Usage
 
@@ -33,14 +50,25 @@ You can work around this problem by right clicking or Ctrl+clicking on the .pkg 
 
 [![Video](https://img.youtube.com/vi/gWR_BvioaVw/0.jpg)](https://youtu.be/gWR_BvioaVw "This video shows the installation")
 
-## Building
+## Building from source
 
-- Clone this git repository
-- Download Apples [Dictionary Development Kit](https://developer.apple.com/downloads/) (The packages is called "Auxiliary Tools for Xcode")
-- Copy the "Dictionary Development Kit" somewhere and adjust the Makefile accordingly
-- make
-- Optional make validate (you need to install jing for that)
-- make install
+```sh
+git clone https://github.com/hashier/MacFolket.git
+cd MacFolket
+make            # fetches dictionary data, converts, and builds
+make install    # copies to ~/Library/Dictionaries
+```
+
+Other useful targets:
+
+| Target | Description |
+|--------|-------------|
+| `make pkg` | Build a `.pkg` installer (requires Xcode CLI tools) |
+| `make zip` | Build a `.zip` archive of the dictionary bundle |
+| `make release` | Clean build, create pkg + zip, push a GitHub release, and update the Homebrew tap |
+| `make validate` | Validate the XML against Apple's schema (requires [jing](https://relaxng.org/jclark/jing.html)) |
+| `make clean` | Remove build artifacts |
+| `make pristine` | Remove build artifacts and downloaded dictionary data |
 
 ## Caveats
 

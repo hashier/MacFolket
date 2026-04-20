@@ -55,7 +55,7 @@ plist:
 pkg: all
 	@echo "Building installer package $(PKG_NAME)"
 	pkgbuild --component $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary \
-		--install-location /Library/Dictionaries \
+		--install-location $(DESTINATION_FOLDER_SYSTEM) \
 		--identifier org.loessl.dictionary.sven \
 		--version $(VERSION) \
 		$(PKG_NAME)
