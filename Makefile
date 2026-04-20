@@ -143,6 +143,7 @@ CASK_FILE = /opt/homebrew/Library/Taps/hashier/homebrew-macfolket/Casks/macfolke
 
 test-cask: zip
 	@echo "Installing cask from local zip"
+	@test -f $(CASK_FILE) || brew tap hashier/macfolket
 	@ZIP_SHA=$$(shasum -a 256 $(ZIP_NAME) | cut -d' ' -f1) && \
 		sed -i '' "s|url .*|url \"file://$(CURDIR)/$(ZIP_NAME)\"|" $(CASK_FILE) && \
 		sed -i '' "s/version \"[^\"]*\"/version \"$(VERSION)\"/" $(CASK_FILE) && \
