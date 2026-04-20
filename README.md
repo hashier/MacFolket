@@ -2,6 +2,14 @@
 
 A Swedish–English dictionary for macOS, integrated into Dictionary.app and system-wide look-up.
 
+![Screenshot](https://github.com/hashier/MacFolket/raw/master/images/svendict.jpg)
+
+## Usage
+
+- Force-click (deep press) a word on the trackpad
+- Select a word and press ⌃⌘D
+- Open Dictionary.app and search directly
+
 ## Installation
 
 The dictionary can live in one of two places:
@@ -35,20 +43,6 @@ Download the `.zip` from the [Releases](https://github.com/hashier/MacFolket/rel
 ### After installing
 
 Open **Dictionary.app** → **Settings** (Cmd+,) and enable the **Svensk-English** dictionary.
-
-## Usage
-
-- Three-finger tap on a word on your trackpad
-- Select a word and press Cmd+Ctrl+D
-- Open Dictionary.app and search directly
-
-## Screenshot
-
-![Screenshot](https://github.com/hashier/MacFolket/raw/master/images/svendict.jpg)
-
-## Video
-
-[![Video](https://img.youtube.com/vi/gWR_BvioaVw/0.jpg)](https://youtu.be/gWR_BvioaVw "This video shows the installation")
 
 ## Building from source
 
