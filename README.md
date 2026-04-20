@@ -7,7 +7,7 @@ A Swedish–English dictionary for macOS, integrated into Dictionary.app and sys
 ## Usage
 
 - Force-click (deep press) a word on the trackpad
-- Select a word and press ⌃⌘D
+- Select a word and press ⌃⌘D (Control+Command+D)
 - Open Dictionary.app and search directly
 
 ## Installation
