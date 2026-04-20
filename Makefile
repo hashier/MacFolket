@@ -76,7 +76,8 @@ release:
 		--notes "Swedish-English dictionary for macOS Dictionary.app"
 	@echo "Updating Homebrew tap"
 	@ZIP_SHA=$$(shasum -a 256 $(ZIP_NAME) | cut -d' ' -f1) && \
-		cd /tmp && \
+		TMPDIR=$$(mktemp -d) && \
+		cd "$$TMPDIR" && \
 		gh repo clone hashier/homebrew-macfolket -- --depth 1 && \
 		cd homebrew-macfolket && \
 		sed -i '' "s/version \"[^\"]*\"/version \"$(VERSION)\"/" Casks/macfolket.rb && \
@@ -84,7 +85,7 @@ release:
 		git add Casks/macfolket.rb && \
 		git commit -m "Update MacFolket to $(VERSION)" && \
 		git push && \
-		cd /tmp && rm -rf homebrew-macfolket
+		rm -rf "$$TMPDIR"
 	@echo "Release v$(VERSION) complete"
 
 install: all
