@@ -79,8 +79,8 @@ release:
 	@ZIP_SHA=$$(shasum -a 256 $(ZIP_NAME) | cut -d' ' -f1) && \
 		TMPDIR=$$(mktemp -d) && \
 		cd "$$TMPDIR" && \
-		gh repo clone hashier/homebrew-macfolket -- --depth 1 && \
-		cd homebrew-macfolket && \
+		gh repo clone hashier/homebrew-tap -- --depth 1 && \
+		cd homebrew-tap && \
 		sed -i '' "s/version \"[^\"]*\"/version \"$(VERSION)\"/" Casks/macfolket.rb && \
 		sed -i '' "s/sha256 \"[^\"]*\"/sha256 \"$$ZIP_SHA\"/" Casks/macfolket.rb && \
 		git add Casks/macfolket.rb && \
@@ -139,7 +139,7 @@ devuninstall:
 validate:
 	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
 
-CASK_FILE = /opt/homebrew/Library/Taps/hashier/homebrew-macfolket/Casks/macfolket.rb
+CASK_FILE = /opt/homebrew/Library/Taps/hashier/homebrew-tap/Casks/macfolket.rb
 
 test-cask: zip
 	@echo "Installing cask from local zip"

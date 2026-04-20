@@ -22,7 +22,7 @@ The dictionary can live in one of two places:
 ### Homebrew (recommended)
 
 ```sh
-brew tap hashier/macfolket
+brew tap hashier/tap
 brew install --cask macfolket
 ```
 
