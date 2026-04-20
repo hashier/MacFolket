@@ -33,7 +33,7 @@ define fix_ampersands
 	rm -f out.xml
 endef
 
-.PHONY: all fetch build plist pkg zip release install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate
+.PHONY: all fetch build plist pkg zip release install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate test-cask
 
 all: fetch convert_all build
 	@printf "\n\nDone building the dictionary.\nTo install the dictionary run make install\n\n"
@@ -137,3 +137,16 @@ devuninstall:
 
 validate:
 	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml
+
+CASK_FILE = /opt/homebrew/Library/Taps/hashier/homebrew-macfolket/Casks/macfolket.rb
+
+test-cask: zip
+	@echo "Installing cask from local zip"
+	@ZIP_SHA=$$(shasum -a 256 $(ZIP_NAME) | cut -d' ' -f1) && \
+		sed -i '' "s|url .*|url \"file://$(CURDIR)/$(ZIP_NAME)\"|" $(CASK_FILE) && \
+		sed -i '' "s/version \"[^\"]*\"/version \"$(VERSION)\"/" $(CASK_FILE) && \
+		sed -i '' "s/sha256 \"[^\"]*\"/sha256 \"$$ZIP_SHA\"/" $(CASK_FILE)
+	brew install --cask macfolket
+	@echo "Resetting tap"
+	cd $(dir $(CASK_FILE)) && git checkout .
+	@echo "Done — dictionary should be in ~/Library/Dictionaries"
