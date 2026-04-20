@@ -68,13 +68,16 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					</xsl:for-each>
 
 					<!-- Add all the translations to the search index as well -->
-					<!-- Yeah! Sure! The syntax sucks -->
-					<!--
-					test <- Attribute
-					cs   <- Element
-					-->
-					<!-- <xsl:for-each select="catalog/cd[artist/@test='a']"> -->
 					<xsl:for-each select="translation[@value!='']">
+<xsl:text>
+	</xsl:text>
+						<xsl:if test="string-length(@value) &lt; 64">
+							<d:index d:value="{@value}"></d:index>
+						</xsl:if>
+					</xsl:for-each>
+
+					<!-- Add variants to the search index -->
+					<xsl:for-each select="variant[@value!='']">
 <xsl:text>
 	</xsl:text>
 						<xsl:if test="string-length(@value) &lt; 64">
@@ -84,123 +87,130 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 
 <xsl:text>
 	</xsl:text>
-					<!-- Heading -->
+					<!-- Headword -->
 					<h1><xsl:value-of select="@value"/></h1>
 
-					<!-- This is actually the real stuff -->
-					<!-- All translations here -->
+					<!-- Translations (primary content) -->
 					<xsl:if test="translation/@value">
 						<ol>
 							<xsl:for-each select="translation">
-								<li>
-									<xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if>
-								</li>
+								<li><xsl:value-of select="@value"/><xsl:if test="@comment"> [<xsl:value-of select="@comment"/>]</xsl:if></li>
 							</xsl:for-each>
 						</ol>
 					</xsl:if>
 
-					<!-- Comment -->
+					<!--
+						Secondary fields use two patterns depending on structure:
+
+						COLLECTED — multiple values joined on one line, no translation children:
+							<xsl:if test="el/@value">
+								<span d:priority="2">Label: <xsl:for-each select="el"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
+							</xsl:if>
+
+						PER-ITEM — one span per occurrence, optional translation child:
+							<xsl:for-each select="el">
+								<span d:priority="2">Label: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+							</xsl:for-each>
+
+						definition and example are primary (no d:priority="2") and always per-item.
+					-->
+
+					<!-- COLLECTED -->
+
+					<!-- Comment (word-level attribute, not a child element) -->
 					<xsl:if test="@comment">
 						<span d:priority="2">Comment: <xsl:value-of select="@comment"/><br/></span>
 					</xsl:if>
 
-					<!-- Phonetic -->
+					<!-- Pronunciation -->
 					<xsl:if test="phonetic/@value">
-						<xsl:for-each select="phonetic">
-							<span d:priority="2">Pronunciation: |<xsl:value-of select="@value"/>|<br/></span>
-						</xsl:for-each>
+						<span d:priority="2">Pronunciation: <xsl:for-each select="phonetic">|<xsl:value-of select="@value"/>|<xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
 					</xsl:if>
 
-					<!-- What kind of word is it (word class) -->
-					<xsl:if test="@class">
-						<span d:priority="2">
-							<xsl:choose>
-								<xsl:when test="@class = 'nn'">Word class: substantiv</xsl:when>
-								<xsl:when test="@class = 'jj'">Word class: adjektiv</xsl:when>
-								<xsl:when test="@class = 'vb'">Word class: verb</xsl:when>
-								<xsl:when test="@class = 'in'">Word class: interjektion</xsl:when>
-								<xsl:when test="@class = 'pp'">Word class: preposition</xsl:when>
-								<xsl:when test="@class = 'pn'">Word class: pronomen</xsl:when>
-								<xsl:when test="@class = 'abbrev'">Word class: förkortning</xsl:when>
-								<xsl:when test="@class = 'ab'">Word class: adverb</xsl:when>
-								<xsl:when test="@class = 'rg'">Word class: grundtal</xsl:when>
-								<xsl:when test="@class = ''"></xsl:when>
-								<xsl:otherwise>Word class: DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
-							</xsl:choose>
-							<br/>
-						</span>
+					<!-- Word class (word-level attribute with fixed value set) -->
+					<xsl:if test="@class and @class != ''">
+						<span d:priority="2">Word class: <xsl:choose>
+							<xsl:when test="@class = 'nn'">substantiv</xsl:when>
+							<xsl:when test="@class = 'jj'">adjektiv</xsl:when>
+							<xsl:when test="@class = 'vb'">verb</xsl:when>
+							<xsl:when test="@class = 'in'">interjektion</xsl:when>
+							<xsl:when test="@class = 'pp'">preposition</xsl:when>
+							<xsl:when test="@class = 'pn'">pronomen</xsl:when>
+							<xsl:when test="@class = 'abbrev'">förkortning</xsl:when>
+							<xsl:when test="@class = 'ab'">adverb</xsl:when>
+							<xsl:when test="@class = 'rg'">grundtal</xsl:when>
+							<xsl:otherwise>DEBUG: <xsl:value-of select="@class"/></xsl:otherwise>
+						</xsl:choose><br/></span>
 					</xsl:if>
 
-					<!-- All synonyms -->
+					<!-- Synonyms -->
 					<xsl:if test="synonym/@value">
-						<span d:priority="2">Synonyms: <xsl:for-each select="synonym"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
+						<span d:priority="2">Synonyms: <xsl:for-each select="synonym"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
 					</xsl:if>
 
-					<!-- All inflections -->
+					<!-- Inflections -->
 					<xsl:if test="paradigm/inflection/@value">
-						<span d:priority="2">Inflections: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/>, </xsl:for-each><br/></span>
+						<span d:priority="2">Inflections: <xsl:for-each select="paradigm/inflection"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
 					</xsl:if>
+
+					<!-- Grammar -->
+					<xsl:if test="grammar/@value">
+						<span d:priority="2">Grammar: <xsl:for-each select="grammar"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
+					</xsl:if>
+
+					<!-- Use -->
+					<xsl:if test="use/@value">
+						<span d:priority="2">Use: <xsl:for-each select="use"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
+					</xsl:if>
+
+					<!-- Variants (alternative spellings) -->
+					<xsl:if test="variant/@value">
+						<span d:priority="2">Variant: <xsl:for-each select="variant"><xsl:value-of select="@value"/><xsl:if test="not(position()=last())">, </xsl:if></xsl:for-each><br/></span>
+					</xsl:if>
+
+					<!-- PER-ITEM (primary — no d:priority) -->
 
 					<!-- Definitions -->
-					<xsl:if test="definition/@value">
-						<xsl:for-each select="definition">
-							<span>Definition: <xsl:value-of select="@value"/></span>
-							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
-							</xsl:if>
-							<br/>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="definition">
+						<span>Definition: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
 					<!-- Examples -->
-					<xsl:if test="example/@value">
-						<xsl:for-each select="example">
-							<span>Example: <xsl:value-of select="@value"/></span>
-							<xsl:if test="translation/@value">
-								<span> (<xsl:value-of select="translation/@value"/>)</span>
-							</xsl:if>
-							<br/>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="example">
+						<span>Example: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
+
+					<!-- PER-ITEM (secondary — d:priority="2") -->
 
 					<!-- Idioms -->
-					<xsl:if test="idiom/@value">
-						<xsl:for-each select="idiom">
-							<span d:priority="2">Idiom: <xsl:value-of select="@value"/>
-							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
-							<br/></span>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="idiom">
+						<span d:priority="2">Idiom: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
 					<!-- Derivations -->
-					<xsl:if test="derivation/@value">
-						<xsl:for-each select="derivation">
-							<span d:priority="2">Derivation: <xsl:value-of select="@value"/>
-							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
-							<br/></span>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="derivation">
+						<span d:priority="2">Derivation: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
 					<!-- Compounds -->
-					<xsl:if test="compound/@value">
-						<xsl:for-each select="compound">
-							<span d:priority="2">Compound: <xsl:value-of select="@value"/>
-							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
-							<br/></span>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="compound">
+						<span d:priority="2">Compound: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
 					<!-- Explanations -->
-					<xsl:if test="explanation/@value">
-						<xsl:for-each select="explanation">
-							<span d:priority="2">Explanation: <xsl:value-of select="@value"/>
-							<xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if>
-							<br/></span>
-						</xsl:for-each>
-					</xsl:if>
+					<xsl:for-each select="explanation">
+						<span d:priority="2">Explanation: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
-					<!-- TODO -->
-					<!-- Grammar -->
+					<!-- See also / Compare — skip saldo, animation, phonetic (internal/dead references) -->
+					<xsl:for-each select="see[@type='also' or @type='compare' or not(@type)]">
+						<span d:priority="2"><xsl:choose><xsl:when test="@type='compare'">Compare: </xsl:when><xsl:otherwise>See also: </xsl:otherwise></xsl:choose><xsl:value-of select="@value"/><br/></span>
+					</xsl:for-each>
+
+					<!-- Antonyms -->
+					<xsl:for-each select="related">
+						<span d:priority="2">Antonym: <xsl:value-of select="@value"/><xsl:if test="translation/@value"> (<xsl:value-of select="translation/@value"/>)</xsl:if><br/></span>
+					</xsl:for-each>
 
 <!--
 					<span class="footer"><a href="http://folkets-lexikon.csc.kth.se/folkets/#lookup&amp;XXXX&amp;0">lookup online</a> | <a href="x-dictionary:r:front_back_matter">About</a></span>
