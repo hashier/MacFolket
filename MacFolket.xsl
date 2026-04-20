@@ -215,10 +215,9 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 				<p>
 				<b>Usage:</b>
 					<ul>
-						<li>Double tab a word with 3 fingers on your track-pad</li>
-						<li>Select a word and press cmd-ctrl-d</li>
-						<li>Use the dictionary application</li>
-						<li>...</li>
+						<li>Force-click (deep press) a word on the trackpad</li>
+						<li>Select a word and press ⌃⌘D (Control+Command+D)</li>
+						<li>Open Dictionary.app and search directly</li>
 					</ul>
 				</p>
 				<p>
