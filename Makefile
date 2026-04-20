@@ -22,6 +22,9 @@ DICT_DEV_KIT_OBJ_DIR = ./objects
 export DICT_DEV_KIT_OBJ_DIR
 DICT_BUNDLE          = $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary
 
+FOLKETS_SV_EN = folkets_sv_en_public.xml
+FOLKETS_EN_SV = folkets_en_sv_public.xml
+
 DESTINATION_FOLDER_USER   = ~/Library/Dictionaries
 DESTINATION_FOLDER_SYSTEM = /Library/Dictionaries
 
@@ -34,18 +37,35 @@ define fix_ampersands
 	rm -f out.xml
 endef
 
-.PHONY: all fetch build plist release install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate test-cask
+.PHONY: all fetch plist release install uninstall clean pristine reinstall reinstallsmall small devuninstall validate test-cask
 
-all: fetch convert_all build
+all: $(DICT_BUNDLE)
 	@printf "\n\nDone building the dictionary.\nTo install the dictionary run make install\n\n"
 
-fetch:
+# File targets
+
+$(FOLKETS_SV_EN):
 	@echo "Fetching needed files"
 	sh get_files.sh
 
-build: plist
+# Both files are produced by get_files.sh; depend on the first so the recipe runs once
+$(FOLKETS_EN_SV): $(FOLKETS_SV_EN)
+
+$(DICT_SRC_PATH): $(FOLKETS_SV_EN) $(FOLKETS_EN_SV) MacFolket.xsl
+	@echo "Converting Folkets dictionary file into Apple DictionarySchema"
+	sed '$$ d' $(FOLKETS_SV_EN) > start.xml
+	tail -n +3 $(FOLKETS_EN_SV) > end.xml
+	cat start.xml end.xml > all.xml
+	rm -f start.xml end.xml
+	xsltproc --stringparam version "$(VERSION)" --stringparam buildDate "$(BUILD_DATE)" -o MacFolket.xml MacFolket.xsl all.xml
+	$(fix_ampersands)
+
+$(DICT_BUNDLE): $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 	@echo "Building dictionary"
 	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
+
+# Phony convenience aliases
+fetch: $(FOLKETS_SV_EN) $(FOLKETS_EN_SV)
 
 plist:
 	@echo "Updating plist version to $(VERSION)"
@@ -69,6 +89,7 @@ zip: $(DICT_BUNDLE)
 
 release:
 	$(MAKE) clean
+	$(MAKE) plist
 	$(MAKE) pkg
 	$(MAKE) zip
 	@echo "Creating GitHub release v$(VERSION)"
@@ -107,22 +128,13 @@ clean:
 
 pristine: clean
 	@echo "Thoroughly clean up"
-	rm -rf folkets_en_sv_public.xml folkets_sv_en_public.xml
-
-convert_all:
-	@echo "Converting Folkets dictionary file into Apple DictionarySchema"
-	sed '$$ d' folkets_sv_en_public.xml > start.xml
-	tail -n +3 folkets_en_sv_public.xml > end.xml
-	cat start.xml end.xml > all.xml
-	rm -f start.xml end.xml
-	xsltproc --stringparam version "$(VERSION)" --stringparam buildDate "$(BUILD_DATE)" -o MacFolket.xml MacFolket.xsl all.xml
-	$(fix_ampersands)
+	rm -rf $(FOLKETS_EN_SV) $(FOLKETS_SV_EN)
 
 # Development targets
 
-reinstall: clean convert_all build install
+reinstall: clean install
 
-reinstallsmall: clean small build install
+reinstallsmall: clean small $(DICT_BUNDLE) install
 
 small:
 	@echo "Building with small.xml (development)"
@@ -143,7 +155,7 @@ CASK_FILE = /opt/homebrew/Library/Taps/hashier/homebrew-tap/Casks/macfolket.rb
 
 test-cask: zip
 	@echo "Installing cask from local zip"
-	@test -f $(CASK_FILE) || brew tap hashier/macfolket
+	@test -f $(CASK_FILE) || brew tap hashier/tap
 	@ZIP_SHA=$$(shasum -a 256 $(ZIP_NAME) | cut -d' ' -f1) && \
 		sed -i '' "s|url .*|url \"file://$(CURDIR)/$(ZIP_NAME)\"|" $(CASK_FILE) && \
 		sed -i '' "s/version \"[^\"]*\"/version \"$(VERSION)\"/" $(CASK_FILE) && \
