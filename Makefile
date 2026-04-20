@@ -20,6 +20,7 @@ DICT_BUILD_TOOL_BIN = "$(DICT_BUILD_TOOL_DIR)/bin"
 
 DICT_DEV_KIT_OBJ_DIR = ./objects
 export DICT_DEV_KIT_OBJ_DIR
+DICT_BUNDLE          = $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary
 
 DESTINATION_FOLDER_USER   = ~/Library/Dictionaries
 DESTINATION_FOLDER_SYSTEM = /Library/Dictionaries
@@ -33,7 +34,7 @@ define fix_ampersands
 	rm -f out.xml
 endef
 
-.PHONY: all fetch build plist pkg zip release install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate test-cask
+.PHONY: all fetch build plist release install uninstall clean pristine convert_all reinstall reinstallsmall small devuninstall validate test-cask
 
 all: fetch convert_all build
 	@printf "\n\nDone building the dictionary.\nTo install the dictionary run make install\n\n"
@@ -52,16 +53,16 @@ plist:
 	sed -i '' 's/MacFolket Version: [0-9.]*</MacFolket Version: $(VERSION)</' $(PLIST_PATH)
 	sed -i '' 's/Build on: [0-9-]*<\//Build on: $(BUILD_DATE)<\//' $(PLIST_PATH)
 
-pkg: all
+pkg: $(DICT_BUNDLE)
 	@echo "Building installer package $(PKG_NAME)"
-	pkgbuild --component $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary \
+	pkgbuild --component $(DICT_BUNDLE) \
 		--install-location $(DESTINATION_FOLDER_SYSTEM) \
 		--identifier org.loessl.dictionary.sven \
 		--version $(VERSION) \
 		$(PKG_NAME)
 	@echo "Created $(PKG_NAME)"
 
-zip: all
+zip: $(DICT_BUNDLE)
 	@echo "Building zip archive $(ZIP_NAME)"
 	cd $(DICT_DEV_KIT_OBJ_DIR) && zip -r ../$(ZIP_NAME) $(DICT_NAME).dictionary
 	@echo "Created $(ZIP_NAME)"
@@ -88,10 +89,10 @@ release:
 		rm -rf "$$TMPDIR"
 	@echo "Release v$(VERSION) complete"
 
-install: all
+install: $(DICT_BUNDLE)
 	@echo "Installing into $(DESTINATION_FOLDER_USER)"
 	mkdir -p $(DESTINATION_FOLDER_USER)
-	ditto --noextattr --norsrc $(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
+	ditto --noextattr --norsrc $(DICT_BUNDLE) $(DESTINATION_FOLDER_USER)/$(DICT_NAME).dictionary
 	touch $(DESTINATION_FOLDER_USER)
 	@echo "Done. To test the new dictionary, try Dictionary.app."
 
