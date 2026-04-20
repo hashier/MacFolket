@@ -54,13 +54,17 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 <xsl:text>
 	</xsl:text>
 					<!-- Make sure that the actual word has an index entry -->
-					<d:index d:value="{@value}"></d:index>
+					<xsl:if test="string-length(@value) &lt; 64">
+						<d:index d:value="{@value}"></d:index>
+					</xsl:if>
 
 					<!-- Add all inflections to the search index so we will be able to find bil even so we search for bilen -->
 					<xsl:for-each select="paradigm/inflection">
 <xsl:text>
 	</xsl:text>
-						<d:index d:value="{@value}"></d:index>
+						<xsl:if test="string-length(@value) &lt; 64">
+							<d:index d:value="{@value}"></d:index>
+						</xsl:if>
 					</xsl:for-each>
 
 					<!-- Add all the translations to the search index as well -->
@@ -73,7 +77,9 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					<xsl:for-each select="translation[@value!='']">
 <xsl:text>
 	</xsl:text>
-						<d:index d:value="{@value}"></d:index>
+						<xsl:if test="string-length(@value) &lt; 64">
+							<d:index d:value="{@value}"></d:index>
+						</xsl:if>
 					</xsl:for-each>
 
 <xsl:text>
