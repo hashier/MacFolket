@@ -3386,6 +3386,7 @@
 <word value="härav" lang="sv" class="ab" comment="formellt"><translation value="of this (these" />
 <translation value="etc.)" />
 <phonetic value="hÄ:ra:v" soundFile="härav.swf" />
+<see value="härav||härav..1||härav..ab.1" type="saldo" />
 <example value="på grund härav saknas resurser"><translation value="resources are therefore lacking" />
 </example>
 </word>
