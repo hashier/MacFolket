@@ -34,7 +34,7 @@ define fix_ampersands
 	python3 fix_ampersands.py MacFolket.xml
 endef
 
-.PHONY: all fetch plist release install uninstall clean pristine reinstall reinstallsmall small devuninstall validate test-cask
+.PHONY: all fetch plist release install uninstall clean pristine reinstall reinstallsmall small devuninstall validate test-cask test
 
 all: $(DICT_BUNDLE)
 	@printf "\n\nDone building the dictionary.\nTo install the dictionary run make install\n\n"
@@ -85,6 +85,7 @@ zip: $(DICT_BUNDLE)
 	@echo "Created $(ZIP_NAME)"
 
 release:
+	$(MAKE) test
 	$(MAKE) clean
 	$(MAKE) plist
 	$(MAKE) pkg
@@ -144,6 +145,9 @@ devuninstall:
 	touch $(DESTINATION_FOLDER_USER)/
 	sudo rm -rf $(DESTINATION_FOLDER_SYSTEM)/$(DICT_NAME).dictionary
 	sudo touch $(DESTINATION_FOLDER_SYSTEM)/
+
+test:
+	python3 test_xsl.py
 
 validate:
 	java -jar $(JING) $(DICT_BUILD_TOOL_DIR)/documents/DictionarySchema/AppleDictionarySchema.rng MacFolket.xml

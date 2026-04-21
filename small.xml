@@ -3382,4 +3382,134 @@
 <translation value="album" />
 <translation value="film" />
 </word>
+<!-- Test words for word class coverage -->
+<word class="article" lang="sv" value="den"><translation value="the, that" />
+<use value="vid adjektiv (+ substantiv)" />
+<phonetic soundFile="den.swf" value="den:" />
+<paradigm><inflection value="det" />
+<inflection value="de" />
+<inflection value="dom" />
+</paradigm>
+<synonym level="5.0" value="saken där" />
+<example value="den röda bilen"><translation value="the red automobile" />
+</example>
+</word>
+<word value="be" lang="en" class="hjälpverb"><translation value="" comment="ingen direkt översättning" />
+<example value="I should have been informed about this"><translation value="jag borde ha informerats om det här" />
+</example>
+<idiom value="smoking is not permitted"><translation value="det är inte tillåtet att röka" />
+</idiom>
+<explanation value="används för att bilda passivform" />
+</word>
+<word value="vilket" lang="sv" class="hp"><translation value="which" />
+</word>
+<word class="ie" lang="sv" value="att"><translation value="to" />
+<use value="endast framför infinitiv" />
+<phonetic soundFile="att.swf" value="at:" />
+<example value="han steg in utan att knacka"><translation value="he entered without knocking" />
+</example>
+</word>
+<word value="allteftersom" lang="sv" class="kn"><translation value="as" />
+<translation value="gradually" />
+<phonetic value="Al:t2Ef:ter+såm:" soundFile="allteftersom.swf" />
+<synonym value="vartefter" level="3.1" />
+<definition value="medan" />
+</word>
+<word value="id est" lang="en" class="latin"><translation value="se i.e." />
+</word>
+<word value="ablate" lang="en" class="pc"><translation value="genomgå borttagande" comment="till exempel operation" />
+<grammar value="intransitivt" />
+</word>
+<word value="Försäkringskassan" lang="sv" class="pm"><translation value="Swedish Social Insurance Agency" />
+<phonetic value="²för+sÄ:kri@skas:an" soundFile="försäkringskassan.swf" />
+<explanation value="Myndighet som sköter socialförsäkringar." />
+</word>
+<word class="prefix" comment="i sammansättning" lang="sv" value="aero-"><translation comment="in compounds" value="aero-" />
+<phonetic soundFile="aero-.swf" value="²aero-" />
+<definition value="luft-, flyg-"><translation value="a combining form meaning &amp;quot;air&amp;quot;" />
+</definition>
+</word>
+<word value="någons" lang="sv" class="ps"><translation value="somebody&amp;#39;s" />
+</word>
+<word value="eighteenth" lang="en" class="ro"><translation value="artonde" />
+<example value="This is the eighteenth day of rain."><translation value="Det här är den artonde dagen det regnar." />
+</example>
+<explanation value="the one counted as number eighteen" />
+</word>
+<word value="utifall" lang="sv" class="sn"><translation value="in case" />
+<translation value="in case of" />
+</word>
+<word class="suffix" lang="sv" value="-procentig"><translation value="per cent" />
+<phonetic soundFile="procentig.swf" value="-prosen:tig" />
+<paradigm><inflection value="procentigt" />
+<inflection value="procentiga" />
+</paradigm>
+<example value="en hundraprocentig ökning"><translation value="a hundred per cent increase" />
+</example>
+</word>
+<word value="asleep" lang="en" class="ab, jj"><translation value="sovande" />
+<example value="fall asleep"><translation value="somna" />
+</example>
+<grammar value="predikativt" />
+</word>
+<word value="when" lang="en" class="ab, kn"><translation value="då" />
+<translation value="vid den tid då" />
+<example value="It was dark when we arrived"><translation value="Det var mörkt då vi kom dit." />
+</example>
+</word>
+<word value="there" lang="en" class="ab, pn"><translation value="det" />
+</word>
+<word value="as" lang="en" class="ab, pp"><translation value="som" />
+<translation value="såsom" comment="används vid jämförelser och vid exemplifiering" />
+<example value="she&amp;#39;s not quite as tall as me"><translation value="hon är inte riktigt lika lång som jag" />
+</example>
+</word>
+<word value="BBC" lang="en" class="abbrev, nn"><translation value="BBC" />
+<translation value="det statliga radio- och televisionsbolaget i Storbritannien" />
+</word>
+<word value="dryshod" lang="en" class="jj, ab"><translation value="torrskodd" />
+<explanation value="torr om fötterna" />
+</word>
+<word value="above" lang="en" class="jj, nn"><translation value="ovanstående" />
+<example value="the above"><translation value="ovannämnda (person), det ovanstående" />
+</example>
+</word>
+<word value="dotted" lang="en" class="jj, pc"><translation value="prickig" />
+<example value="sign on the dotted line"><translation value="signera på den prickade linjen" />
+</example>
+</word>
+<word value="unlike" lang="en" class="jj, pp"><translation value="olik" />
+<example value="It&amp;#39;s very unlike him to be late."><translation value="Det är väldigt olikt honom att vara sen." />
+</example>
+</word>
+<word value="Tory" lang="en" class="nn, jj"><translation value="medlem av det konservativa partiet i Storbritannien" />
+<example value="It&amp;#39;s a Tory principle."><translation value="Det är en konservativ princip." />
+</example>
+</word>
+<word value="bounce" lang="en" class="nn, vb" comment="datatekniskt"><translation value="studs" />
+<translation value="studsa" />
+<example value="My email message to Tom bounced."><translation value="Mitt e-postmeddelande till Tom studsade." />
+</example>
+</word>
+<word value="below" lang="en" class="pp, ab"><translation value="nedanför" />
+<translation value="under" />
+<example value="the figure is below the current standard"><translation value="siffran understiger den gällande normen" />
+</example>
+</word>
+<word value="until" lang="en" class="pp, kn"><translation value="till" />
+<translation value="ända tills" />
+<example value="Wait inside until I call your name."><translation value="Stanna inomhus ända tills jag ropar på dig." />
+</example>
+</word>
+<word value="eighty" lang="en" class="rg, nn"><translation value="åttio" />
+<explanation value="80" />
+</word>
+<word value="eighth" lang="en" class="ro, nn"><translation value="åttonde" />
+<translation value="åttondel" />
+</word>
+<word value="copy-and-paste" lang="en" class="vb, nn" comment="datatekniskt"><variant value="cut-and-paste" />
+<translation value="kopiera och klistra in" />
+<explanation value="An easy technique for copying data from one location to another."><translation value="Funktion som låter användaren enkelt kopiera data från ett dokument till ett annat." />
+</explanation>
+</word>
 </dictionary>
