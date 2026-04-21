@@ -22,6 +22,12 @@ span.column {
 	padding: 0.5em;
 }
 
+.word-comment {
+	font-size: 60%;
+	font-weight: normal;
+	margin-left: 0.4em;
+}
+
 .footer {
 	font-size: 80%;
 	color: gray;

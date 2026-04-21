@@ -3382,6 +3382,13 @@
 <translation value="album" />
 <translation value="film" />
 </word>
+<!-- Test word for comment styling -->
+<word value="härav" lang="sv" class="ab" comment="formellt"><translation value="of this (these" />
+<translation value="etc.)" />
+<phonetic value="hÄ:ra:v" soundFile="härav.swf" />
+<example value="på grund härav saknas resurser"><translation value="resources are therefore lacking" />
+</example>
+</word>
 <!-- Test words for word class coverage -->
 <word class="article" lang="sv" value="den"><translation value="the, that" />
 <use value="vid adjektiv (+ substantiv)" />

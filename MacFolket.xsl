@@ -133,8 +133,8 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 
 <xsl:text>
 	</xsl:text>
-					<!-- Headword -->
-					<h1><xsl:value-of select="@value"/></h1>
+					<!-- Headword (with optional usage comment inline, e.g. "härav (formellt)") -->
+					<h1><xsl:value-of select="@value"/><xsl:if test="@comment"> <span class="word-comment">(<xsl:value-of select="@comment"/>)</span></xsl:if></h1>
 
 					<!-- Translations (primary content) -->
 					<xsl:if test="translation/@value">
@@ -162,11 +162,6 @@ https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/
 					-->
 
 					<!-- COLLECTED -->
-
-					<!-- Comment (word-level attribute, not a child element) -->
-					<xsl:if test="@comment">
-						<span d:priority="2">Comment: <xsl:value-of select="@comment"/><br/></span>
-					</xsl:if>
 
 					<!-- Pronunciation -->
 					<xsl:if test="phonetic/@value">
